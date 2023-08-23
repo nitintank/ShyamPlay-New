@@ -1,0 +1,671 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url("/images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 170px;
+}
+
+.middle-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.middle-nav p {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nested Dropdown */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #d0d0d0
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+/* navlinks */
+
+.sidebar .nav-links {
+    height: 100%;
+    overflow: auto;
+    width: 260px;
+}
+
+.sidebar.close .nav-links {
+    overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover {
+    /* background: #d0d0d0; */
+}
+
+.sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+    display: block
+}
+
+.sidebar .nav-links li i {
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+    transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow {
+    display: none;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+
+.sidebar.close .nav-links li a .link_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+    padding: 10px 20px;
+    /* margin-top: -10px; */
+    background: #dbdbdb;
+    display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+    color: black;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu .link_name {
+    display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Nested Dropdown End */
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wallet {
+    color: white;
+    padding: 5px 10px;
+    background-color: #252e4d;
+    border-radius: 5px;
+}
+
+.deposit {
+    color: white;
+    padding: 5px 10px;
+    background-color: #D17918;
+    border-radius: 5px;
+}
+
+.right-nav img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Banner Section */
+
+.banner {
+    width: 92%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Trending Games Section */
+
+.trending {
+    height: 190px;
+    width: 92%;
+    background-color: #443e1b;
+    display: block;
+    margin: 60px auto 30px;
+    border-radius: 0px 15px 15px 15px;
+    border: 2px solid #b7b520;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trending .top-pill {
+    width: 200px;
+    position: absolute;
+    top: -45.5px;
+    left: -2.2px;
+}
+
+.trend {
+    position: absolute;
+    top: -40px !important;
+    left: 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trend img {
+    width: 35px;
+}
+
+.trend p {
+    color: white;
+    font-size: 17px;
+}
+
+.trending-img {
+    width: 16%;
+    border-radius: 15px;
+}
+
+/* Game Pills Section */
+
+.game-pills {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #443e1b;
+    border: 1px solid #b7b520;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.games-pill-btn label img {
+    width: 25px;
+    height: 25px;
+}
+
+.games-pill-btn input[type="radio"] {
+    display: none;
+}
+
+.games-pill-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-pill-btn label {
+    color: white;
+    background-color: #161623;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+:checked+label {
+    background: #B6B326;
+    color: #fff;
+}
+
+/* Sports Section */
+
+.sports {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.sport-games {
+    width: 16%;
+    height: auto;
+}
+
+.sport-games img {
+    width: 100%;
+}
+
+/* Inplay Games */
+
+.inplay {
+    height: auto;
+    width: 92%;
+    background-color: #443e1b;
+    display: block;
+    margin: 60px auto 20px;
+    border-radius: 0px 15px 15px 15px;
+    border: 2px solid #b7b520;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+}
+
+.inplay .inplay-pill-img {
+    width: 200px;
+    position: absolute;
+    top: -45.5px;
+    left: -2.2px;
+}
+
+.inplay-img {
+    position: absolute;
+    top: -40px !important;
+    left: 12px !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inplay-img img {
+    width: 35px;
+}
+
+.inplay-img p {
+    color: white;
+    font-size: 17px;
+}
+
+.table {
+    width: 98%;
+}
+
+.table-top {
+    width: 100%;
+    height: 50px;
+    background-color: #161623;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sport-img-table {
+    width: 2%;
+}
+
+.table-top img {
+    width: 30px;
+    height: 30px;
+}
+
+.match-name {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.live-status {
+    width: 58%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.live-status span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #44E15C;
+    border-radius: 50%;
+}
+
+.live-status p {
+    color: white;
+    font-size: 18px;
+}
+
+.table-below {
+    width: 100%;
+    height: auto;
+    background-color: #393838;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.favourite-img {
+    width: 2%;
+}
+
+.favourite-img img {
+    width: 25px;
+    height: 25px;
+}
+
+.names {
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.live-tv {
+    width: 18%;
+}
+
+.live-tv img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.t-odds {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 0;
+    margin-left: 10px;
+}
+
+.blue {
+    padding: 10px 20px;
+    background-color: #4fa1dc;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.pink {
+    padding: 10px 20px;
+    background-color: #f994ba;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.blank {
+    padding: 10px 20px;
+    background-color: #2e3438;
+    color: #aaafb5;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #aaafb5;
+}
+
+/* Offer Section */
+
+.offers {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.offer-box {
+    width: 24%;
+    height: 120px;
+    padding: 15px;
+    background-color: #171f35;
+    /* border: 2px solid #b7b520; */
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer-box img {
+    width: 37%;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+.follow-us {
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.follow-us h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.social-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-images img {
+    width: 150px;
+}
+
+.social-desk {
+    display: block;
+}
+
+.social-mob {
+    display: none;
+}
+
+/* Gaming Partner Section */
+
+.gaming-partner {
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+/* Copyright Section */
+
+.copyright {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+.copyright img {
+    width: 200px;
+    height: auto;
+}
+
+footer p {
+    color: white;
+}

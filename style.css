@@ -1,0 +1,859 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-image: url("/images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.mob-logo{
+    display: none;
+}
+
+.coin{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 125px;
+}
+
+/* Login Box */
+
+.login-box{
+    width: 80%;
+    height: auto;
+    border-radius: 55px;
+    background-color: white;
+    background-image: url("/images/box-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content p{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.content h3{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.content h2{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+}
+
+.textbox-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.heading-mob .mobi-h2{
+    display: none;
+}
+
+.textbox{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.textbox input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 35px;
+}
+
+.textbox .icon{
+    height: 20px; 
+    width: 20px; 
+    margin-bottom: 0px; 
+    position: absolute; 
+    top: 50%px; 
+    left: 7px;
+}
+
+.textbox .icon2{
+    height: 15px; 
+    width: 20px; 
+    margin-bottom: 0px;
+    position: absolute; 
+    top: 50%px; 
+    right: 12px;
+}
+
+.textbox input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.imp-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+.remember{
+    width: 50%;
+    height: auto;
+}
+
+.imp-box label{
+    color: white;
+}
+
+.forgot{
+    width: 50%;
+    height: auto;
+}
+
+.forgot p{
+    color: #b5b326;
+    font-weight: 900;
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.login-button{
+    width: 80%;
+}
+
+.login-button button{
+    width: 100%;
+    padding: 10px;
+    background-color: #b5b326;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.or-btn{
+    width: 80%;
+    position: relative;
+}
+
+.textbox-main h4{
+    color: white;
+    text-align: center;
+}
+
+.textbox-main h4::before{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+.textbox-main h4::after{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    right: 0;
+    left: inherit;
+    bottom: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+.login-otp{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-otp button{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.login-otp .icon{
+    height: 20px; 
+    width: 15px; 
+    margin-bottom: 0px;
+}
+
+.login-otp p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-otp p span{
+    color: #b5b326;
+}
+
+.login-otp p span:hover{
+    cursor: pointer;
+}
+
+.btns{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bt-n {
+  width: 190px;
+  height: 54px;
+background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  @media (max-width:425px) {
+    width: 45%;
+  }
+}
+
+.bt-n h2 {
+  z-index: 1;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  @media (max-width:425px) {
+    font-size: 0.8em;
+  }
+}
+
+.bt-n h2 img{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0px;
+}
+
+.bt-n::before {
+  content: '';
+  position: absolute;
+  width: 450px;
+  background-color:#afafb2;
+  height: 50%;
+  animation: rotBGimg 5s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bt-n::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
+  inset: 2.5px;
+  border-radius: 15px;
+}
+
+.bt-n2 {
+    width: 190px;
+    height: 54px;
+    background: linear-gradient(134deg, #000 0%, #34BD39 100%);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    @media (max-width:425px) {
+      width: 45%;
+    }
+  }
+  
+  .bt-n2 h2 {
+    z-index: 1;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    @media (max-width:425px) {
+      font-size: 0.8em;
+    }
+  }
+  
+  .bt-n2 h2 img{
+      width: 22px;
+      height: 22px;
+      margin-bottom: 0px;
+  }
+  
+  .bt-n2::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    background-color:#afafb2;
+    height: 50%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  .bt-n2::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(134deg, #000 0%, #34BD39 100%);
+    inset: 2.5px;
+    border-radius: 15px;
+  }
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 90%;
+}
+
+/* Offer Section */
+
+.offer-section{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-box{
+    width: 80%;
+    height: 150px;
+    border: 2px solid #b5b326;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-box p{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #b5b326;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.or-button{
+    width: 50%;
+    position: relative;
+}
+
+.or-button h4{
+    color: white;
+    text-align: center;
+}
+
+.or-button h4::before{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+.or-button h4::after{
+    content: "";
+    width: calc(50% - 25px);
+    position: absolute;
+    right: 0;
+    left: inherit;
+    bottom: calc(50% - 1px);
+    background: #fff;
+    height: 2px;
+}
+
+/* Manual Box */
+
+.manual-box{
+    width: 100%;
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manual-box img{
+    width: 30%;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+.follow-us{
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.follow-us h2{
+    color: white;
+    font-size: 30px;
+}
+
+.social-images{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-images img{
+    width: 150px;
+}
+
+.social-desk{
+    display: block;
+}
+
+.social-mob{
+    display: none;
+}
+
+/* Gaming Partner Section */
+
+.gaming-partner{
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+/* Copyright Section */
+
+.copyright{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+.copyright img{
+    width: 200px;
+    height: auto;
+}
+
+footer p{
+    color: white;
+}
+
+/* Mobile Responsive Code */
+
+@media (max-width: 1350px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1275px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+    .follow-us{
+        height: 90px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 90px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1100px){
+    .follow-us h2{
+        font-size: 20px;
+    }
+    .social-images img{
+        width: 110px;
+    }
+    .follow-us{
+        height: 80px;
+    }
+    .gaming-partner{
+        height: 80px;
+    }
+    .gaming-partner img{
+        width: 10%;
+    }
+    .btns{
+        width: 95%;
+    }
+    .bt-n{
+        width: 48%;
+    }
+    .bt-n2{
+        width: 48%;
+    }
+    .manual-box img{
+        width: 40%;
+    }
+    .login-box{
+        width: 95%;
+    }
+    .coin{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 900px){
+    .follow-us h2{
+        font-size: 18px;
+    }
+    .follow-us{
+        height: 60px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 60px;
+        overflow-x: auto;
+    }
+    .social-images img{
+        width: 95px;
+    }
+}
+
+@media (max-width: 769px) {
+    .coin{
+        display: none;
+    }
+    body{
+        margin-top: 20px;
+    }
+    .login-box{
+        width: 95%;
+        background: transparent;
+        background-image: url("/images/tablet-register-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+    }
+    .textbox-main{
+        gap: 20px;
+    }
+    .image{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .content .heading-2{
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: left;
+        margin-top: -25px;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .or-btn{
+        width: 100%;
+    }
+    .mob-logo{
+        width: 160px;
+        align-self: flex-start;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+    .heading-mob{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .heading-mob .mobi-h2{
+        display: none;
+    }
+    .content h3{
+        display: none;
+    }
+    .content p{
+        display: none;
+    }
+    .textbox{
+        width: 100%;
+    }
+    .imp-box{
+        width: 100%;
+    }
+    .login-button{
+        width: 100%;
+    }
+    .login-otp{
+        width: 100%;
+    }
+    .btns{
+        width: 100%;
+    }
+    .bt-n{
+        width: 49%;
+    }
+    .bt-n h2{
+        display: flex;
+    }
+    .bt-n2{
+        width: 49%;
+    }
+    .bt-n2 h2{
+        display: flex;
+    }
+    .mob-logo{
+        width: 160px;
+        align-self: flex-start;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+    .mobile-logo{
+        display: none;
+    }
+    .offer-box{
+        height: 100px;
+        width: 95%;
+        border-radius: 20px;
+    }
+    .offer-box p{
+        font-size: 16px;
+        padding: 5px 15px;
+        margin-top: -17px;
+    }
+    .manual-box img{
+        width: 60%;
+    }
+    .social-images img{
+        width: 80px;
+    }
+    .gaming-partner img{
+        width: 15%;
+    }
+    .follow-us{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+    }
+    .follow-us h2 {
+        font-size: 18px;
+    }
+    .gaming-partner{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+        overflow-x: auto;
+    }
+    .copyright{
+        height: 50px;
+    }
+    .copyright img{
+        width: 100px;
+    }
+    footer p{
+        text-align: center;
+    }
+    .social-desk{
+        display: none;
+    }
+    .social-mob{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .content .heading-2{
+        text-align: center;
+    }
+    .social-images img{
+        width: 50px;
+    }
+    .follow-us h2 {
+        font-size: 14px;
+    }
+    .login-box{
+        background-image: url("/images/mobile-login-bg.png");
+    }
+    .heading-mob .mobi-h2{
+        text-align: center;
+        display: block;
+    }
+    .manual-box img{
+        width: 90%;
+    }
+    .follow-us{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        height: 55px;
+    }
+    .follow-us{
+        height: 55px;
+    }
+    
+}
+
+@media (max-width: 410px){
+    .textbox-main{
+        gap: 17px;
+    }
+    .content .heading-2{
+        margin-bottom: 25px;
+    }
+    .social-images{
+        gap: 7px;
+    }
+}
+
+@media (max-width: 390px){
+    .textbox-main{
+        gap: 15px;
+    }
+    .content .heading-2{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 375px){
+    .login-box{
+        width: 95%;
+        background: transparent;
+        background-image: url("/images/mobile-login-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+        height: auto;
+    }
+    .content .heading-2{
+        margin-bottom: 30px;
+    }
+    .textbox-main{
+        gap: 12px;
+    }
+    .gaming-partner{
+        height: 47px;
+    }
+    .follow-us{
+        height: 47px;
+    }
+}
+
+@media (max-width: 365px){
+    .textbox-main{
+        gap: 12px;
+    }
+    .content .heading-2{
+        margin-bottom: 35px;
+    }
+}
