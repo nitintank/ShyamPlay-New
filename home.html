@@ -10,6 +10,43 @@
 </head>
 
 <body>
+    <div class="mob-sidebar" id="mob-sidebar">
+        <div class="mob-sidebar-top">
+            <p class="mob-side-cross" onclick="sidemobclose()">X</p>
+            <div class="mob-side-top-content">
+                <img src="/images/profile.png" alt="">
+                <p class="mob-side-register">Register</p>
+            </div>
+        </div>
+        <ul>
+            <li style="margin-top: 20px;"><img src="/images/inplay-sidebar.png" alt="">Inplay</li>
+            <li><img src="/images/favorites.png" alt="">Favorites</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/Sports.png" alt="">Sports</p>
+        <ul>
+            <li><img src="/images/cricket-ball.png" alt="">Cricket</li>
+            <li><img src="/images/soccer-ball.png" alt="">Soccer</li>
+            <li><img src="/images/tennis-ball.png" alt="">Tennis</li>
+            <li><img src="/images/horse-race.png" alt="">Horse Racing</li>
+            <li><img src="/images/greyhound-race.png" alt="">Greyhound Racing</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/live-casino.png" alt="">Casino</p>
+        <ul class="mob-side-arrow">
+            <li><span><img src="/images/liv-casino.png" alt="">Live Casino</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/Slot-games.png" alt="">Slot Games</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/cras-games.png" alt="">Crash Game</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/tabl-games.png" alt="">Table Game</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/virtua-games.png" alt="">Virtual Sport</span><img src="/images/right-arrow.png" alt=""></li>
+        </ul>
+        <div class="mob-sidebar-support">
+            <div class="mob-sidebar-support-content">
+                <h2>Support</h2>
+                <p>24/7</p>
+            </div>
+            <img src="/images/what-tele.png" alt="">
+        </div>
+    </div>
+
     <nav>
         <img src="/images/logo.png" alt="" class="logo">
         <div class="middle-nav">
@@ -116,8 +153,17 @@
             <p class="deposit">Deposit</p>
             <img src="/images/notification.png" alt="">
             <img src="/images/profile.png" alt="">
+            <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
         </div>
     </nav>
+
+    <!-- Marquee Section -->
+
+    <div class="marquee">
+        <img src="/images/horn.png" alt="">
+        <marquee>Get Amazing Bonus Daily With SHYAMPLAY Every Day Scratch Card And Get Reward By Referring Your Friends
+            And Family Many More way To Win Lot Of Money With SHYAMPLAY</marquee>
+    </div>
 
     <!-- Banner Section -->
 
@@ -133,12 +179,14 @@
             <img src="/images/rocket.png" alt="">
             <p>TRENDING</p>
         </div>
-        <img src="https://cdn.dreamcasino.live/evp_talismansoffortune.png" alt="" class="trending-img">
-        <img src="https://cdn.dreamcasino.live/evp_egyptgods.jpg" alt="" class="trending-img">
-        <img src="https://cdn.dreamcasino.live/evp_luckymahjongbox.jpg" alt="" class="trending-img">
-        <img src="https://cdn.dreamcasino.live/evp_chinesenewyear.jpg" alt="" class="trending-img">
-        <img src="https://cdn.dreamcasino.live/evp_legendofra.jpg" alt="" class="trending-img">
-        <img src="https://cdn.dreamcasino.live/evp_clashofpirates.jpg" alt="" class="trending-img">
+        <div class="trending-img">
+            <img src="https://cdn.dreamcasino.live/evp_talismansoffortune.png" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_egyptgods.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_luckymahjongbox.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_chinesenewyear.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_legendofra.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_clashofpirates.jpg" alt="">
+        </div>
     </div>
 
     <!-- Game Pills -->
@@ -330,11 +378,23 @@
 
     <!-- Upcoming Matches -->
 
-    <div class="inplay">
-        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
-        <div class="inplay-img">
-            <img src="/images/inplay.png" alt="">
-            <p>TODAY</p>
+    <div class="inplay" id="upcoming-border">
+        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
+        <img src="/images/middle-bar.png" alt="" class="upcoming-matches-img2" id="tomorrow-match">
+        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img3" id="upcoming-match">
+        <div class="upcoming-matches">
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='today' checked onclick="today()">
+                <label for='today' class="match-label">Today</label>
+            </span>
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='tomorrow' onclick="tomorrow()">
+                <label for='tomorrow' class="match-label">Tomorrow</label>
+            </span>
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='upcoming' onclick="upcoming()">
+                <label for='upcoming' class="match-label">Upcoming</label>
+            </span>
         </div>
 
         <div class="table">
@@ -471,15 +531,54 @@
 </body>
 <script>
     const submenuItems = document.querySelectorAll(".submenu_item");
-        submenuItems.forEach((item, index) => {
-            item.addEventListener("click", () => {
-                item.classList.toggle("showMenu");
-                submenuItems.forEach((item2, index2) => {
-                    if (index !== index2) {
-                        item2.classList.remove("showMenu");
-                    }
-                });
+    submenuItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("showMenu");
+            submenuItems.forEach((item2, index2) => {
+                if (index !== index2) {
+                    item2.classList.remove("showMenu");
+                }
             });
         });
-    </script>
+    });
+
+    let todaymatch = document.getElementById("today-match")
+    let tomorrowmatch = document.getElementById("tomorrow-match")
+    let upcomingmatch = document.getElementById("upcoming-match")
+    let upcomingborder = document.getElementById("upcoming-border")
+
+    let today = () => {
+        todaymatch.style.display = "block"
+        tomorrowmatch.style.display = "none"
+        upcomingmatch.style.display = "none"
+        upcomingborder.style.borderRadius = "0px 15px 15px 15px"
+    }
+    let tomorrow = () => {
+        todaymatch.style.display = "none"
+        tomorrowmatch.style.display = "block"
+        upcomingmatch.style.display = "none"
+        upcomingborder.style.borderRadius = "15px"
+    }
+    let upcoming = () => {
+        todaymatch.style.display = "none"
+        tomorrowmatch.style.display = "none"
+        upcomingmatch.style.display = "block"
+        if (x.matches) {
+            upcomingborder.style.borderRadius = "15px 0px 15px 15px"
+        } else {
+            console.log("hello desktop")
+        }
+    }
+    var x = window.matchMedia("(max-width: 360px)")
+    x.addListener(upcoming)
+
+    let mobsidebar = document.getElementById("mob-sidebar")
+    let sidemobopen =()=>{
+        mobsidebar.style.display ="block"
+    }
+    let sidemobclose =()=>{
+        mobsidebar.style.display ="none"
+    }
+</script>
+
 </html>

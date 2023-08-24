@@ -250,6 +250,30 @@ nav {
     width: 40px;
 }
 
+/* Marquee Section */
+
+.marquee{
+    color: white;
+    background-color: #0f171d;
+    padding: 5px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.marquee marquee{
+    width: 98%;
+}
+
+.marquee img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
 /* Banner Section */
 
 .banner {
@@ -306,7 +330,14 @@ nav {
     font-size: 17px;
 }
 
-.trending-img {
+.trending-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trending-img img{
     width: 16%;
     border-radius: 15px;
 }
@@ -523,6 +554,7 @@ nav {
 }
 
 .t-btn {
+    width: 32%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -538,6 +570,7 @@ nav {
     font-weight: 700;
     border-radius: 10px;
     font-size: 18px;
+    width: 50%;
 }
 
 .pink {
@@ -547,6 +580,7 @@ nav {
     font-weight: 700;
     border-radius: 10px;
     font-size: 18px;
+    width: 50%;
 }
 
 .blank {
@@ -557,6 +591,7 @@ nav {
     border-radius: 10px;
     font-size: 18px;
     border: 1px solid #aaafb5;
+    width: 50%;
 }
 
 /* Offer Section */
@@ -567,6 +602,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
+    margin-bottom: 80px;
 }
 
 .offer-box {
@@ -585,6 +621,81 @@ nav {
 .offer-box img {
     width: 37%;
 }
+
+/* Upcoming Matches */
+
+.match-label{
+    padding: 4px 15px !important;
+}
+
+.upcoming-matches{
+    padding-left: 4px;
+    width: 338px;
+    top: -34px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upcoming-matches-img {
+    width: 117px;
+    height: 40px;
+    position: absolute;
+    top: -39.5px;
+    left: -2px;
+}
+.upcoming-matches-img2 {
+    width: 198px;
+    position: absolute;
+    display: none;
+    top: -42px;
+    left: 52.8px;
+}
+.upcoming-matches-img3 {
+    position: absolute;
+    display: none;
+    width: 156px;
+    height: 40px;
+    top: -40.4px;
+    left: 186.8px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* .upcoming-matches{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    padding-left: 40px;
+}
+
+.upcoming-matches-img {
+    width: 240px;
+    position: absolute;
+    top: -54.4px;
+    left: -2.2px;
+}
+
+.upcoming-matches-img2 {
+    display: none;
+    width: 273px;
+    position: absolute;
+    top: -56.4px;
+    left: 171.8px;
+}
+
+.upcoming-matches-img3 {
+    display: none;
+    width: 273px;
+    position: absolute;
+    top: -56.4px;
+    left: 411.8px;
+} */
 
 /* Footer */
 
@@ -668,4 +779,498 @@ footer {
 
 footer p {
     color: white;
+}
+
+/* Responsive Code */
+
+@media (max-width: 1060px){
+    .middle-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 790px) and (max-width: 1350px) {
+    .banner{
+        width: 98%;
+    }
+    .game-pills{
+        gap: 5px;
+        width: 98%;
+        overflow-x: scroll;
+    }
+    .trending{
+        width: 98%;
+    }
+    .sports{
+        width: 98%;
+    }
+    .offers{
+        width: 98%;
+    }
+    .inplay{
+        width: 98%;
+    }
+    .table{
+        overflow-x: scroll;
+    }
+    .t-btn{
+        margin-left: 0px;
+    }
+    .blue{
+        padding: 10px;
+    }
+    .pink{
+        padding: 10px;
+    }
+    .blank{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 790px) {
+    nav{
+        padding: 15px 10px;
+    }
+    .logo{
+        width: 110px;
+    }
+    .middle-nav{
+        display: none;
+    }
+    .right-nav{
+        gap: 5px;
+    }
+    .right-nav img{
+        height: 30px;
+        width: 30px;
+    }
+    .marquee marquee {
+        width: 92%;
+    }
+    .marquee img{
+        top: 2px;
+    }
+    .banner{
+        width: 97%;
+        margin: 10px auto auto;
+    }
+    .trending{
+        width: 97%;
+        height: auto;
+        justify-content: space-between;
+        gap: 5px;
+        padding-left: 5px;
+        margin: 50px auto 15px;
+    }
+    .trending-img{
+        padding: 5px 0px;
+        justify-content: space-between;
+        gap: 5px;
+        overflow-x: scroll;
+    }
+    .trending-img img{
+        width: 32.5%;
+    }
+    .game-pills{
+        width: 97%;
+        gap: 5px;
+        overflow-x: scroll;
+    }
+    .sports{
+        width: 97%;
+        flex-wrap: wrap;
+    }
+    .sport-games{
+        width: 32%;
+    }
+    .sport-img-table{
+        width: 9%;
+    }
+    .inplay{
+        width: 98%;
+        padding: 5px 0px;
+    }
+    .table-top{
+        padding: 0px 5px;
+        gap: 0px;
+    }
+    .table-top img{
+        width: 25px;
+        height: 25px;
+    }
+    .match-name{
+        width: 78%;
+    }
+    .match-name p{
+        font-size: 14px;
+    }
+    .live-status{
+        width: 13%;
+    }
+    .live-status p{
+        font-size: 14px;
+    }
+    .table-below{
+        flex-wrap: wrap;
+        gap: 0px;
+        padding: 5px;
+    }
+    .favourite-img{
+        width: 9%;
+    }
+    .names{
+        width: 78%;
+    }
+    .names p{
+        font-size: 14px;
+    }
+    .live-tv{
+        width: 13%;
+        display: flex;
+    }
+    .live-tv img{
+        width: 14px;
+        height: 14px;
+        margin-right: 3px;
+    }
+    .t-odds{
+        width: 100%;
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .t-btn{
+        margin-left: 0px;
+        gap: 5px;
+        width: 32%;
+    }
+    .blue{
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 50%;
+        text-align: center;
+    }
+    .pink{
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 50%;
+        text-align: center;
+    }
+    .blank{
+        padding: 8px 10px;
+        font-size: 14px;
+        width: 50%;
+        text-align: center;
+    }
+    .offers{
+        width: 98%;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 65px;
+    }
+    .offer-box{
+        width: 49%;
+        height: auto;
+    }
+    .offer-box-content h2{
+        font-size: 16px;
+    }
+    .offer-box-content p{
+        font-size: 12px;
+    }
+    /* .upcoming-matches{
+        padding-left: 4px;
+        width: 338px;
+        top: -34px;
+    }
+    .upcoming-matches-img {
+        width: 117px;
+        height: 40px;
+        top: -39.5px;
+        left: -2px;
+    }
+    .upcoming-matches-img2 {
+        width: 198px;
+        top: -42px;
+        left: 52.8px;
+    }
+    .upcoming-matches-img3 {
+        width: 156px;
+        height: 40px;
+        top: -40.4px;
+        left: 186.8px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    } */
+    .match-label{
+        padding: 4px 15px !important;
+    }
+}
+
+@media (max-width: 1350px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1275px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+    .follow-us{
+        height: 90px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 90px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1100px){
+    .follow-us h2{
+        font-size: 20px;
+    }
+    .social-images img{
+        width: 110px;
+    }
+    .follow-us{
+        height: 80px;
+    }
+    .gaming-partner{
+        height: 80px;
+    }
+    .gaming-partner img{
+        width: 10%;
+    }
+}
+
+@media (max-width: 900px){
+    .follow-us h2{
+        font-size: 18px;
+    }
+    .follow-us{
+        height: 60px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 60px;
+        overflow-x: auto;
+    }
+    .social-images img{
+        width: 95px;
+    }
+}
+
+@media (max-width: 769px) {
+    .social-images img{
+        width: 80px;
+    }
+    .gaming-partner img{
+        width: 15%;
+    }
+    .follow-us{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+    }
+    .follow-us h2 {
+        font-size: 18px;
+    }
+    .gaming-partner{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+        overflow-x: auto;
+    }
+    .copyright{
+        height: 50px;
+    }
+    .copyright img{
+        width: 100px;
+    }
+    footer p{
+        text-align: center;
+    }
+    .social-desk{
+        display: none;
+    }
+    .social-mob{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .social-images img{
+        width: 50px;
+    }
+    .follow-us h2 {
+        font-size: 14px;
+    }
+    .follow-us{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        height: 55px;
+    }
+    .follow-us{
+        height: 55px;
+    }
+}
+
+@media (max-width: 410px){
+    .social-images{
+        gap: 7px;
+    }
+}
+
+@media (max-width: 375px){
+    .gaming-partner{
+        height: 47px;
+    }
+    .follow-us{
+        height: 47px;
+    }
+}
+
+/* Mobile Sidebar */
+
+.mob-sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #393838;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    padding: 10px 0px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.mob-sidebar-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.mob-side-top-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mob-side-cross{
+    background-color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.mob-sidebar-top img{
+    height: 30px;
+    width: 30px;
+}
+
+.mob-side-register{
+    background-color: #b7b520;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.mob-sidebar ul li{
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: 500;
+}
+
+.mob-side-arrow li{
+    justify-content: space-between;
+}
+
+.mob-sidebar ul li span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mob-sidebar ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+.mob-side-title{
+    color: white;
+    background-color: #161623;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mob-side-title img{
+    width: 20px;
+    height: 20px;
+}
+
+.mob-sidebar-support{
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #171f35;
+    border-left: 2px solid #b7b520;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mob-sidebar-support img {
+    width: 37%;
+}
+
+.mobile-side-bars{
+    display: none;
+    width: 25px !important;
+    height: 25px !important;
+
+}
+
+@media (max-width: 1024px) {
+    .mobile-side-bars{
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .wallet{
+        padding: 5px;
+    }
+    .deposit{
+        padding: 5px;
+    }
+    .right-nav img{
+        width: 25px;
+        height: 25px;
+    }
+    .mobile-side-bars{
+        width: 20px !important;
+        height: 20px !important;
+    
+    }
 }
