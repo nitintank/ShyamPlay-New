@@ -281,7 +281,7 @@ nav {
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
 .banner img {
@@ -296,7 +296,7 @@ nav {
     width: 92%;
     background-color: #443e1b;
     display: block;
-    margin: 60px auto 30px;
+    margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
     border: 2px solid #b7b520;
     position: relative;
@@ -350,9 +350,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: #443e1b;
-    border: 1px solid #b7b520;
+    border: 2px solid #b7b520;
     padding: 5px;
     border-radius: 5px;
 }
@@ -418,7 +418,7 @@ nav {
     width: 92%;
     background-color: #443e1b;
     display: block;
-    margin: 60px auto 20px;
+    margin: 50px auto 20px;
     border-radius: 0px 15px 15px 15px;
     border: 2px solid #b7b520;
     position: relative;
@@ -439,7 +439,7 @@ nav {
 
 .inplay-img {
     position: absolute;
-    top: -40px !important;
+    top: -38px !important;
     left: 12px !important;
     display: flex;
     align-items: center;
@@ -629,14 +629,12 @@ nav {
 }
 
 .upcoming-matches{
-    padding-left: 4px;
-    width: 338px;
-    top: -34px;
-    left: 0px;
-    position: absolute;
+    padding-left: 14px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
 }
 .upcoming-matches-img {
     width: 117px;
@@ -881,14 +879,14 @@ footer p {
         flex-wrap: wrap;
     }
     .sport-games{
-        width: 32%;
+        width: 49%;
     }
     .sport-img-table{
         width: 9%;
     }
     .inplay{
         width: 98%;
-        padding: 5px 0px;
+        padding: 10px 0px;
     }
     .table-top{
         padding: 0px 5px;
@@ -977,32 +975,19 @@ footer p {
     .offer-box-content p{
         font-size: 12px;
     }
-    /* .upcoming-matches{
-        padding-left: 4px;
-        width: 338px;
-        top: -34px;
-    }
-    .upcoming-matches-img {
-        width: 117px;
-        height: 40px;
-        top: -39.5px;
-        left: -2px;
-    }
-    .upcoming-matches-img2 {
-        width: 198px;
-        top: -42px;
-        left: 52.8px;
-    }
-    .upcoming-matches-img3 {
-        width: 156px;
-        height: 40px;
-        top: -40.4px;
-        left: 186.8px;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-    } */
     .match-label{
         padding: 4px 15px !important;
+        font-size: 18px !important;
+    }
+    .games-pill-btn label{
+        padding: 5px 14px;
+        font-size: 14px;
+    }
+    .upcoming-matches{
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: space-between;
+        gap: 10px;
     }
 }
 

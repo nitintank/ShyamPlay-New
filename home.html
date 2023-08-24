@@ -379,9 +379,14 @@
     <!-- Upcoming Matches -->
 
     <div class="inplay" id="upcoming-border">
-        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
+        <!-- <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
         <img src="/images/middle-bar.png" alt="" class="upcoming-matches-img2" id="tomorrow-match">
-        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img3" id="upcoming-match">
+        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img3" id="upcoming-match"> -->
+        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
+        <div class="inplay-img">
+            <img src="/images/time.png" alt="" style="width: 25px;">
+            <p>UPCOMING</p>
+        </div>
         <div class="upcoming-matches">
             <span class="games-pill-btn">
                 <input type='radio' name='game-btn' id='today' checked onclick="today()">
@@ -542,33 +547,33 @@
         });
     });
 
-    let todaymatch = document.getElementById("today-match")
-    let tomorrowmatch = document.getElementById("tomorrow-match")
-    let upcomingmatch = document.getElementById("upcoming-match")
-    let upcomingborder = document.getElementById("upcoming-border")
+    // let todaymatch = document.getElementById("today-match")
+    // let tomorrowmatch = document.getElementById("tomorrow-match")
+    // let upcomingmatch = document.getElementById("upcoming-match")
+    // let upcomingborder = document.getElementById("upcoming-border")
 
-    let today = () => {
-        todaymatch.style.display = "block"
-        tomorrowmatch.style.display = "none"
-        upcomingmatch.style.display = "none"
-        upcomingborder.style.borderRadius = "0px 15px 15px 15px"
-    }
-    let tomorrow = () => {
-        todaymatch.style.display = "none"
-        tomorrowmatch.style.display = "block"
-        upcomingmatch.style.display = "none"
-        upcomingborder.style.borderRadius = "15px"
-    }
-    let upcoming = () => {
-        todaymatch.style.display = "none"
-        tomorrowmatch.style.display = "none"
-        upcomingmatch.style.display = "block"
-        if (x.matches) {
-            upcomingborder.style.borderRadius = "15px 0px 15px 15px"
-        } else {
-            console.log("hello desktop")
-        }
-    }
+    // let today = () => {
+    //     todaymatch.style.display = "block"
+    //     tomorrowmatch.style.display = "none"
+    //     upcomingmatch.style.display = "none"
+    //     upcomingborder.style.borderRadius = "0px 15px 15px 15px"
+    // }
+    // let tomorrow = () => {
+    //     todaymatch.style.display = "none"
+    //     tomorrowmatch.style.display = "block"
+    //     upcomingmatch.style.display = "none"
+    //     upcomingborder.style.borderRadius = "15px"
+    // }
+    // let upcoming = () => {
+    //     todaymatch.style.display = "none"
+    //     tomorrowmatch.style.display = "none"
+    //     upcomingmatch.style.display = "block"
+    //     if (x.matches) {
+    //         upcomingborder.style.borderRadius = "15px 0px 15px 15px"
+    //     } else {
+    //         console.log("hello desktop")
+    //     }
+    // }
     var x = window.matchMedia("(max-width: 360px)")
     x.addListener(upcoming)
 
