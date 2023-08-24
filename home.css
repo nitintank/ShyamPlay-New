@@ -725,6 +725,32 @@ footer {
     font-size: 30px;
 }
 
+.download-android {
+    width: 70%;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-android h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.android-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.android-images img {
+    width: 235px;
+    cursor: pointer;
+}
+
 .social-images {
     display: flex;
     align-items: center;
@@ -733,6 +759,7 @@ footer {
 
 .social-images img {
     width: 150px;
+    cursor: pointer;
 }
 
 .social-desk {
@@ -988,6 +1015,18 @@ footer p {
         padding-right: 5px;
         justify-content: space-between;
         gap: 10px;
+    }
+    .download-android{
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .download-android h2{
+        font-size: 18px;
+    }
+    .android-images img{
+        width: 170px;
     }
 }
 
