@@ -1,90 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Shyam Play Login Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <title>Shyam Play Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <img src="/images/logo.png" alt="" class="mob-logo">
-    <section class="login-box">
-        <img src="/images/coin.png" alt="" class="coin">
-        <div class="content">
-            <img src="/images/logo.png" alt="" class="mobile-logo">
-            <h3>Welcome back, Gamer</h3>
-            <p>Login To View Your Account</p>
-            <div class="heading-mob">
-                <h2 class="heading-2 mobi-h2">Register</h2>
-                <h2 class="heading-2">Login</h2>
-            </div>
-            <div class="textbox-main">
-                <div class="textbox">
-                    <img src="/images/user.png" alt="" class="icon">
-                    <input type="text" placeholder="Username/Mobile Number">
-                </div>
-                <div class="textbox">
-                    <img src="/images/password.png" alt="" class="icon">
-                    <input type="text" placeholder="Password">
-                    <img src="/images/eye.png" alt="" class="icon2">
-                </div>
-                <div class="imp-box">
-                    <div class="remember">
-                        <input type="checkbox">
-                        <label for="">Remember Me</label>
-                    </div>
-                    <div class="forgot">
-                        <p>Forgot Password?</p>
-                    </div>
-                </div>
-                <div class="login-button">
-                    <button>LOGIN</button>
-                </div>
-                <div class="or-btn">
-                    <h4>OR</h4>
-                </div>
-                <div class="login-otp">
-                    <button>LOGIN WITH OTP<img src="/images/phone.png" alt="" class="icon"></button>
-                    <p>Don't Have An Account? <span>Sign Up</span></p>
-                </div>
-                <div class="btns">
-                    <div class="bt-n">
-                        <h2><img src="/images/android.png" alt="" style="height: 25px;">DOWNLOAD APK</h2>
-                    </div>
-                    <div class="bt-n2">
-                        <h2><img src="/images/contact.png" alt="">CONTACT US</h2>
-                    </div>
-                </div>
+    <div class="mob-sidebar" id="mob-sidebar">
+        <div class="mob-sidebar-top">
+            <p class="mob-side-cross" onclick="sidemobclose()">X</p>
+            <div class="mob-side-top-content">
+                <img src="/images/profile.png" alt="">
+                <p class="mob-side-register">Register</p>
             </div>
         </div>
-        <div class="image">
-            <img src="/images/image.png" alt="">
+        <ul>
+            <li style="margin-top: 20px;"><img src="/images/inplay-sidebar.png" alt="">Inplay</li>
+            <li><img src="/images/favorites.png" alt="">Favorites</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/Sports.png" alt="">Sports</p>
+        <ul>
+            <li><img src="/images/cricket-ball.png" alt="">Cricket</li>
+            <li><img src="/images/soccer-ball.png" alt="">Soccer</li>
+            <li><img src="/images/tennis-ball.png" alt="">Tennis</li>
+            <li><img src="/images/horse-race.png" alt="">Horse Racing</li>
+            <li><img src="/images/greyhound-race.png" alt="">Greyhound Racing</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/live-casino.png" alt="">Casino</p>
+        <ul class="mob-side-arrow">
+            <li><span><img src="/images/liv-casino.png" alt="">Live Casino</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/Slot-games.png" alt="">Slot Games</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/cras-games.png" alt="">Crash Game</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/tabl-games.png" alt="">Table Game</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/virtua-games.png" alt="">Virtual Sport</span><img src="/images/right-arrow.png" alt=""></li>
+        </ul>
+        <div class="mob-sidebar-support">
+            <div class="mob-sidebar-support-content">
+                <h2>Support</h2>
+                <p>24/7</p>
+            </div>
+            <img src="/images/what-tele.png" alt="">
+        </div>
+    </div>
+
+    <nav>
+        <img src="/images/logo.png" alt="" class="logo">
+        <div class="middle-nav">
+            <p>Inplay</p>
+            <!-- <p>Sports</p> -->
+            <div class="dropdown">
+                <button class="dropbtn">Sports</button>
+                <div class="dropdown-content sidebar">
+                    <ul class="nav-links">
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Cricket</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Soccer</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Japanese J League 3</a></li>
+                                <li><a href="#">South African Premier Division</a></li>
+                                <li><a href="#">Czech Cup</a></li>
+                                <li><a href="#">German 3 Liga</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Tennis</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Todi Challenger 2023</a></li>
+                                <li><a href="#">ATP Cincinnati 2023</a></li>
+                                <li><a href="#">Zhuhai Challenger 2023</a></li>
+                                <li><a href="#">Lima Challenger 2023</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Horse Racing</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Greyhound Racing</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Slot Games</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>Live Casino</p>
+            <p>Slot Games</p>
+            <p>Crash Games</p>
+            <p>More</p>
+        </div>
+        <div class="right-nav">
+            <p class="wallet">Rs.0.00</p>
+            <p class="deposit">Deposit</p>
+            <img src="/images/notification.png" alt="">
+            <img src="/images/profile.png" alt="">
+            <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
+        </div>
+    </nav>
+
+    <!-- Marquee Section -->
+
+    <div class="marquee">
+        <img src="/images/horn.png" alt="">
+        <marquee>Get Amazing Bonus Daily With SHYAMPLAY Every Day Scratch Card And Get Reward By Referring Your Friends
+            And Family Many More way To Win Lot Of Money With SHYAMPLAY</marquee>
+    </div>
+
+    <!-- Banner Section -->
+
+    <section class="banner">
+        <img src="/images/banner.webp" alt="">
+    </section>
+
+    <!-- Trending Games Section -->
+
+    <div class="trending">
+        <img src="/images/top-pill.png" alt="" class="top-pill">
+        <div class="trend">
+            <img src="/images/rocket.png" alt="">
+            <p>TRENDING</p>
+        </div>
+        <div class="trending-img">
+            <img src="https://cdn.dreamcasino.live/evp_talismansoffortune.png" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_egyptgods.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_luckymahjongbox.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_chinesenewyear.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_legendofra.jpg" alt="">
+            <img src="https://cdn.dreamcasino.live/evp_clashofpirates.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Game Pills -->
+
+    <section class="game-pills">
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='sports' checked>
+            <label for='sports'><img src="/images/Sports.png" alt="">Sports</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='live-casino'>
+            <label for='live-casino'><img src="/images/live-casino.png" alt="">Live Casino</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='slot-games'>
+            <label for='slot-games'><img src="/images/Slot-games.png" alt="">Slot Games</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='crash-games'>
+            <label for='crash-games'><img src="/images/Crash-Games.png" alt="">Crash Games</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='table-games'>
+            <label for='table-games'><img src="/images/Table-Games.png" alt="">Table Games</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='virtual-sports'>
+            <label for='virtual-sports'><img src="/images/Virtual-Sports.png" alt="">Virtual Sports</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='our-game'>
+            <label for='our-game'><img src="/images/Our-games.png" alt="">Our Game</label>
+        </span>
+    </section>
+
+    <!-- Sports Section -->
+    <section class="sports">
+        <div class="sport-games">
+            <img src="/images/cricket.png" alt="">
+        </div>
+        <div class="sport-games">
+            <img src="/images/tennis.png" alt="">
+        </div>
+        <div class="sport-games">
+            <img src="/images/football.png" alt="">
+        </div>
+        <div class="sport-games">
+            <img src="/images/horse-racing.png" alt="">
+        </div>
+        <div class="sport-games">
+            <img src="/images/greyhound-racing.png" alt="">
+        </div>
+        <div class="sport-games">
+            <img src="/images/virtual-sport.png" alt="">
         </div>
     </section>
+
+    <!-- Inplay Games -->
+
+    <div class="inplay">
+        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
+        <div class="inplay-img">
+            <img src="/images/inplay.png" alt="">
+            <p>INPLAY</p>
+        </div>
+
+        <div class="table">
+            <div class="table-top">
+                <div class="sport-img-table">
+                    <img src="/images/cric.png" alt="">
+                </div>
+                <div class="match-name">
+                    <img src="/images/india.png" alt="">
+                    <p>Maharaja Trophy KSCA T20 2023</p>
+                </div>
+                <div class="live-status">
+                    <span></span>
+                    <p>Live</p>
+                </div>
+            </div>
+            <div class="table-below">
+                <div class="favourite-img">
+                    <img src="/images/favourite.png" alt="">
+                </div>
+                <div class="names">
+                    <p>Godavari Titans vs Rayalaseema Kings</p>
+                    <p>20 Aug 03:30PM</p>
+                </div>
+                <div class="live-tv">
+                    <img src="/images/live-tv.png" alt="">
+                    <img src="/images/b.png" alt="">
+                    <img src="/images/f.png" alt="">
+                </div>
+
+                <div class="t-odds">
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blank">__</p>
+                        <p class="blank">__</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="table-top">
+                <div class="sport-img-table">
+                    <img src="/images/cric.png" alt="">
+                </div>
+                <div class="match-name">
+                    <img src="/images/india.png" alt="">
+                    <p>Maharaja Trophy KSCA T20 2023</p>
+                </div>
+                <div class="live-status">
+                    <span></span>
+                    <p>Live</p>
+                </div>
+            </div>
+            <div class="table-below">
+                <div class="favourite-img">
+                    <img src="/images/favourite.png" alt="">
+                </div>
+                <div class="names">
+                    <p>Godavari Titans vs Rayalaseema Kings</p>
+                    <p>20 Aug 03:30PM</p>
+                </div>
+                <div class="live-tv">
+                    <img src="/images/live-tv.png" alt="">
+                    <img src="/images/b.png" alt="">
+                    <img src="/images/f.png" alt="">
+                </div>
+
+                <div class="t-odds">
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blank">__</p>
+                        <p class="blank">__</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Offer Section -->
 
-    <section class="offer-section">
+    <section class="offers">
         <div class="offer-box">
-            <p>Offers For You</p>
+            <div class="offer-box-content">
+                <h2>TVBET</h2>
+                <p>Live Games 24/7</p>
+            </div>
+            <img src="/images/gift-box.webp" alt="">
+        </div>
+        <div class="offer-box">
+            <div class="offer-box-content">
+                <h2>TVBET</h2>
+                <p>Live Games 24/7</p>
+            </div>
+            <img src="/images/gift-box.webp" alt="">
+        </div>
+        <div class="offer-box">
+            <div class="offer-box-content">
+                <h2>TVBET</h2>
+                <p>Live Games 24/7</p>
+            </div>
+            <img src="/images/gift-box.webp" alt="">
+        </div>
+        <div class="offer-box">
+            <div class="offer-box-content">
+                <h2>TVBET</h2>
+                <p>Live Games 24/7</p>
+            </div>
+            <img src="/images/gift-box.webp" alt="">
         </div>
     </section>
-    <div class="or-button">
-        <h4>OR</h4>
+
+    <!-- Upcoming Matches -->
+
+    <div class="inplay" id="upcoming-border">
+        <!-- <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
+        <img src="/images/middle-bar.png" alt="" class="upcoming-matches-img2" id="tomorrow-match">
+        <img src="/images/top-pill.png" alt="" class="upcoming-matches-img3" id="upcoming-match"> -->
+        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
+        <div class="inplay-img">
+            <img src="/images/time.png" alt="" style="width: 25px;">
+            <p>UPCOMING</p>
+        </div>
+        <div class="upcoming-matches">
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='today' checked onclick="today()">
+                <label for='today' class="match-label">Today</label>
+            </span>
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='tomorrow' onclick="tomorrow()">
+                <label for='tomorrow' class="match-label">Tomorrow</label>
+            </span>
+            <span class="games-pill-btn">
+                <input type='radio' name='game-btn' id='upcoming' onclick="upcoming()">
+                <label for='upcoming' class="match-label">Upcoming</label>
+            </span>
+        </div>
+
+        <div class="table">
+            <div class="table-top">
+                <div class="sport-img-table">
+                    <img src="/images/cric.png" alt="">
+                </div>
+                <div class="match-name">
+                    <img src="/images/india.png" alt="">
+                    <p>Maharaja Trophy KSCA T20 2023</p>
+                </div>
+                <div class="live-status">
+                    <span></span>
+                    <p>Live</p>
+                </div>
+            </div>
+            <div class="table-below">
+                <div class="favourite-img">
+                    <img src="/images/favourite.png" alt="">
+                </div>
+                <div class="names">
+                    <p>Godavari Titans vs Rayalaseema Kings</p>
+                    <p>20 Aug 03:30PM</p>
+                </div>
+                <div class="live-tv">
+                    <img src="/images/live-tv.png" alt="">
+                    <img src="/images/b.png" alt="">
+                    <img src="/images/f.png" alt="">
+                </div>
+
+                <div class="t-odds">
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blank">__</p>
+                        <p class="blank">__</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="table-top">
+                <div class="sport-img-table">
+                    <img src="/images/cric.png" alt="">
+                </div>
+                <div class="match-name">
+                    <img src="/images/india.png" alt="">
+                    <p>Maharaja Trophy KSCA T20 2023</p>
+                </div>
+                <div class="live-status">
+                    <span></span>
+                    <p>Live</p>
+                </div>
+            </div>
+            <div class="table-below">
+                <div class="favourite-img">
+                    <img src="/images/favourite.png" alt="">
+                </div>
+                <div class="names">
+                    <p>Godavari Titans vs Rayalaseema Kings</p>
+                    <p>20 Aug 03:30PM</p>
+                </div>
+                <div class="live-tv">
+                    <img src="/images/live-tv.png" alt="">
+                    <img src="/images/b.png" alt="">
+                    <img src="/images/f.png" alt="">
+                </div>
+
+                <div class="t-odds">
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blank">__</p>
+                        <p class="blank">__</p>
+                    </div>
+                    <div class="t-btn">
+                        <p class="blue">2.16</p>
+                        <p class="pink">2.21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Manual Box -->
-
-    <section class="manual-box">
-        <img src="/images/manual-box.png" alt="">
-    </section>
 
     <!-- Footer -->
 
     <footer>
+        <div class="download-android">
+            <h2>Download Mobile Application :</h2>
+            <div class="android-images">
+                <img src="/images/android-app.png" alt="">
+            </div>
+        </div>
         <div class="follow-us">
             <h2>Follow Us On :</h2>
             <div class="social-images">
@@ -119,7 +535,61 @@
             <img src="https://opt-v3-files.raksahb.com/static/media/beAwareLogo.png" alt="">
             <img src="https://opt-v3-files.raksahb.com/static/media/gamcareLogo.png" alt="">
         </div>
-        <p>This website is proudly operated by Shyamplay.com, a legally registered company under the laws of CURACAO.</p>
+        <p>This website is proudly operated by Shyamplay.com, a legally registered company under the laws of CURACAO.
+        </p>
     </footer>
+
 </body>
+<script>
+    const submenuItems = document.querySelectorAll(".submenu_item");
+    submenuItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("showMenu");
+            submenuItems.forEach((item2, index2) => {
+                if (index !== index2) {
+                    item2.classList.remove("showMenu");
+                }
+            });
+        });
+    });
+
+    // let todaymatch = document.getElementById("today-match")
+    // let tomorrowmatch = document.getElementById("tomorrow-match")
+    // let upcomingmatch = document.getElementById("upcoming-match")
+    // let upcomingborder = document.getElementById("upcoming-border")
+
+    // let today = () => {
+    //     todaymatch.style.display = "block"
+    //     tomorrowmatch.style.display = "none"
+    //     upcomingmatch.style.display = "none"
+    //     upcomingborder.style.borderRadius = "0px 15px 15px 15px"
+    // }
+    // let tomorrow = () => {
+    //     todaymatch.style.display = "none"
+    //     tomorrowmatch.style.display = "block"
+    //     upcomingmatch.style.display = "none"
+    //     upcomingborder.style.borderRadius = "15px"
+    // }
+    // let upcoming = () => {
+    //     todaymatch.style.display = "none"
+    //     tomorrowmatch.style.display = "none"
+    //     upcomingmatch.style.display = "block"
+    //     if (x.matches) {
+    //         upcomingborder.style.borderRadius = "15px 0px 15px 15px"
+    //     } else {
+    //         console.log("hello desktop")
+    //     }
+    // }
+    var x = window.matchMedia("(max-width: 360px)")
+    x.addListener(upcoming)
+
+    let mobsidebar = document.getElementById("mob-sidebar")
+    let sidemobopen =()=>{
+        mobsidebar.style.display ="block"
+    }
+    let sidemobclose =()=>{
+        mobsidebar.style.display ="none"
+    }
+</script>
+
 </html>
