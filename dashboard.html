@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="mob-sidebar" id="mob-sidebar">
+        <div class="mob-sidebar-top">
+            <p class="mob-side-cross" onclick="sidemobclose()">X</p>
+            <div class="mob-side-top-content">
+                <img src="/images/profile.png" alt="">
+                <p class="mob-side-register">Register</p>
+            </div>
+        </div>
+        <ul>
+            <li style="margin-top: 20px;"><img src="/images/inplay-sidebar.png" alt="">Inplay</li>
+            <li><img src="/images/favorites.png" alt="">Favorites</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/Sports.png" alt="">Sports</p>
+        <ul>
+            <li><img src="/images/cricket-ball.png" alt="">Cricket</li>
+            <li><img src="/images/soccer-ball.png" alt="">Soccer</li>
+            <li><img src="/images/tennis-ball.png" alt="">Tennis</li>
+            <li><img src="/images/horse-race.png" alt="">Horse Racing</li>
+            <li><img src="/images/greyhound-race.png" alt="">Greyhound Racing</li>
+        </ul>
+        <p class="mob-side-title"><img src="/images/live-casino.png" alt="">Casino</p>
+        <ul class="mob-side-arrow">
+            <li><span><img src="/images/liv-casino.png" alt="">Live Casino</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/Slot-games.png" alt="">Slot Games</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/cras-games.png" alt="">Crash Game</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/tabl-games.png" alt="">Table Game</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/virtua-games.png" alt="">Virtual Sport</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+        </ul>
+        <div class="mob-sidebar-support">
+            <div class="mob-sidebar-support-content">
+                <h2>Support</h2>
+                <p>24/7</p>
+            </div>
+            <img src="/images/what-tele.png" alt="">
+        </div>
+    </div>
+    
+    <nav>
+        <img src="/images/logo.png" alt="" class="logo">
+        <div class="middle-nav">
+            <p>Inplay</p>
+            <!-- <p>Sports</p> -->
+            <div class="dropdown">
+                <button class="dropbtn">Sports</button>
+                <div class="dropdown-content sidebar">
+                    <ul class="nav-links">
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Cricket</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Soccer</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Japanese J League 3</a></li>
+                                <li><a href="#">South African Premier Division</a></li>
+                                <li><a href="#">Czech Cup</a></li>
+                                <li><a href="#">German 3 Liga</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Tennis</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Todi Challenger 2023</a></li>
+                                <li><a href="#">ATP Cincinnati 2023</a></li>
+                                <li><a href="#">Zhuhai Challenger 2023</a></li>
+                                <li><a href="#">Lima Challenger 2023</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Horse Racing</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Greyhound Racing</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu_item">
+                            <div class="iocn-link">
+                                <a href="#">
+                                    <span class="link_name">Slot Games</span>
+                                </a>
+                                <i class='bx bxs-chevron-down arrow'></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Maharaja Trophy KSCA T20 2023</a></li>
+                                <li><a href="#">International Twenty20 Matches</a></li>
+                                <li><a href="#">The Hundred - Womens</a></li>
+                                <li><a href="#">US Masters T10</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p>Live Casino</p>
+            <p>Slot Games</p>
+            <p>Crash Games</p>
+            <p>More</p>
+        </div>
+        <div class="right-nav">
+            <p class="wallet">Rs.0.00</p>
+            <p class="deposit">Deposit</p>
+            <img src="/images/notification.png" alt="">
+            <a href="/login.html"><img src="/images/profile.png" alt=""></a>
+            <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
+        </div>
+    </nav>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="download-android">
+            <h2>Download Mobile Application :</h2>
+            <div class="android-images">
+                <img src="/images/android-app.png" alt="">
+            </div>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us On :</h2>
+            <div class="social-images">
+                <img src="/images/telegram.png" alt="" class="social-desk">
+                <img src="/images/instagram.png" alt="" class="social-desk">
+                <img src="/images/facebook.png" alt="" class="social-desk">
+                <img src="/images/youtube.png" alt="" class="social-desk">
+                <img src="/images/telegram-mob.png" alt="" class="social-mob">
+                <img src="/images/instagram-mob.png" alt="" class="social-mob">
+                <img src="/images/facebook-mob.png" alt="" class="social-mob">
+                <img src="/images/youtube-mob.png" alt="" class="social-mob">
+            </div>
+        </div>
+        <div class="gaming-partner-logo">
+            <div class="gaming-partner-logo-img">
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/ag-logo.png" alt="">
+                <img src="/images/footer-logo/bet-game.png" alt="">
+                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                <img src="/images/footer-logo/ecugi.png" alt="">
+                <img src="/images/footer-logo/evolution.png" alt="">
+                <img src="/images/footer-logo/evoplay.png" alt="">
+                <img src="/images/footer-logo/india-soe.png" alt="">
+                <img src="/images/footer-logo/jili.png" alt="">
+            </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                <img src="/images/footer-logo/sexy.png" alt="">
+                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                <img src="/images/footer-logo/BETSOFT.png" alt="">
+                <img src="/images/footer-logo/Spribe.png" alt="">
+                <img src="/images/footer-logo/supernowa.png" alt="">
+                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                <img src="/images/footer-logo/Royal-gaming.png" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="gaming-partner">
+            <img src="https://opt-v3-files.raksahb.com/static/media/internetBanking.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/upiLogoNew.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/gpayLogoNew.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/paytmLogoNew.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/astropayLogoNew.png" alt="">
+        </div>
+        <div class="copyright">
+            <img src="https://opt-v3-files.raksahb.com/static/media/gamestopLogo.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/beAwareLogo.png" alt="">
+            <img src="https://opt-v3-files.raksahb.com/static/media/gamcareLogo.png" alt="">
+        </div>
+        <p>This website is proudly operated by Shyamplay.com, a legally registered company under the laws of CURACAO.
+        </p>
+    </footer>
+</body>
+<script>
+    const submenuItems = document.querySelectorAll(".submenu_item");
+    submenuItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("showMenu");
+            submenuItems.forEach((item2, index2) => {
+                if (index !== index2) {
+                    item2.classList.remove("showMenu");
+                }
+            });
+        });
+    });
+
+    let mobsidebar = document.getElementById("mob-sidebar")
+    let sidemobopen = () => {
+        mobsidebar.style.display = "block"
+    }
+    let sidemobclose = () => {
+        mobsidebar.style.display = "none"
+    }
+</script>
+</html>
