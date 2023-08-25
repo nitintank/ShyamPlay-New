@@ -231,6 +231,10 @@ nav {
     gap: 20px;
 }
 
+.right-nav a{
+    display: flex;
+}
+
 .wallet {
     color: white;
     padding: 5px 10px;
