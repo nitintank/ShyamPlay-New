@@ -32,11 +32,16 @@
         </ul>
         <p class="mob-side-title"><img src="/images/live-casino.png" alt="">Casino</p>
         <ul class="mob-side-arrow">
-            <li><span><img src="/images/liv-casino.png" alt="">Live Casino</span><img src="/images/right-arrow.png" alt=""></li>
-            <li><span><img src="/images/Slot-games.png" alt="">Slot Games</span><img src="/images/right-arrow.png" alt=""></li>
-            <li><span><img src="/images/cras-games.png" alt="">Crash Game</span><img src="/images/right-arrow.png" alt=""></li>
-            <li><span><img src="/images/tabl-games.png" alt="">Table Game</span><img src="/images/right-arrow.png" alt=""></li>
-            <li><span><img src="/images/virtua-games.png" alt="">Virtual Sport</span><img src="/images/right-arrow.png" alt=""></li>
+            <li><span><img src="/images/liv-casino.png" alt="">Live Casino</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/Slot-games.png" alt="">Slot Games</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/cras-games.png" alt="">Crash Game</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/tabl-games.png" alt="">Table Game</span><img src="/images/right-arrow.png"
+                    alt=""></li>
+            <li><span><img src="/images/virtua-games.png" alt="">Virtual Sport</span><img src="/images/right-arrow.png"
+                    alt=""></li>
         </ul>
         <div class="mob-sidebar-support">
             <div class="mob-sidebar-support-content">
@@ -193,11 +198,11 @@
 
     <section class="game-pills">
         <span class="games-pill-btn">
-            <input type='radio' name='game-btn' id='sports' checked>
+            <input type='radio' name='game-btn' id='sports' checked onclick="showsports()">
             <label for='sports'><img src="/images/Sports.png" alt="">Sports</label>
         </span>
         <span class="games-pill-btn">
-            <input type='radio' name='game-btn' id='live-casino'>
+            <input type='radio' name='game-btn' id='live-casino' onclick="showcasino()">
             <label for='live-casino'><img src="/images/live-casino.png" alt="">Live Casino</label>
         </span>
         <span class="games-pill-btn">
@@ -222,276 +227,479 @@
         </span>
     </section>
 
-    <!-- Sports Section -->
-    <section class="sports">
-        <div class="sport-games">
-            <img src="/images/cricket.png" alt="">
-        </div>
-        <div class="sport-games">
-            <img src="/images/tennis.png" alt="">
-        </div>
-        <div class="sport-games">
-            <img src="/images/football.png" alt="">
-        </div>
-        <div class="sport-games">
-            <img src="/images/horse-racing.png" alt="">
-        </div>
-        <div class="sport-games">
-            <img src="/images/greyhound-racing.png" alt="">
-        </div>
-        <div class="sport-games">
-            <img src="/images/virtual-sport.png" alt="">
-        </div>
+    <section id="casino-toggle">
+
+        <!-- Casino Games Section -->
+
+        <section class="casino-games">
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='royal-gaming' checked>
+                <label for='royal-gaming'><span>
+                        <p><img src="/images/casino-card.png" alt="">Royal Gaming</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='royal-gaming-virtual'>
+                <label for='royal-gaming-virtual'><span>
+                        <p><img src="/images/casino-card.png" alt="">Live Casino</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='ezugi'>
+                <label for='ezugi'><span>
+                        <p><img src="/images/casino-card.png" alt="">Ezugi</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='evolution-gaming'>
+                <label for='evolution-gaming'><span>
+                        <p><img src="/images/casino-card.png" alt="">Evolution Gaming</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='supernova'>
+                <label for='supernova'><span>
+                        <p><img src="/images/casino-card.png" alt="">Supernova</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='jili-gaming'>
+                <label for='jili-gaming'><span>
+                        <p><img src="/images/casino-card.png" alt="">Jili Gaming</p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='asia-gaming'>
+                <label for='asia-gaming'><span>
+                        <p><img src="/images/casino-card.png" alt="">Asia Gaming</p>
+                    </span></label>
+            </span>
+        </section>
+
+        <!-- Casino Games Card Section -->
+
+        <section class="casino-games-card">
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_robinson.jpg" alt="">
+                <p>Robinson</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_aeronauts.jpg" alt="">
+                <p>Aeronauts</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_battletanks.jpg" alt="">
+                <p>Battle Tanks</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_candydreams.jpg" alt="">
+                <p>Candy Dreams</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_theslavs.jpg" alt="">
+                <p>The Slavs</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/evp_legendofkaan.jpg" alt="">
+                <p>Legend Of Kaan</p>
+            </div>
+        </section>
+
     </section>
 
-    <!-- Inplay Games -->
+    <section id="sports-toggle">
 
-    <div class="inplay">
-        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
-        <div class="inplay-img">
-            <img src="/images/inplay.png" alt="">
-            <p>INPLAY</p>
-        </div>
-
-        <div class="table">
-            <div class="table-top">
-                <div class="sport-img-table">
-                    <img src="/images/cric.png" alt="">
-                </div>
-                <div class="match-name">
-                    <img src="/images/india.png" alt="">
-                    <p>Maharaja Trophy KSCA T20 2023</p>
-                </div>
-                <div class="live-status">
-                    <span></span>
-                    <p>Live</p>
-                </div>
+        <!-- Sports Section -->
+        <section class="sports">
+            <div class="sport-games">
+                <img src="/images/cricket.png" alt="">
             </div>
-            <div class="table-below">
-                <div class="favourite-img">
-                    <img src="/images/favourite.png" alt="">
-                </div>
-                <div class="names">
-                    <p>Godavari Titans vs Rayalaseema Kings</p>
-                    <p>20 Aug 03:30PM</p>
-                </div>
-                <div class="live-tv">
-                    <img src="/images/live-tv.png" alt="">
-                    <img src="/images/b.png" alt="">
-                    <img src="/images/f.png" alt="">
-                </div>
-
-                <div class="t-odds">
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
-                    </div>
-                    <div class="t-btn">
-                        <p class="blank">__</p>
-                        <p class="blank">__</p>
-                    </div>
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
-                    </div>
-                </div>
+            <div class="sport-games">
+                <img src="/images/tennis.png" alt="">
             </div>
-        </div>
-        <div class="table">
-            <div class="table-top">
-                <div class="sport-img-table">
-                    <img src="/images/cric.png" alt="">
-                </div>
-                <div class="match-name">
-                    <img src="/images/india.png" alt="">
-                    <p>Maharaja Trophy KSCA T20 2023</p>
-                </div>
-                <div class="live-status">
-                    <span></span>
-                    <p>Live</p>
-                </div>
+            <div class="sport-games">
+                <img src="/images/football.png" alt="">
             </div>
-            <div class="table-below">
-                <div class="favourite-img">
-                    <img src="/images/favourite.png" alt="">
-                </div>
-                <div class="names">
-                    <p>Godavari Titans vs Rayalaseema Kings</p>
-                    <p>20 Aug 03:30PM</p>
-                </div>
-                <div class="live-tv">
-                    <img src="/images/live-tv.png" alt="">
-                    <img src="/images/b.png" alt="">
-                    <img src="/images/f.png" alt="">
-                </div>
+            <div class="sport-games">
+                <img src="/images/horse-racing.png" alt="">
+            </div>
+            <div class="sport-games">
+                <img src="/images/greyhound-racing.png" alt="">
+            </div>
+            <div class="sport-games">
+                <img src="/images/virtual-sport.png" alt="">
+            </div>
+        </section>
 
-                <div class="t-odds">
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
+        <!-- Inplay Games -->
+
+        <div class="inplay">
+            <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
+            <div class="inplay-img">
+                <img src="/images/inplay.png" alt="">
+                <p>INPLAY</p>
+            </div>
+
+            <div class="table">
+                <div class="table-top">
+                    <div class="sport-img-table">
+                        <img src="/images/cric.png" alt="">
                     </div>
-                    <div class="t-btn">
-                        <p class="blank">__</p>
-                        <p class="blank">__</p>
+                    <div class="match-name">
+                        <img src="/images/india.png" alt="">
+                        <p>Maharaja Trophy KSCA T20 2023</p>
                     </div>
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
+                    <div class="live-status">
+                        <span></span>
+                        <p>Live</p>
+                    </div>
+                </div>
+                <div class="table-below">
+                    <div class="favourite-img">
+                        <img src="/images/favourite.png" alt="">
+                    </div>
+                    <div class="names">
+                        <p>Godavari Titans vs Rayalaseema Kings</p>
+                        <p>20 Aug 03:30PM</p>
+                    </div>
+                    <div class="live-tv">
+                        <img src="/images/live-tv.png" alt="">
+                        <img src="/images/b.png" alt="">
+                        <img src="/images/f.png" alt="">
+                    </div>
+
+                    <div class="t-odds">
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blank">__</p>
+                            <p class="blank">__</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="table">
+                <div class="table-top">
+                    <div class="sport-img-table">
+                        <img src="/images/cric.png" alt="">
+                    </div>
+                    <div class="match-name">
+                        <img src="/images/india.png" alt="">
+                        <p>Maharaja Trophy KSCA T20 2023</p>
+                    </div>
+                    <div class="live-status">
+                        <span></span>
+                        <p>Live</p>
+                    </div>
+                </div>
+                <div class="table-below">
+                    <div class="favourite-img">
+                        <img src="/images/favourite.png" alt="">
+                    </div>
+                    <div class="names">
+                        <p>Godavari Titans vs Rayalaseema Kings</p>
+                        <p>20 Aug 03:30PM</p>
+                    </div>
+                    <div class="live-tv">
+                        <img src="/images/live-tv.png" alt="">
+                        <img src="/images/b.png" alt="">
+                        <img src="/images/f.png" alt="">
+                    </div>
 
-    <!-- Offer Section -->
+                    <div class="t-odds">
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blank">__</p>
+                            <p class="blank">__</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section class="offers">
-        <div class="offer-box">
-            <div class="offer-box-content">
-                <h2>TVBET</h2>
-                <p>Live Games 24/7</p>
-            </div>
-            <img src="/images/gift-box.webp" alt="">
-        </div>
-        <div class="offer-box">
-            <div class="offer-box-content">
-                <h2>TVBET</h2>
-                <p>Live Games 24/7</p>
-            </div>
-            <img src="/images/gift-box.webp" alt="">
-        </div>
-        <div class="offer-box">
-            <div class="offer-box-content">
-                <h2>TVBET</h2>
-                <p>Live Games 24/7</p>
-            </div>
-            <img src="/images/gift-box.webp" alt="">
-        </div>
-        <div class="offer-box">
-            <div class="offer-box-content">
-                <h2>TVBET</h2>
-                <p>Live Games 24/7</p>
-            </div>
-            <img src="/images/gift-box.webp" alt="">
-        </div>
-    </section>
+        <!-- Offer Section -->
 
-    <!-- Upcoming Matches -->
+        <section class="offers">
+            <div class="offer-box">
+                <div class="offer-box-content">
+                    <h2>TVBET</h2>
+                    <p>Live Games 24/7</p>
+                </div>
+                <img src="/images/gift-box.webp" alt="">
+            </div>
+            <div class="offer-box">
+                <div class="offer-box-content">
+                    <h2>TVBET</h2>
+                    <p>Live Games 24/7</p>
+                </div>
+                <img src="/images/gift-box.webp" alt="">
+            </div>
+            <div class="offer-box">
+                <div class="offer-box-content">
+                    <h2>TVBET</h2>
+                    <p>Live Games 24/7</p>
+                </div>
+                <img src="/images/gift-box.webp" alt="">
+            </div>
+            <div class="offer-box">
+                <div class="offer-box-content">
+                    <h2>TVBET</h2>
+                    <p>Live Games 24/7</p>
+                </div>
+                <img src="/images/gift-box.webp" alt="">
+            </div>
+        </section>
 
-    <div class="inplay" id="upcoming-border">
-        <!-- <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
+        <!-- Upcoming Matches -->
+
+        <div class="inplay" id="upcoming-border">
+            <!-- <img src="/images/top-pill.png" alt="" class="upcoming-matches-img" id="today-match">
         <img src="/images/middle-bar.png" alt="" class="upcoming-matches-img2" id="tomorrow-match">
         <img src="/images/top-pill.png" alt="" class="upcoming-matches-img3" id="upcoming-match"> -->
-        <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
-        <div class="inplay-img">
-            <img src="/images/time.png" alt="" style="width: 25px;">
-            <p>UPCOMING</p>
-        </div>
-        <div class="upcoming-matches">
-            <span class="games-pill-btn">
-                <input type='radio' name='game-btn' id='today' checked onclick="today()">
-                <label for='today' class="match-label">Today</label>
-            </span>
-            <span class="games-pill-btn">
-                <input type='radio' name='game-btn' id='tomorrow' onclick="tomorrow()">
-                <label for='tomorrow' class="match-label">Tomorrow</label>
-            </span>
-            <span class="games-pill-btn">
-                <input type='radio' name='game-btn' id='upcoming' onclick="upcoming()">
-                <label for='upcoming' class="match-label">Upcoming</label>
-            </span>
-        </div>
-
-        <div class="table">
-            <div class="table-top">
-                <div class="sport-img-table">
-                    <img src="/images/cric.png" alt="">
-                </div>
-                <div class="match-name">
-                    <img src="/images/india.png" alt="">
-                    <p>Maharaja Trophy KSCA T20 2023</p>
-                </div>
-                <div class="live-status">
-                    <span></span>
-                    <p>Live</p>
-                </div>
+            <img src="/images/top-pill.png" alt="" class="inplay-pill-img">
+            <div class="inplay-img">
+                <img src="/images/time.png" alt="" style="width: 25px;">
+                <p>UPCOMING</p>
             </div>
-            <div class="table-below">
-                <div class="favourite-img">
-                    <img src="/images/favourite.png" alt="">
-                </div>
-                <div class="names">
-                    <p>Godavari Titans vs Rayalaseema Kings</p>
-                    <p>20 Aug 03:30PM</p>
-                </div>
-                <div class="live-tv">
-                    <img src="/images/live-tv.png" alt="">
-                    <img src="/images/b.png" alt="">
-                    <img src="/images/f.png" alt="">
-                </div>
-
-                <div class="t-odds">
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
-                    </div>
-                    <div class="t-btn">
-                        <p class="blank">__</p>
-                        <p class="blank">__</p>
-                    </div>
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
-                    </div>
-                </div>
+            <div class="upcoming-matches">
+                <span class="games-pill-btn">
+                    <input type='radio' name='upcoming-btn' id='today' checked>
+                    <label for='today' class="match-label">Today</label>
+                </span>
+                <span class="games-pill-btn">
+                    <input type='radio' name='upcoming-btn' id='tomorrow'>
+                    <label for='tomorrow' class="match-label">Tomorrow</label>
+                </span>
+                <span class="games-pill-btn">
+                    <input type='radio' name='upcoming-btn' id='upcoming'>
+                    <label for='upcoming' class="match-label">Upcoming</label>
+                </span>
             </div>
-        </div>
-        <div class="table">
-            <div class="table-top">
-                <div class="sport-img-table">
-                    <img src="/images/cric.png" alt="">
-                </div>
-                <div class="match-name">
-                    <img src="/images/india.png" alt="">
-                    <p>Maharaja Trophy KSCA T20 2023</p>
-                </div>
-                <div class="live-status">
-                    <span></span>
-                    <p>Live</p>
-                </div>
-            </div>
-            <div class="table-below">
-                <div class="favourite-img">
-                    <img src="/images/favourite.png" alt="">
-                </div>
-                <div class="names">
-                    <p>Godavari Titans vs Rayalaseema Kings</p>
-                    <p>20 Aug 03:30PM</p>
-                </div>
-                <div class="live-tv">
-                    <img src="/images/live-tv.png" alt="">
-                    <img src="/images/b.png" alt="">
-                    <img src="/images/f.png" alt="">
-                </div>
 
-                <div class="t-odds">
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
+            <div class="table">
+                <div class="table-top">
+                    <div class="sport-img-table">
+                        <img src="/images/cric.png" alt="">
                     </div>
-                    <div class="t-btn">
-                        <p class="blank">__</p>
-                        <p class="blank">__</p>
+                    <div class="match-name">
+                        <img src="/images/india.png" alt="">
+                        <p>Maharaja Trophy KSCA T20 2023</p>
                     </div>
-                    <div class="t-btn">
-                        <p class="blue">2.16</p>
-                        <p class="pink">2.21</p>
+                    <div class="live-status">
+                        <span></span>
+                        <p>Live</p>
+                    </div>
+                </div>
+                <div class="table-below">
+                    <div class="favourite-img">
+                        <img src="/images/favourite.png" alt="">
+                    </div>
+                    <div class="names">
+                        <p>Godavari Titans vs Rayalaseema Kings</p>
+                        <p>20 Aug 03:30PM</p>
+                    </div>
+                    <div class="live-tv">
+                        <img src="/images/live-tv.png" alt="">
+                        <img src="/images/b.png" alt="">
+                        <img src="/images/f.png" alt="">
+                    </div>
+
+                    <div class="t-odds">
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blank">__</p>
+                            <p class="blank">__</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="table">
+                <div class="table-top">
+                    <div class="sport-img-table">
+                        <img src="/images/cric.png" alt="">
+                    </div>
+                    <div class="match-name">
+                        <img src="/images/india.png" alt="">
+                        <p>Maharaja Trophy KSCA T20 2023</p>
+                    </div>
+                    <div class="live-status">
+                        <span></span>
+                        <p>Live</p>
+                    </div>
+                </div>
+                <div class="table-below">
+                    <div class="favourite-img">
+                        <img src="/images/favourite.png" alt="">
+                    </div>
+                    <div class="names">
+                        <p>Godavari Titans vs Rayalaseema Kings</p>
+                        <p>20 Aug 03:30PM</p>
+                    </div>
+                    <div class="live-tv">
+                        <img src="/images/live-tv.png" alt="">
+                        <img src="/images/b.png" alt="">
+                        <img src="/images/f.png" alt="">
+                    </div>
 
+                    <div class="t-odds">
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blank">__</p>
+                            <p class="blank">__</p>
+                        </div>
+                        <div class="t-btn">
+                            <p class="blue">2.16</p>
+                            <p class="pink">2.21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- Footer -->
 
     <footer>
@@ -514,14 +722,29 @@
                 <img src="/images/youtube-mob.png" alt="" class="social-mob">
             </div>
         </div>
-        <div class="gaming-partner">
-            <img src="https://opt-v3-files.raksahb.com/static/media/ezugiLogoNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/aGLogoNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/betGamesLogoNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/evolutionGamesNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/netentLogoNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/tvbetLogoNew.png" alt="">
-            <img src="https://opt-v3-files.raksahb.com/static/media/superSpadeLogoNew.png" alt="">
+        <div class="gaming-partner-logo">
+            <div class="gaming-partner-logo-img">
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/ag-logo.png" alt="">
+                <img src="/images/footer-logo/bet-game.png" alt="">
+                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                <img src="/images/footer-logo/ecugi.png" alt="">
+                <img src="/images/footer-logo/evolution.png" alt="">
+                <img src="/images/footer-logo/evoplay.png" alt="">
+                <img src="/images/footer-logo/india-soe.png" alt="">
+                <img src="/images/footer-logo/jili.png" alt="">
+            </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                <img src="/images/footer-logo/sexy.png" alt="">
+                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                <img src="/images/footer-logo/BETSOFT.png" alt="">
+                <img src="/images/footer-logo/Spribe.png" alt="">
+                <img src="/images/footer-logo/supernowa.png" alt="">
+                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                <img src="/images/footer-logo/Royal-gaming.png" alt="">
+            </div>
+            </div>
         </div>
         <div class="gaming-partner">
             <img src="https://opt-v3-files.raksahb.com/static/media/internetBanking.png" alt="">
@@ -553,42 +776,27 @@
         });
     });
 
-    // let todaymatch = document.getElementById("today-match")
-    // let tomorrowmatch = document.getElementById("tomorrow-match")
-    // let upcomingmatch = document.getElementById("upcoming-match")
-    // let upcomingborder = document.getElementById("upcoming-border")
+    let sportstoggle = document.getElementById("sports-toggle")
+    let casinotoggle = document.getElementById("casino-toggle")
 
-    // let today = () => {
-    //     todaymatch.style.display = "block"
-    //     tomorrowmatch.style.display = "none"
-    //     upcomingmatch.style.display = "none"
-    //     upcomingborder.style.borderRadius = "0px 15px 15px 15px"
-    // }
-    // let tomorrow = () => {
-    //     todaymatch.style.display = "none"
-    //     tomorrowmatch.style.display = "block"
-    //     upcomingmatch.style.display = "none"
-    //     upcomingborder.style.borderRadius = "15px"
-    // }
-    // let upcoming = () => {
-    //     todaymatch.style.display = "none"
-    //     tomorrowmatch.style.display = "none"
-    //     upcomingmatch.style.display = "block"
-    //     if (x.matches) {
-    //         upcomingborder.style.borderRadius = "15px 0px 15px 15px"
-    //     } else {
-    //         console.log("hello desktop")
-    //     }
-    // }
+    let showsports = () => {
+        sportstoggle.style.display = "block"
+        casinotoggle.style.display = "none"
+    }
+    let showcasino = () => {
+        sportstoggle.style.display = "none"
+        casinotoggle.style.display = "block"
+    }
+
     var x = window.matchMedia("(max-width: 360px)")
     x.addListener(upcoming)
 
     let mobsidebar = document.getElementById("mob-sidebar")
-    let sidemobopen =()=>{
-        mobsidebar.style.display ="block"
+    let sidemobopen = () => {
+        mobsidebar.style.display = "block"
     }
-    let sidemobclose =()=>{
-        mobsidebar.style.display ="none"
+    let sidemobclose = () => {
+        mobsidebar.style.display = "none"
     }
 </script>
 
