@@ -663,6 +663,8 @@ footer p{
         text-align: left;
         margin-top: -10px;
         margin-left: 20px;
+        text-decoration: none;
+        color: white;
     }
     .heading-mob{
         display: flex;
