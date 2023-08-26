@@ -257,7 +257,7 @@ nav {
 /* Match Details Section */
 
 .match-details {
-    height: 190px;
+    height: auto;
     width: 92%;
     background-color: #443e1b;
     display: block;
@@ -306,7 +306,7 @@ nav {
     gap: 5px;
 }
 
-.match-game-details p{
+.match-game-details .para{
     color: white;
     background-color: #161623;
     width: 98%;
@@ -318,23 +318,167 @@ nav {
 
 /* Match Table */
 
-.table-head{
+.table{
     width: 98%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-head{
+    width: 100%;
     background-color: #161623;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .table-top-left{
     display: flex;
     align-items: center;
     font-size: 18px;
-    border-radius: 10px;
     gap: 5px;
 }
 
 .table-top-left img{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.table-top-right{
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.table-body{
+    width: 100%;
+    background-color: #393838;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(132, 132, 132);
+}
+
+.table-body-left p{
+    background-color: #393838;
+    color: white;
+    font-size: 18px;
+}
+
+.t-odds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.blue {
+    padding: 7px 0px;
+    background-color: #4fa1dc !important;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.blue span{
+    font-size: 12px;
+}
+
+.pink {
+    padding: 7px 0px;
+    background-color: #f994ba !important;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.pink span{
+    font-size: 12px;
+}
+
+/* Fancy Bar */
+
+.fancy-bar{
+    width: 98%;
+    background-color: #161623;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fancy-bar p{
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #b7b520;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Live Status Toggle Section */
+
+.live-status {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    gap: 5px;
+    position: absolute;
+    top: -38px;
+    right: 10px;
+}
+
+.live-status-pill-btn label img {
+    width: 20px;
+    height: 20px;
+}
+
+.live-status-pill-btn input[type="radio"] {
+    display: none;
+}
+
+.live-status-pill-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-status-pill-btn label {
+    color: white;
+    background-color: #161623;
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+}
+
+:checked+label {
+    background: #B6B326;
+    color: #fff;
 }
 
 /* Details */
@@ -599,6 +743,34 @@ footer p {
 }
 
 @media (max-width: 769px) {
+    .match-details{
+        width: 98%;
+    }
+    .match-game-details .para{
+        font-size: 16px;
+    }
+    details .summary-title{
+        font-size: 16px;
+    }
+    .table{
+        border-radius: 10px;
+    }
+    .table-body-left p{
+        font-size: 16px;
+    }
+    .blue{
+        width: 65px;
+        font-size: 13px;
+    }
+    .pink{
+        width: 65px;
+        font-size: 13px;
+    }
+    .fancy-bar p{
+        font-size: 16px;
+        width: 120px;
+        padding: 8px;
+    }
     .social-images img{
         width: 80px;
     }
@@ -871,7 +1043,7 @@ footer p {
 
 @media (min-width: 501px) and (max-width: 815px) {
     .gaming-partner-logo{
-        width: 70%;
+        width: 95%;
     }
     .gaming-partner-logo-img img {
         width: 20%;
