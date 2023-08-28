@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Transfer Request</title>
-    <link rel="stylesheet" href="/money-transfer-request.css">
+    <title>Cash Pick</title>
+    <link rel="stylesheet" href="/cash-pick.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -51,7 +51,7 @@
     </div>
     
     <nav>
-        <a href="/index.html"><img src="/images/logo.png" alt="" class="logo"></a>
+        <img src="/images/logo.png" alt="" class="logo">
         <div class="middle-nav">
             <p>Inplay</p>
             <!-- <p>Sports</p> -->
@@ -152,92 +152,13 @@
             <p>More</p>
         </div>
         <div class="right-nav">
-            <a href="/dashboard.html" style="text-decoration: none;"><p class="wallet">Rs.0.00</p></a>
+            <p class="wallet">Rs.0.00</p>
             <p class="deposit">Deposit</p>
             <img src="/images/notification.png" alt="">
             <a href="/login.html"><img src="/images/profile.png" alt=""></a>
             <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
         </div>
     </nav>
-
-    <!-- Money Transfer Section -->
-
-    <h2 class="heading">Money Transfer</h2>
-
-    <div class="create-user-card">
-        <div class="textbox">
-            <label for="">User Id</label>
-            <img src="/images/user.png" alt="" class="icon">
-            <input type="text" placeholder="Enter User Id">
-        </div>
-        <div class="textbox">
-            <label for="">Balance To Transfer</label>
-            <img src="/images/money-transfer-2.png" alt="" class="icon">
-            <input type="text" placeholder="Enter Balance Amount">
-        </div>
-        <div class="textbox">
-            <label for="">Password</label>
-            <img src="/images/security.png" alt="" class="icon">
-            <input type="text" placeholder="Enter Password">
-        </div>
-        <div class="login-button">
-            <button>Submit</button>
-        </div>
-    </div>
-
-    <!-- User Search Card -->
-
-    <div class="user-search">
-        <div class="input-box">
-            <label for="">Select User</label>
-            <input type="text" placeholder="Search By Username">
-        </div>
-        <div class="input-box">
-            <label for="">Select Type</label>
-            <select name="" id="">
-                <option value="">All</option>
-                <option value="">Receive</option>
-                <option value="">Send</option>
-            </select>
-        </div>
-        <div class="input-box">
-            <label for="">Select Status</label>
-            <select name="" id="">
-                <option value="">All</option>
-                <option value="">Pending</option>
-                <option value="">Success</option>
-                <option value="">Declined</option>
-            </select>
-        </div>
-        <div class="input-box">
-            <label for="">Select Date Range</label>
-            <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
-        </div>
-        <button class="load-btn">Load</button>
-    </div>
-
-    <!-- Money Transfer Requests -->
-
-    <h2 class="heading">Money Transfer Requests</h2>
-
-    <div class="paginator">
-        <div class="paginator-left-section">
-            <label for="">Items</label>
-            <select name="" id="">
-                <option value="">50</option>
-                <option value="">100</option>
-                <option value="">200</option>
-                <option value="">500</option>
-            </select>
-            <p>0 of 0</p>
-        </div>
-        <div class="paginator-right-section">
-           <img src="/images/super-left-arrow.png" alt="" class="wid-2">
-           <img src="/images/lefti-arrow.png" alt="" class="wid-1">
-           <img src="/images/righti-arrow.png" alt="" class="wid-1">
-           <img src="/images/super-right-arrow.png" alt="" class="wid-2">
-        </div>
-    </div>
 
     <!-- Footer -->
 
