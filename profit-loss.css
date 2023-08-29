@@ -446,7 +446,7 @@ nav {
     width: 100%;
     background-color: #000;
     border-radius: 15px;
-    border-spacing: 10px;
+    /* border-spacing: 10px; */
 }
 
 .reward-table table th{
@@ -459,8 +459,12 @@ nav {
 }
 
 .reward-table table tr td{
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     padding: 5px;
+}
+
+.reward-table table tr:nth-child(even){
+    background-color: #1e1e1e;
 }
 
 .reward-table .green-text{

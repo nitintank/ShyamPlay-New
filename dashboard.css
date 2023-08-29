@@ -361,8 +361,9 @@ nav {
     color: white;
     border-radius: 10px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .deposit-btn{
@@ -375,8 +376,9 @@ nav {
     color: white;
     border-radius: 10px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* Profile Card Section */
@@ -427,6 +429,8 @@ nav {
     justify-content: center;
     gap: 10px;
     padding: 20px 0px;
+    text-decoration: none;
+    color: white;
 }
 
 .profile-content-cards img{
@@ -464,6 +468,8 @@ nav {
     justify-content: center;
     gap: 10px;
     padding: 20px 0px;
+    text-decoration: none;
+    color: white;
 }
 
 .reports-content-cards img{
