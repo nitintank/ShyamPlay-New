@@ -303,6 +303,14 @@ nav {
     padding-left: 40px;
 }
 
+.textbox textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 40px;
+}
+
 .textbox .icon{
     height: 20px; 
     width: 20px; 
@@ -425,7 +433,7 @@ nav {
 }
 
 .load-btn{
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background-color: #b5b326;
     color: white;
@@ -612,6 +620,9 @@ nav {
     }
     .transfer-card{
         width: 48%;
+    }
+    .load-btn{
+        width: 100%;
     }
 }
 

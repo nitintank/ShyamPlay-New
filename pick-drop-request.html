@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/dashboard.css">
+    <title>Pick Drop Request</title>
+    <link rel="stylesheet" href="/pick-drop-request.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
     <div class="mob-sidebar" id="mob-sidebar">
         <div class="mob-sidebar-top">
@@ -154,7 +152,7 @@
             <p>More</p>
         </div>
         <div class="right-nav">
-            <p class="wallet">Rs.0.00</p>
+            <a href="/dashboard.html" style="text-decoration: none;"><p class="wallet">Rs.0.00</p></a>
             <p class="deposit">Deposit</p>
             <img src="/images/notification.png" alt="">
             <a href="/login.html"><img src="/images/profile.png" alt=""></a>
@@ -162,125 +160,76 @@
         </div>
     </nav>
 
-    <!-- Profile Section -->
+    <!-- Pick Drop Request Section -->
 
-    <div class="profile">
-        <img src="/images/user-image.png" alt="">
-        <p>USERNAME</p>
-        <p class="change-password">Change Password</p>
+    <h2 class="heading">Pick Drop Request</h2>
+
+    <!-- User Search Card -->
+
+    <div class="user-search">
+        <div class="input-box">
+            <label for="">Select Type</label>
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">Pick</option>
+                <option value="">Drop</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label for="">Select Status</label>
+            <select name="" id="">
+                <option value="">All</option>
+                <option value="">Pending</option>
+                <option value="">Success</option>
+                <option value="">Declined</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <label for="">Select Date Range</label>
+            <input type="text" name="daterange" value="01/01/2023 - 01/15/2023" />
+        </div>
+        <button class="load-btn">Load</button>
     </div>
 
-    <!-- Amount Card -->
+    <!-- Pick Drop Requests -->
 
-    <div class="amount">
-        <div class="total-amount">
-            <div class="total-balance">
-
-                <p>Total Balance</p>
-                <h2>0.00 ₹</h2>
+    <div class="transfer-card-section">
+        <div class="transfer-card">
+            <div class="transfer-card-top">
+                <p>Pick Drop</p>
+                <div class="transfer-card-top-status">
+                    <img src="/images/eye-solid.svg" alt="">
+                    <p>Success</p>
+                </div>
             </div>
-            <div class="net-exposure">
-                <p>Net Exposure</p>
-                <h2>0.00 ₹</h2>
+            <div class="transfer-card-bottom">
+                <p>Id: 807</p>
+                <p>Date: 21-08-2023 05:31:54 AM</p>
+                <p>User Name: Nitin54</p>
+                <p>Method: Phone Pe</p>
+                <p>Account Holder : Nitin</p>
+                <p>Number : 99999999</p>
+                <h2 class="amount-status">300 INR</h2>
             </div>
-        </div>
-        <div class="amount-button">
-            <div class="withdrawal-btn">
-                <button>Withdrawal</button>
-            </div>
-            <div class="deposit-btn">
-                <button>Deposit</button>
-            </div>
-        </div>
-        <div class="total-amount">
-            <div class="main-balance">
-                <p>Main Balance</p>
-                <h2>0.00 ₹</h2>
-            </div>
-            <div class="total-bonus">
-                <p>Total Bonus</p>
-                <h2>0.00 ₹</h2>
-            </div>
-        </div>
-    </div>
-
-    <!-- Profile Card Section -->
-
-    <div class="profile-card-section">
-        <h2><span></span>Profile</h2>
-        <div class="profile-content-box">
-            <a href="/profile.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/user-3d.png" alt="">
-                <p>Account Info</p>
-            </a>
-            <a href="/refer.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/refer.png" alt="">
-                <p>Referral</p>
-            </a>
-            <a href="/scratch-card.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/scratch-card.png" alt="">
-                <p>Scratch Card</p>
-            </a>
-            <a href="/create-user.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/user-to-user.png" alt="">
-                <p>User To User</p>
-            </a>
-            <a href="/money-transfer.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/money-transfer.png" alt="">
-                <p>Money Transfer</p>
-            </a>
         </div>
     </div>
 
-    <!-- Finance Card Section -->
-
-    <div class="profile-card-section">
-        <h2><span></span>Finance</h2>
-        <div class="profile-content-box">
-            <a href="/cash-pick.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/user-3d.png" alt="">
-                <p>Cash Pick</p>
-            </a>
-            <a href="/cash-drop.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/refer.png" alt="">
-                <p>Cash Drop</p>
-            </a>
-            <a href="/deposit-withdrawal-request.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/scratch-card.png" alt="">
-                <p>D/W Request</p>
-            </a>
-            <a href="/pick-drop-request.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/user-to-user.png" alt="">
-                <p>Pick Drop Request</p>
-            </a>
-            <a href="/money-transfer-request.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/money-transfer.png" alt="">
-                <p>Money Transfer Request</p>
-            </a>
+    <div class="paginator">
+        <div class="paginator-left-section">
+            <label for="">Items</label>
+            <select name="" id="">
+                <option value="">50</option>
+                <option value="">100</option>
+                <option value="">200</option>
+                <option value="">500</option>
+            </select>
+            <p>0 of 0</p>
         </div>
-    </div>
-
-    <!-- Reports Card Section -->
-
-    <div class="profile-card-section">
-        <h2><span></span>Reports</h2>
-        <div class="reports-content-box">
-            <a href="/profit-loss.html" style="text-decoration: none; color: white;" class="profile-content-cards">
-                <img src="/images/user-3d.png" alt="">
-                <p>Betting P&L</p>
-            </a>
-            <div class="reports-content-cards">
-                <img src="/images/refer.png" alt="">
-                <p>Bet History</p>
-            </div>
-            <div class="reports-content-cards mob-padding">
-                <img src="/images/scratch-card.png" alt="">
-                <p>Account Statement</p>
-            </div>
-            <div class="reports-content-cards">
-                <img src="/images/user-to-user.png" alt="">
-                <p>Login History</p>
-            </div>
+        <div class="paginator-right-section">
+           <img src="/images/super-left-arrow.png" alt="" class="wid-2">
+           <img src="/images/lefti-arrow.png" alt="" class="wid-1">
+           <img src="/images/righti-arrow.png" alt="" class="wid-1">
+           <img src="/images/super-right-arrow.png" alt="" class="wid-2">
         </div>
     </div>
 
@@ -308,26 +257,26 @@
         </div>
         <div class="gaming-partner-logo">
             <div class="gaming-partner-logo-img">
-                <div class="gaming-partner-logo-section">
-                    <img src="/images/footer-logo/ag-logo.png" alt="">
-                    <img src="/images/footer-logo/bet-game.png" alt="">
-                    <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
-                    <img src="/images/footer-logo/ecugi.png" alt="">
-                    <img src="/images/footer-logo/evolution.png" alt="">
-                    <img src="/images/footer-logo/evoplay.png" alt="">
-                    <img src="/images/footer-logo/india-soe.png" alt="">
-                    <img src="/images/footer-logo/jili.png" alt="">
-                </div>
-                <div class="gaming-partner-logo-section">
-                    <img src="/images/footer-logo/pragmatic-play.png" alt="">
-                    <img src="/images/footer-logo/sexy.png" alt="">
-                    <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
-                    <img src="/images/footer-logo/BETSOFT.png" alt="">
-                    <img src="/images/footer-logo/Spribe.png" alt="">
-                    <img src="/images/footer-logo/supernowa.png" alt="">
-                    <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
-                    <img src="/images/footer-logo/Royal-gaming.png" alt="">
-                </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/ag-logo.png" alt="">
+                <img src="/images/footer-logo/bet-game.png" alt="">
+                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                <img src="/images/footer-logo/ecugi.png" alt="">
+                <img src="/images/footer-logo/evolution.png" alt="">
+                <img src="/images/footer-logo/evoplay.png" alt="">
+                <img src="/images/footer-logo/india-soe.png" alt="">
+                <img src="/images/footer-logo/jili.png" alt="">
+            </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                <img src="/images/footer-logo/sexy.png" alt="">
+                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                <img src="/images/footer-logo/BETSOFT.png" alt="">
+                <img src="/images/footer-logo/Spribe.png" alt="">
+                <img src="/images/footer-logo/supernowa.png" alt="">
+                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                <img src="/images/footer-logo/Royal-gaming.png" alt="">
+            </div>
             </div>
         </div>
         <div class="gaming-partner">
@@ -367,5 +316,4 @@
         mobsidebar.style.display = "none"
     }
 </script>
-
 </html>
