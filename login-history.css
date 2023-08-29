@@ -461,6 +461,7 @@ nav {
 .reward-table table tr td{
     border-bottom: 1px solid white;
     padding: 5px;
+    white-space: nowrap;
 }
 
 .reward-table .green-text{
