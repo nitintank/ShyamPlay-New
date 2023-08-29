@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Statement</title>
-    <link rel="stylesheet" href="/account-statement.css">
+    <title>Bet History</title>
+    <link rel="stylesheet" href="/bet-history.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="mob-sidebar" id="mob-sidebar">
         <div class="mob-sidebar-top">
@@ -49,9 +51,9 @@
             <img src="/images/what-tele.png" alt="">
         </div>
     </div>
-    
+
     <nav>
-        <img src="/images/logo.png" alt="" class="logo">
+        <a href="/index.html"><img src="/images/logo.png" alt="" class="logo"></a>
         <div class="middle-nav">
             <p>Inplay</p>
             <!-- <p>Sports</p> -->
@@ -152,13 +154,257 @@
             <p>More</p>
         </div>
         <div class="right-nav">
-            <p class="wallet">Rs.0.00</p>
+            <a href="/dashboard.html" style="text-decoration: none;">
+                <p class="wallet">Rs.0.00</p>
+            </a>
             <p class="deposit">Deposit</p>
             <img src="/images/notification.png" alt="">
             <a href="/login.html"><img src="/images/profile.png" alt=""></a>
             <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
         </div>
     </nav>
+
+    <!-- Bet History Section -->
+
+    <h2 class="heading">Bet History</h2>
+
+    <!-- User Search Card -->
+
+    <div class="user-search">
+
+        <div class="live-status">
+            <span class="live-status-pill-btn">
+                <input type='radio' name='casino-game-btn' id='royal-gaming' checked onclick="currentbet()">
+                <label for='royal-gaming'>Current</label>
+            </span>
+            <span class="live-status-pill-btn">
+                <input type='radio' name='casino-game-btn' id='royal-gaming-virtual' onclick="pastbet()">
+                <label for='royal-gaming-virtual'>Past</label>
+            </span>
+        </div>
+
+        <div class="current-bet-history" id="current-bet-history">
+            <div class="input-box">
+                <label for="">Select Sport</label>
+                <select name="" id="">
+                    <option value="">All</option>
+                    <option value="">Soccer</option>
+                    <option value="">Tennis</option>
+                    <option value="">Cricket</option>
+                    <option value="">Horse Racing</option>
+                    <option value="">Greyhound Racing</option>
+                    <option value="">Casino</option>
+                    <option value="">Super Nowa</option>
+                    <option value="">Slot Games</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Bet Type</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Match</option>
+                    <option value="">Session</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Delete Status</label>
+                <select name="" id="">
+                    <option value="">Un-Delete</option>
+                    <option value="">Delete</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Type</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Lay</option>
+                    <option value="">Back</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Status</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Win</option>
+                    <option value="">Loss</option>
+                </select>
+            </div>
+            <button class="load-btn">Apply</button>
+            <button class="reset-btn">Reset</button>
+        </div>
+
+        <div class="past-bet-history" id="past-bet-history">
+            <div class="input-box">
+                <label for="">Select Sport</label>
+                <select name="" id="">
+                    <option value="">All</option>
+                    <option value="">Soccer</option>
+                    <option value="">Tennis</option>
+                    <option value="">Cricket</option>
+                    <option value="">Horse Racing</option>
+                    <option value="">Greyhound Racing</option>
+                    <option value="">Casino</option>
+                    <option value="">Super Nowa</option>
+                    <option value="">Slot Games</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Bet Type</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Match</option>
+                    <option value="">Session</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Type</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Lay</option>
+                    <option value="">Back</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">Status</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Win</option>
+                    <option value="">Loss</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <label for="">From</label>
+                <input type="date">
+            </div>
+            <div class="input-box">
+                <label for="">To</label>
+                <input type="date">
+            </div>
+            <button class="load-btn">Apply</button>
+            <button class="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <!-- Profit Loss Report -->
+
+    <div class="reward-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Remark</th>
+                    <th>Amount</th>
+                    <th>Commission</th>
+                    <th>Free Bal</th>
+                    <th>Downline Bal</th>
+                    <th>Total Bal</th>
+                    <th>Bonus Type</th>
+                    <th>Lock Bonus</th>
+                    <th>Bonus Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+                <tr>
+                    <td>8/22/23</td>
+                    <td>Profit: Casino: JiLi Gaming: Super Ace</td>
+                    <td></td>
+                    <td class="green-text">0.9</td>
+                    <td class="red-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">1.8</td>
+                    <td class="green-text">Amount</td>
+                    <td class="green-text">0</td>
+                    <td class="green-text">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="paginator">
+        <div class="paginator-left-section">
+            <label for="">Items</label>
+            <select name="" id="">
+                <option value="">50</option>
+                <option value="">100</option>
+                <option value="">200</option>
+                <option value="">500</option>
+            </select>
+            <p>0 of 0</p>
+        </div>
+        <div class="paginator-right-section">
+            <img src="/images/super-left-arrow.png" alt="" class="wid-2">
+            <img src="/images/lefti-arrow.png" alt="" class="wid-1">
+            <img src="/images/righti-arrow.png" alt="" class="wid-1">
+            <img src="/images/super-right-arrow.png" alt="" class="wid-2">
+        </div>
+    </div>
 
     <!-- Footer -->
 
@@ -184,26 +430,26 @@
         </div>
         <div class="gaming-partner-logo">
             <div class="gaming-partner-logo-img">
-            <div class="gaming-partner-logo-section">
-                <img src="/images/footer-logo/ag-logo.png" alt="">
-                <img src="/images/footer-logo/bet-game.png" alt="">
-                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
-                <img src="/images/footer-logo/ecugi.png" alt="">
-                <img src="/images/footer-logo/evolution.png" alt="">
-                <img src="/images/footer-logo/evoplay.png" alt="">
-                <img src="/images/footer-logo/india-soe.png" alt="">
-                <img src="/images/footer-logo/jili.png" alt="">
-            </div>
-            <div class="gaming-partner-logo-section">
-                <img src="/images/footer-logo/pragmatic-play.png" alt="">
-                <img src="/images/footer-logo/sexy.png" alt="">
-                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
-                <img src="/images/footer-logo/BETSOFT.png" alt="">
-                <img src="/images/footer-logo/Spribe.png" alt="">
-                <img src="/images/footer-logo/supernowa.png" alt="">
-                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
-                <img src="/images/footer-logo/Royal-gaming.png" alt="">
-            </div>
+                <div class="gaming-partner-logo-section">
+                    <img src="/images/footer-logo/ag-logo.png" alt="">
+                    <img src="/images/footer-logo/bet-game.png" alt="">
+                    <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                    <img src="/images/footer-logo/ecugi.png" alt="">
+                    <img src="/images/footer-logo/evolution.png" alt="">
+                    <img src="/images/footer-logo/evoplay.png" alt="">
+                    <img src="/images/footer-logo/india-soe.png" alt="">
+                    <img src="/images/footer-logo/jili.png" alt="">
+                </div>
+                <div class="gaming-partner-logo-section">
+                    <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                    <img src="/images/footer-logo/sexy.png" alt="">
+                    <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                    <img src="/images/footer-logo/BETSOFT.png" alt="">
+                    <img src="/images/footer-logo/Spribe.png" alt="">
+                    <img src="/images/footer-logo/supernowa.png" alt="">
+                    <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                    <img src="/images/footer-logo/Royal-gaming.png" alt="">
+                </div>
             </div>
         </div>
         <div class="gaming-partner">
@@ -242,5 +488,18 @@
     let sidemobclose = () => {
         mobsidebar.style.display = "none"
     }
+
+    let currentbethistory = document.getElementById("current-bet-history")
+    let pastbethistory = document.getElementById("past-bet-history")
+
+    let currentbet = () => {
+        currentbethistory.style.display = "flex"
+        pastbethistory.style.display = "none"
+    }
+    let pastbet = () => {
+        currentbethistory.style.display = "none"
+        pastbethistory.style.display = "flex"
+    }
 </script>
+
 </html>
