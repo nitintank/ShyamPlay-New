@@ -254,42 +254,123 @@ nav {
     width: 40px;
 }
 
-/* Terms Policy Content Section */
+/* Notification Section */
 
 .heading{
     width: 100%;
-    text-align: center;
     color: white;
-    font-size: 25px;
-    margin: 10px auto;
+    text-align: center;
+    margin: 20px auto;
 }
 
-.about-content{
-    color: white;
-    width: 90%;
+/* Notification Design 1 */
+
+.notification-design-1{
+    width: 70%;
     margin: 20px auto;
+    color: white;
+}
+
+.notification-design-1-content{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.notification-design-1-content p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
     gap: 10px;
 }
 
-.about-content h3{
-    font-size: 21px;
+.notification-design-1-content p img{
+    width: 25px;
+    height: 25px;
 }
 
-.about-content p{
-    font-size: 16px;
+/* Notification Design 2 */
+
+.notification-design-2{
+    width: 70%;
+    margin: 20px auto;
 }
 
-.thanks-text{
-    text-align: center;
-    font-weight: 600;
+.notification-design-2-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.notification-design-2-content p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     font-size: 18px;
+    gap: 10px;
 }
 
-@media (max-width: 768px) {
-    .about-content{
+.notification-design-2-content p img{
+    width: 20px;
+    height: 20px;
+    justify-self: flex-end;
+}
+
+.notification-design-2-content p .detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notification-design-2-content img{
+    width: 40px;
+    height: 40px;
+}
+
+.notification-2-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Code */
+
+@media (max-width: 1100px){
+    .notification-design-1{
+        width: 85%;
+    }
+    .notification-design-2{
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .notification-design-1{
         width: 95%;
+    }
+    .notification-design-2{
+        width: 95%;
+    }
+    .notification-design-2-content p{
+        font-size: 16px;
+    }
+    .notification-design-1-content p{
+        font-size: 16px;
+    }
+    .notification-design-2-content img{
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -768,7 +849,7 @@ footer p {
 
 @media (min-width: 501px) and (max-width: 815px) {
     .gaming-partner-logo{
-        width: 70%;
+        width: 95%;
     }
     .gaming-partner-logo-img img {
         width: 20%;
