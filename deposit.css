@@ -254,6 +254,199 @@ nav {
     width: 40px;
 }
 
+/* Deposit Card Section */
+
+.deposit-card{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.deposit-card h2{
+    color: white;
+    text-align: center;
+}
+
+.deposit-wallet{
+    width: 200px;
+    margin: 10px auto;
+    background-color: #da7901;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 50px;
+}
+
+.deposit-wallet h3{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.deposit-wallet h3 img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Deposit Main */
+
+.deposit-main{
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+}
+
+.payment-region{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-region img{
+    width: 30px;
+    height: 30px;
+}
+
+.payment-region-content p{
+    color: white;
+    font-size: 14px;
+}
+
+/* Deposit Methods */
+
+.deposit-h3{
+    color: white;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.deposit-methods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+.method-box{
+    width: 32%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-box img{
+    width: auto;
+    height: 50px;
+}
+
+.deposit-big-box{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.deposit-big-box label{
+    font-size: 20px;
+}
+
+.deposit-big-box input{
+    width: 60%;
+    background-color: white;
+    border: 2px solid #e8ecf0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.deposit-big-box p{
+    width: 60%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount-button{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.amount-button button{
+    width: 19%;
+    background-color: #e8ecf0;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+.deposit-btn{
+    width: 50%;
+    background-color: #D17918;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive Code */
+
+@media (max-width:800px) {
+    .deposit-main{
+        width: 95%;
+        padding: 10px;
+    }
+    .method-box img{
+        height: 25px;
+    }
+    .deposit-methods{
+        gap: 5px;
+    }
+    .deposit-big-box{
+        padding: 10px;
+    }
+    .deposit-big-box input{
+        width: 90%;
+    }
+    .deposit-big-box p{
+        width: 90%;
+        font-size: 12px;
+    }
+    .amount-button{
+        width: 90%;
+        margin: 10px 0px;
+    }
+    .amount-button button{
+        font-size: 12px;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -729,7 +922,7 @@ footer p {
 
 @media (min-width: 501px) and (max-width: 815px) {
     .gaming-partner-logo{
-        width: 70%;
+        width: 95%;
     }
     .gaming-partner-logo-img img {
         width: 20%;
