@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deposit</title>
-    <link rel="stylesheet" href="/deposit.css">
+    <title>Deposit Second</title>
+    <link rel="stylesheet" href="/deposit-second.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="mob-sidebar" id="mob-sidebar">
         <div class="mob-sidebar-top">
@@ -49,7 +51,7 @@
             <img src="/images/what-tele.png" alt="">
         </div>
     </div>
-    
+
     <nav>
         <a href="/index.html"><img src="/images/logo.png" alt="" class="logo"></a>
         <div class="middle-nav">
@@ -149,85 +151,53 @@
             <p>Live Casino</p>
             <p>Slot Games</p>
             <p>Crash Games</p>
-            <a href="/about-us.html" style="text-decoration: none; color: white;"><p>More</p></a>
+            <a href="/about-us.html" style="text-decoration: none; color: white;">
+                <p>More</p>
+            </a>
         </div>
         <div class="right-nav">
-            <a href="/dashboard.html" style="text-decoration: none;"><p class="wallet">Rs.0.00</p></a>
-            <a href="/deposit.html" style="text-decoration: none;"><p class="deposit">Deposit</p></a>
+            <a href="/dashboard.html" style="text-decoration: none;">
+                <p class="wallet">Rs.0.00</p>
+            </a>
+            <a href="/deposit.html" style="text-decoration: none;">
+                <p class="deposit">Deposit</p>
+            </a>
             <a href="/notification.html"><img src="/images/notification.png" alt=""></a>
             <a href="/login.html"><img src="/images/profile.png" alt=""></a>
             <img src="/images/menu-bar.png" alt="" class="mobile-side-bars" onclick="sidemobopen()">
         </div>
     </nav>
 
-    <!-- Deposit Card Section -->
-
-    <div class="deposit-card">
-        <h2>Deposit</h2>
-        <div class="deposit-wallet">
-            <h3><img src="/images/coin.png" alt="">₹ 9999</h3>
-            <p>Your Balance</p>
-        </div>
-    </div>
-
     <!-- Deposit Main Section -->
 
     <div class="deposit-main">
-        <div class="payment-region">
-            <img src="/images/india.png" alt="">
-            <div class="payment-region-content">
-                <p>Payment methods for the region</p>
-                <p>India (भारत)</p>
-            </div>
-        </div>
-        <h3 class="deposit-h3">Deposit Methods</h3>
         <div class="deposit-methods">
             <div class="method-box">
-                <img src="/images/paytm.png" alt="">
-            </div>
-            <div class="method-box">
-                <img src="/images/gpay.png" alt="">
-            </div>
-            <div class="method-box">
-                <img src="/images/bank-transfer.png" alt="">
-            </div>
-            <div class="deposit-big-box">
-                <label for="">Enter The Deposit Amount</label>
-                <input type="text" value="300">
-                <p>Amount of one deposit <span>from ₹ 300 to ₹ 100000</span></p>
-                <div class="amount-button">
-                    <button>₹ 500</button>
-                    <button>₹ 5000</button>
-                    <button>₹ 15000</button>
-                    <button>₹ 25000</button>
-                    <button>₹ 50000</button>
+                <p>Please send money to the provided PhonePe number only. After sending the payment, insert the
+                    mandatory field: </p>
+                <img src="/images/QR.jpeg" alt="" class="qr-code">
+                <a href="#" class="download-qr"><img src="/images/download.png" alt="">Download
+                    QR</a>
+                <div class="qr-detail">
+                    <p>Name: <span>Jyoti Rice<img src="/images/duplicate.png" alt=""></span></p>
+                    <p>UPI: <span>abcd@apl<img src="/images/duplicate.png" alt=""></span></p>
+                    <p>Number: <span>9999999999<img src="/images/duplicate.png" alt=""></span></p>
                 </div>
-                <a href="/deposit-second.html" class="deposit-btn">Deposit</a>
-            </div>
-        </div>
-        <div class="deposit-methods">
-            <div class="method-box">
-                <img src="/images/phonepe_logo.png" alt="">
-            </div>
-            <div class="method-box">
-                <img src="/images/upi.png" alt="">
-            </div>
-            <div class="method-box">
-                <img src="/images/online-payment.png" alt="">
-            </div>
-            <!-- <div class="deposit-big-box">
-                <label for="">Enter The Deposit Amount</label>
-                <input type="text" value="300">
-                <p>Amount of one deposit <span>from ₹ 300 to ₹ 100000</span></p>
-                <div class="amount-button">
-                    <button>₹ 500</button>
-                    <button>₹ 5000</button>
-                    <button>₹ 15000</button>
-                    <button>₹ 25000</button>
-                    <button>₹ 50000</button>
+                <div class="amount-credited">
+                    <label for="">Amount To Be Credited</label>
+                    <input type="text" value="500">
                 </div>
-                <button class="deposit-btn">Deposit</button>
-            </div> -->
+                <div class="amount-credited">
+                    <label for="">Enter UTR ID</label>
+                    <input type="text">
+                </div>
+                <div class="upload-screenshot">
+                    <img src="/images/upload.png" alt="">
+                    <p>Upload Screenshot</p>
+                    <input type="file">
+                </div>
+                <a href="#" class="download-qr">Proceed To Pay</a>
+            </div>
         </div>
     </div>
 
@@ -255,26 +225,26 @@
         </div>
         <div class="gaming-partner-logo">
             <div class="gaming-partner-logo-img">
-            <div class="gaming-partner-logo-section">
-                <img src="/images/footer-logo/ag-logo.png" alt="">
-                <img src="/images/footer-logo/bet-game.png" alt="">
-                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
-                <img src="/images/footer-logo/ecugi.png" alt="">
-                <img src="/images/footer-logo/evolution.png" alt="">
-                <img src="/images/footer-logo/evoplay.png" alt="">
-                <img src="/images/footer-logo/india-soe.png" alt="">
-                <img src="/images/footer-logo/jili.png" alt="">
-            </div>
-            <div class="gaming-partner-logo-section">
-                <img src="/images/footer-logo/pragmatic-play.png" alt="">
-                <img src="/images/footer-logo/sexy.png" alt="">
-                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
-                <img src="/images/footer-logo/BETSOFT.png" alt="">
-                <img src="/images/footer-logo/Spribe.png" alt="">
-                <img src="/images/footer-logo/supernowa.png" alt="">
-                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
-                <img src="/images/footer-logo/Royal-gaming.png" alt="">
-            </div>
+                <div class="gaming-partner-logo-section">
+                    <img src="/images/footer-logo/ag-logo.png" alt="">
+                    <img src="/images/footer-logo/bet-game.png" alt="">
+                    <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                    <img src="/images/footer-logo/ecugi.png" alt="">
+                    <img src="/images/footer-logo/evolution.png" alt="">
+                    <img src="/images/footer-logo/evoplay.png" alt="">
+                    <img src="/images/footer-logo/india-soe.png" alt="">
+                    <img src="/images/footer-logo/jili.png" alt="">
+                </div>
+                <div class="gaming-partner-logo-section">
+                    <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                    <img src="/images/footer-logo/sexy.png" alt="">
+                    <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                    <img src="/images/footer-logo/BETSOFT.png" alt="">
+                    <img src="/images/footer-logo/Spribe.png" alt="">
+                    <img src="/images/footer-logo/supernowa.png" alt="">
+                    <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                    <img src="/images/footer-logo/Royal-gaming.png" alt="">
+                </div>
             </div>
         </div>
         <div class="gaming-partner">
@@ -314,4 +284,5 @@
         mobsidebar.style.display = "none"
     }
 </script>
+
 </html>
