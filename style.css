@@ -1414,7 +1414,8 @@ footer p {
     z-index: 2;
     padding: 10px 0px;
     overflow-y: scroll;
-    display: none;
+    display: block;
+    padding-bottom: 90px;
 }
 
 .mob-sidebar-top{
@@ -1495,7 +1496,7 @@ footer p {
 
 .mob-sidebar-support{
     width: 95%;
-    height: auto;
+    height: 70px;
     margin: 10px auto;
     padding: 15px;
     background-color: #171f35;
@@ -1508,7 +1509,18 @@ footer p {
 }
 
 .mob-sidebar-support img {
-    width: 37%;
+    width: 35%;
+    align-self: flex-end;
+}
+
+.mob-sidebar-support-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mob-sidebar-support-content p{
+    color: #a2a2a7;
 }
 
 .mobile-side-bars{

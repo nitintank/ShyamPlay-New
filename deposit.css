@@ -340,8 +340,8 @@ nav {
 }
 
 .method-box{
-    width: 32%;
-    height: 100px;
+    width: 49%;
+    height: 80px;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -351,7 +351,7 @@ nav {
 
 .method-box img{
     width: auto;
-    height: 50px;
+    height: 40px;
 }
 
 .deposit-big-box{
@@ -425,7 +425,7 @@ nav {
         padding: 10px;
     }
     .method-box img{
-        height: 25px;
+        height: 35px;
     }
     .deposit-methods{
         gap: 5px;
