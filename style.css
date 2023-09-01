@@ -598,13 +598,14 @@ nav {
 .trending .top-pill {
     width: 200px;
     position: absolute;
-    top: -45.61px;
+    top: -39.61px;
     left: -1px;
+    height: 40px;
 }
 
 .trend {
     position: absolute;
-    top: -40px !important;
+    top: -37px !important;
     left: 12px !important;
     display: flex;
     align-items: center;
@@ -642,7 +643,7 @@ nav {
     margin: auto;
     margin-bottom: 10px;
     background-color: #443e1b;
-    border: 2px solid #b7b520;
+    border: 1px solid #b7b520;
     padding: 5px;
     border-radius: 15px;
 }
@@ -721,9 +722,9 @@ nav {
     width: 92%;
     background-color: #443e1b;
     display: block;
-    margin: 50px auto 20px;
+    margin: 45px auto 20px;
     border-radius: 0px 15px 15px 15px;
-    border: 2px solid #b7b520;
+    border: 1px solid #b7b520;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -736,13 +737,14 @@ nav {
 .inplay .inplay-pill-img {
     width: 200px;
     position: absolute;
-    top: -45.5px;
-    left: -2.2px;
+    top: -39.61px;
+    left: -1px;
+    height: 40px;
 }
 
 .inplay-img {
     position: absolute;
-    top: -38px !important;
+    top: -36px !important;
     left: 12px !important;
     display: flex;
     align-items: center;
@@ -1189,7 +1191,7 @@ footer p {
         justify-content: space-between;
         gap: 5px;
         padding-left: 5px;
-        margin: 50px auto 10px;
+        margin: 42px auto 10px;
     }
     .trending-img{
         padding: 5px 0px;
@@ -1294,7 +1296,7 @@ footer p {
         width: 98%;
         flex-wrap: wrap;
         gap: 5px;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
     }
     .offer-box{
         width: 49%;
