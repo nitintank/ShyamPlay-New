@@ -20,8 +20,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border-radius: 0px 0px 20px 20px;
-    background-image: linear-gradient(#b5b326, #98971e); */
+    border-radius: 0px 0px 20px 20px;
+    background-image: linear-gradient(#b5b326, #000);
 }
 
 .bottom_bar {
@@ -1577,7 +1577,8 @@ footer p {
     display: none;
     width: 25px !important;
     height: 25px !important;
-
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @media (max-width: 1024px) {
@@ -1586,13 +1587,16 @@ footer p {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px){
     .wallet{
         padding: 5px;
     }
     .deposit{
         padding: 5px;
     }
+}
+
+@media (max-width: 400px) {
     .right-nav img{
         width: 25px;
         height: 25px;
@@ -1600,7 +1604,20 @@ footer p {
     .mobile-side-bars{
         width: 20px !important;
         height: 20px !important;
-    
+    }
+    .notification-bell{
+        height: 25px;
+        width: 25px;
+    }
+    .notification-bell img{
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .notification-bell p{
+        padding: 7px;
+        width: 8px;
+        height: 8px;
+        font-size: 12px;
     }
 }
 
