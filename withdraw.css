@@ -1,0 +1,876 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url("/images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 170px;
+}
+
+.middle-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.middle-nav p {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nested Dropdown */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #d0d0d0
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+/* navlinks */
+
+.sidebar .nav-links {
+    height: 100%;
+    overflow: auto;
+    width: 260px;
+}
+
+.sidebar.close .nav-links {
+    overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover {
+    /* background: #d0d0d0; */
+}
+
+.sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+    display: block
+}
+
+.sidebar .nav-links li i {
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+    transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow {
+    display: none;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+
+.sidebar.close .nav-links li a .link_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+    padding: 10px 20px;
+    /* margin-top: -10px; */
+    background: #dbdbdb;
+    display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+    color: black;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu .link_name {
+    display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Nested Dropdown End */
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-nav a{
+    display: flex;
+}
+
+.wallet {
+    color: white;
+    padding: 5px 10px;
+    background-color: #252e4d;
+    border-radius: 5px;
+}
+
+.deposit {
+    color: white;
+    padding: 5px 10px;
+    background-color: #D17918;
+    border-radius: 5px;
+}
+
+.right-nav img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Deposit Card Section */
+
+.deposit-card{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.deposit-card h2{
+    color: white;
+    text-align: center;
+}
+
+.deposit-wallet{
+    width: 95%;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #B6B326 0%, #000 100%);
+}
+
+.deposit-wallet h3{
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.deposit-wallet hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: white;
+}
+
+/* Deposit Main */
+
+.deposit-main{
+    width: 70%;
+    height: auto;
+    margin: 5px auto;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+}
+
+/* Deposit Methods */
+
+.deposit-h3{
+    color: white;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+.deposit-methods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+.method-box{
+    width: 49%;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-box img{
+    width: auto;
+    height: 40px;
+}
+
+/* Responsive Code */
+
+@media (max-width:800px) {
+    .deposit-main{
+        width: 95%;
+        padding: 10px;
+    }
+    .method-box img{
+        height: 35px;
+    }
+    .deposit-methods{
+        gap: 5px;
+    }
+    .deposit-big-box{
+        padding: 10px;
+    }
+    .deposit-big-box input{
+        width: 90%;
+    }
+    .deposit-big-box p{
+        width: 90%;
+        font-size: 12px;
+    }
+    .amount-button{
+        width: 90%;
+        margin: 10px 0px;
+    }
+    .amount-button button{
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+.follow-us {
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.follow-us h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.download-android {
+    width: 70%;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-android h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.android-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.android-images img {
+    width: 235px;
+    cursor: pointer;
+}
+
+.social-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-images img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.social-desk {
+    display: block;
+}
+
+.social-mob {
+    display: none;
+}
+
+/* Gaming Partner Section */
+
+.gaming-partner {
+    width: 70%;
+    height: 100px;
+    background-image: url("/images/black-box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+/* Copyright Section */
+
+.copyright {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0px 50px;
+}
+
+.copyright img {
+    width: 200px;
+    height: auto;
+}
+
+footer p {
+    color: white;
+}
+
+@media (max-width: 1060px){
+    .middle-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 790px) {
+    nav{
+        padding: 15px 10px;
+    }
+    .logo{
+        width: 110px;
+    }
+    .middle-nav{
+        display: none;
+    }
+    .right-nav{
+        gap: 5px;
+    }
+    .right-nav img{
+        height: 30px;
+        width: 30px;
+    }
+    .download-android{
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+    .download-android h2{
+        font-size: 16px;
+    }
+    .android-images img{
+        width: 170px;
+    }
+}
+
+@media (max-width: 1350px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1275px){
+    .follow-us h2{
+        font-size: 22px;
+    }
+    .follow-us{
+        height: 90px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 90px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1100px){
+    .follow-us h2{
+        font-size: 20px;
+    }
+    .social-images img{
+        width: 110px;
+    }
+    .follow-us{
+        height: 80px;
+    }
+    .gaming-partner{
+        height: 80px;
+    }
+    .gaming-partner img{
+        width: 10%;
+    }
+}
+
+@media (max-width: 900px){
+    .follow-us h2{
+        font-size: 18px;
+    }
+    .follow-us{
+        height: 60px;
+        padding: 0px 20px;
+    }
+    .gaming-partner{
+        height: 60px;
+        overflow-x: auto;
+    }
+    .social-images img{
+        width: 95px;
+    }
+}
+
+@media (max-width: 769px) {
+    .social-images img{
+        width: 80px;
+    }
+    .gaming-partner img{
+        width: 15%;
+    }
+    .follow-us{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+    }
+    .follow-us h2 {
+        font-size: 18px;
+    }
+    .gaming-partner{
+        width: 95%;
+        padding: 0px 10px;
+        height: 70px;
+        overflow-x: auto;
+    }
+    .copyright{
+        height: 50px;
+    }
+    .copyright img{
+        width: 100px;
+    }
+    footer p{
+        text-align: center;
+    }
+    .social-desk{
+        display: none;
+    }
+    .social-mob{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .social-images img{
+        width: 50px;
+    }
+    .follow-us h2 {
+        font-size: 14px;
+    }
+    .follow-us{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        background-image: url("/images/black-box-mob.png");
+    }
+    .gaming-partner{
+        height: 55px;
+    }
+    .follow-us{
+        height: 55px;
+    }
+}
+
+@media (max-width: 410px){
+    .social-images{
+        gap: 7px;
+    }
+}
+
+@media (max-width: 375px){
+    .gaming-partner{
+        height: 47px;
+    }
+    .follow-us{
+        height: 47px;
+    }
+}
+
+/* Mobile Sidebar */
+
+.mob-sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #393838;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    padding: 10px 0px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.mob-sidebar-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.mob-side-top-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mob-side-cross{
+    background-color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.mob-sidebar-top img{
+    height: 30px;
+    width: 30px;
+}
+
+.mob-side-register{
+    background-color: #b7b520;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.mob-sidebar ul li{
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: 500;
+}
+
+.mob-side-arrow li{
+    justify-content: space-between;
+}
+
+.mob-sidebar ul li span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mob-sidebar ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+.mob-side-title{
+    color: white;
+    background-color: #161623;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mob-side-title img{
+    width: 20px;
+    height: 20px;
+}
+
+.mob-sidebar-support{
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #171f35;
+    border-left: 2px solid #b7b520;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mob-sidebar-support img {
+    width: 37%;
+}
+
+.mobile-side-bars{
+    display: none;
+    width: 25px !important;
+    height: 25px !important;
+
+}
+
+@media (max-width: 1024px) {
+    .mobile-side-bars{
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .wallet{
+        padding: 5px;
+    }
+    .deposit{
+        padding: 5px;
+    }
+    .right-nav img{
+        width: 25px;
+        height: 25px;
+    }
+    .mobile-side-bars{
+        width: 20px !important;
+        height: 20px !important;
+    
+    }
+}
+
+/* Footer Gaming Partner Logo */
+
+.gaming-partner-logo {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 15px;
+    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+}
+
+.gaming-partner-logo-img {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #161623;
+    margin: 2px;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.gaming-partner-logo-section{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gaming-partner-logo-img img {
+    width: 12%;
+    height: 70px;
+    border-radius: 10px;
+}
+
+@media (min-width: 816px) and (max-width: 1250px) {
+    .gaming-partner-logo{
+        width: 70%;
+    }
+    .gaming-partner-logo-img img {
+        width: 20%;
+        height: 60px;
+    }
+    .gaming-partner-logo-img {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 815px) {
+    .gaming-partner-logo{
+        width: 95%;
+    }
+    .gaming-partner-logo-img img {
+        width: 20%;
+        height: 60px;
+    }
+    .gaming-partner-logo-img {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 500px) {
+    .gaming-partner-logo{
+        width: 95%;
+    }
+    .gaming-partner-logo-img img {
+        width: 20%;
+        height: 60px;
+    }
+    .gaming-partner-logo-img {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+}
