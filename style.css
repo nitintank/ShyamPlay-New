@@ -21,7 +21,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 0px 0px 20px 20px;
-    background-image: linear-gradient(#b5b326, #000);
+    background: linear-gradient(180deg, rgba(181,179,38,1) 0%, rgba(121,119,25,1) 52%, rgba(73,72,15,1) 74%, rgba(0,0,0,1) 100%);
 }
 
 .bottom_bar {
@@ -644,12 +644,13 @@ nav {
     background-color: #443e1b;
     border: 2px solid #b7b520;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .games-pill-btn label img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+    align-self: flex-end;
 }
 
 .games-pill-btn input[type="radio"] {
@@ -669,17 +670,29 @@ nav {
     white-space: nowrap;
     cursor: pointer;
     display: block;
-    padding: 12px 25px;
+    padding: 12px 18px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    height: 40px;
 }
 
 :checked+label {
     background: #B6B326;
     color: #fff;
+}
+
+@media (max-width:500px) {
+    .games-pill-btn label img{
+        height: 30px;
+        width: 30px;
+        align-self: flex-end;
+    }
+    .games-pill-btn label{
+        height: 30px;
+    }
 }
 
 /* Sports Section */
@@ -1176,7 +1189,7 @@ footer p {
         justify-content: space-between;
         gap: 5px;
         padding-left: 5px;
-        margin: 50px auto 15px;
+        margin: 50px auto 10px;
     }
     .trending-img{
         padding: 5px 0px;
@@ -1298,7 +1311,7 @@ footer p {
         font-size: 18px !important;
     }
     .games-pill-btn label{
-        padding: 5px 14px;
+        padding: 5px 10px;
         font-size: 14px;
     }
     .upcoming-matches{
@@ -1465,7 +1478,7 @@ footer p {
     padding: 10px 0px;
     overflow-y: scroll;
     display: none;
-    padding-bottom: 20px;
+    padding-bottom: 90px;
 }
 
 .mob-sidebar-top{
