@@ -588,7 +588,7 @@ nav {
     display: block;
     margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
-    border: 2px solid #b7b520;
+    border: 1px solid #b7b520;
     position: relative;
     display: flex;
     align-items: center;
@@ -598,8 +598,8 @@ nav {
 .trending .top-pill {
     width: 200px;
     position: absolute;
-    top: -45.5px;
-    left: -2.2px;
+    top: -45.61px;
+    left: -1px;
 }
 
 .trend {
