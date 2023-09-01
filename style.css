@@ -686,12 +686,12 @@ nav {
 
 @media (max-width:500px) {
     .games-pill-btn label img{
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         align-self: flex-end;
     }
     .games-pill-btn label{
-        height: 30px;
+        height: 35px;
     }
 }
 
