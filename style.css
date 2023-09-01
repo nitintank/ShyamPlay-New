@@ -490,6 +490,56 @@ nav {
     width: 40px;
 }
 
+.notification-bell{
+    width: 40px;
+    height: 40px;
+    background-color: #252e4d;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.notification-bell img{
+    width: 30px;
+    height: 30px;
+}
+
+.notification-bell p{
+    height: 20px;
+    width: 20px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@media (max-width: 790px) {
+    .notification-bell{
+        height: 30px;
+        width: 30px;
+    }
+
+    .notification-bell img{
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .notification-bell p{
+        padding: 8px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
 /* Marquee Section */
 
 .marquee{
