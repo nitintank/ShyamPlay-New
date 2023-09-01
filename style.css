@@ -1411,11 +1411,11 @@ footer p {
     position: fixed;
     top: 0px;
     right: 0px;
-    z-index: 2;
+    z-index: 10;
     padding: 10px 0px;
     overflow-y: scroll;
     display: block;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
 }
 
 .mob-sidebar-top{
