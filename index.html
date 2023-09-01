@@ -7,9 +7,92 @@
     <title>Shyam Play Home Page</title>
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
 </head>
 
 <body>
+
+    <div class="bottom_bar">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="ic"><img src="/images/sport-sidebar.png" alt=""></span>
+              Sports
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ic"><img src="/images/play-button.png" alt=""></span>
+              InPlay
+            </a>
+          </li>
+          <li></li>
+          <li class="bigCircle" id="menu-open">
+            <a class="circleBtn" onclick="openmenu()">
+              <span class="ic">
+                <img src="/images/homewhite.png" alt="" class="house_img">
+                <img src="/images/close.png" alt="" class="closeImg">
+              </span>
+            </a>
+            <span class="menu-item">
+              <a href="#" class="search-box fav_ic">
+                <img src="/images/heart.png" alt="">
+              </a>
+            </span>
+            <span class="menu-item">
+              <a href="#" class="search-box">
+                <button type="button" class="modeBtn">
+                  <!-- <i class="fa-solid fa-moon" title="dark mode"></i>
+                  <i class="fa-solid fa-sun" title="light mode"></i> -->
+                  <img src="/images/settings.png" alt="">
+                </button>
+              </a>
+            </span>
+            <span class="menu-item">
+              <a routerLink="/" class="search-box">
+                <img src="/images/homewhite.png" alt="" class="house_img">
+              </a>
+            </span>
+            <span class="menu-item">
+              <a href="#searchCollapse" data-bs-toggle="collapse" aria-expanded="false" aria-controls="searchCollapse"
+                class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M10.5 20C15.7467 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.25329 20 10.5 20Z"
+                    stroke="rgb(196, 196, 196)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M21 21L19 19" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </a>
+            </span>
+            <span class="menu-item">
+              <a href="#" class="search-box">
+                <img src="/images/discount.png" alt="">
+              </a>
+            </span>
+            <span class="bottom-circle"></span>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ic d-block">
+                <div class="whatp">
+                    <img src="/images/whatsapp.png" alt="">
+                </div>
+              </span>
+              Whatsapp
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ic">
+                <img src="/images/m-transfer.png" alt="">
+            </span>
+              M Transfer
+            </a>
+          </li>
+        </ul>
+      </div>
+
     <div class="mob-sidebar" id="mob-sidebar">
         <div class="mob-sidebar-top">
             <p class="mob-side-cross" onclick="sidemobclose()">X</p>
@@ -794,6 +877,11 @@
     }
     let sidemobclose = () => {
         mobsidebar.style.display = "none"
+    }
+
+    let menuopen = document.getElementById("menu-open")
+    let openmenu = ()=>{
+        menuopen.classList.toggle("menuOpen");
     }
 </script>
 
