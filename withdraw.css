@@ -372,6 +372,70 @@ nav {
     }
 }
 
+/* Bank Details */
+
+.bank-details{
+    color: white;
+    display: flex;
+    width: 95%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bank-details button{
+    background-color: #B6B326;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Reward Table */
+
+.reward-table{
+    width: 95%;
+    color: white;
+    margin: 10px auto;
+    overflow-x: auto;
+}
+
+.reward-table table{
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.reward-table table th{
+    font-size: 16px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.reward-table table tr{
+    text-align: center;
+}
+
+.reward-table table tr:nth-child(even){
+    background-color: #1e1e1e;
+}
+
+.reward-table table tr td{
+    padding: 5px;
+    white-space: nowrap;
+}
+
+.reward-table .green-text{
+    color: #0FBC79;
+    white-space: nowrap;
+}
+
+.reward-table .red-text{
+    color: #C81C28;
+    white-space: nowrap;
+}
+
 /* Footer */
 
 footer {
