@@ -267,56 +267,37 @@ nav {
 }
 
 .deposit-wallet{
-    width: 40%;
+    width: 200px;
     margin: 10px auto;
-    margin-bottom: 5px;
+    background-color: #da7901;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #B6B326 0%, #000 100%);
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 50px;
 }
 
 .deposit-wallet h3{
-    width: 100%;
-    font-size: 16px;
+    text-align: center;
+    font-size: 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
 }
 
-.deposit-wallet hr{
-    width: 100%;
-    height: 1px;
-    border: none;
-    background-color: white;
+.deposit-wallet h3 img{
+    width: 30px;
+    height: 30px;
 }
 
-/* Deposit Main */
-
-.deposit-main{
-    width: 70%;
-    height: auto;
-    margin: 5px auto;
-    border-radius: 20px;
-    background-color: black;
-    padding: 20px;
-}
-
-/* Deposit Methods */
-
-.deposit-h3{
-    color: white;
-    margin: 10px 0px;
-    font-size: 18px;
-}
+/* Button Section */
 
 .deposit-methods{
-    width: 100%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -325,149 +306,157 @@ nav {
     gap: 10px;
 }
 
+.deposit-methods a{
+    text-decoration: none;
+}
+
 .method-box{
-    width: 49%;
-    height: 80px;
-    background-color: white;
+    width: 35%;
+    height: auto;
+    background-color: #b7b520;
+    color: white;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
 }
 
-.method-box img{
-    width: auto;
-    height: 40px;
+.deposit-methods .dark-button{
+    background-color: white;
+    color: black;
 }
 
-/* Bank Details */
+/* Balance Cards */
 
-.bank-details{
+.balance-cards{
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.balance-bars{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #252E4D;
+    height: 50px;
+    padding: 5px 10px;
     color: white;
     display: flex;
-    width: 70%;
-    margin: 10px auto;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
 }
 
-.bank-details button{
-    background-color: #B6B326;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 5px;
+.balance-bars-left{
+    height: 100%;
     color: white;
-    font-size: 18px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
 }
 
-/* Reward Table */
-
-.reward-table{
-    width: 70%;
-    color: white;
-    margin: 10px auto;
-    overflow-x: auto;
+.balance-bars-left .bars-img{
+    width: auto;
+    height: 35px;
 }
 
-.reward-table table{
-    width: 100%;
-    background-color: #000;
-    border-radius: 10px;
+.balance-bars-left .arrow-img{
+    width: 12px;
+    height: 12px;
 }
 
-.reward-table table th{
-    font-size: 16px;
-    padding: 5px;
-    white-space: nowrap;
-}
-
-.reward-table table tr{
-    text-align: center;
-}
-
-.reward-table table tr:nth-child(even){
-    background-color: #1e1e1e;
-}
-
-.reward-table table tr td{
-    padding: 5px;
-    white-space: nowrap;
-}
-
-.reward-table table tr td img{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.reward-table .green-text{
+.balance-bars .green-text{
     color: #0FBC79;
     white-space: nowrap;
 }
 
-.reward-table .red-text{
+.balance-bars .red-text{
     color: #C81C28;
     white-space: nowrap;
 }
 
-/* Amount Submit Section */
+/* Exposure Section */
 
-.amount-submit{
-    color: white;
+.faq-section{
+    width: 50%;
     display: flex;
-    width: 70%;
-    margin: 10px auto;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    margin: 20px auto;
 }
 
-.amount-submit input{
-    background-color: #10171d;
-    border: 1px solid white;
+details {
+    font-size: 18px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+    background-color: #252e4d;
+    min-height: 50px;
     padding: 5px 10px;
-    border-radius: 5px;
+  }
+  details .summary-title {
+    font-size: 18px;
     color: white;
-    font-size: 16px;
-}
-
-.amount-submit button{
-    background-color: #B6B326;
-    padding: 6px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    align-self: flex-end;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  details:hover {
     cursor: pointer;
-}
+  }
+  details .summary-content {
+    border-top: 1px solid #e2e8f0;
+    cursor: default;
+    padding: 0.5em;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  details summary {
+    list-style: none;
+    padding: 10px 10px;
+  }
+  details summary:focus {
+    outline: none;
+  }
+  details summary:hover .summary-chevron-up svg {
+    opacity: 1;
+  }
+  details .summary-chevron-up svg {
+    opacity: 0.5;
+  }
+  details .summary-chevron-up,
+  details .summary-chevron-down {
+    pointer-events: none;
+    position: absolute;
+    top: 0.8em;
+    right: 1em;
+    background: #252e4d;
+  }
+  details .summary-chevron-up svg,
+  details .summary-chevron-down svg {
+    display: block;
+  }
+  details summary::-webkit-details-marker {
+    display: none;
+  }
 
-.amount-submit-left{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-/* Withdraw Content */
-
-.withdraw-content{
-    width: 70%;
-    margin: 10px auto;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.withdraw-content ul{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.withdraw-content ul li span{
-    color: #B6B326;
-}
+  .summary-title span{
+    color: #D17918;
+  }
 
 /* Responsive Code */
 
@@ -476,14 +465,12 @@ nav {
         width: 95%;
         padding: 10px;
     }
-    .deposit-wallet{
-        width: 95%;
-    }
     .method-box img{
         height: 35px;
     }
     .deposit-methods{
         gap: 5px;
+        width: 95%;
     }
     .deposit-big-box{
         padding: 10px;
@@ -502,21 +489,23 @@ nav {
     .amount-button button{
         font-size: 12px;
     }
-    .reward-table{
+
+    .balance-cards{
         width: 95%;
     }
-    .bank-details{
-        width: 95%;
+    .balance-bars{
+        font-size: 16px;
     }
-    .amount-submit{
-        width: 95%;
+    .balance-bars-left{
+        font-size: 16px;
     }
-    .withdraw-content{
+    .balance-bars-left .bars-img{
+        height: 30px;
+    }
+    .faq-section{
         width: 95%;
     }
 }
-
-
 
 /* Footer */
 

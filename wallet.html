@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/dashboard.css">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="/wallet.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
     <div class="mob-sidebar" id="mob-sidebar">
         <div class="mob-sidebar-top">
@@ -51,7 +49,7 @@
             <img src="/images/what-tele.png" alt="">
         </div>
     </div>
-
+    
     <nav>
         <a href="/index.html"><img src="/images/logo.png" alt="" class="logo"></a>
         <div class="middle-nav">
@@ -162,125 +160,103 @@
         </div>
     </nav>
 
-    <!-- Profile Section -->
+    <!-- Wallet Card Section -->
 
-    <div class="profile">
-        <img src="/images/user-image.png" alt="">
-        <p>USERNAME</p>
-        <p class="change-password">Change Password</p>
+    <div class="deposit-card">
+        <h2>Wallet</h2>
+        <div class="deposit-wallet">
+            <h3><img src="/images/coin.png" alt="">₹ 9999</h3>
+            <p>Your Balance</p>
+        </div>
     </div>
 
-    <!-- Amount Card -->
+    <!-- Button Section -->
+        <div class="deposit-methods">
+            <a href="/deposit.html" class="method-box">
+                <p>Deposit</p>
+            </a>     
+            <a href="/withdraw.html" class="method-box dark-button">
+                <p>Withdraw</p>
+            </a>
+        </div>
 
-    <div class="amount">
-        <div class="total-amount">
-            <div class="total-balance">
-                <p>Total Balance</p>
-                <h2>0.00 ₹</h2>
-            </div>
-            <div class="net-exposure">
-                <p>Net Exposure</p>
-                <h2>0.00 ₹</h2>
-            </div>
-        </div>
-        <div class="amount-button">
-            <div class="withdrawal-btn">
-                <a href="/withdraw.html"><button>Withdrawal</button></a>
-            </div>
-            <div class="deposit-btn">
-                <a href="/deposit.html"><button>Deposit</button></a>
-            </div>
-        </div>
-        <div class="total-amount">
-            <div class="main-balance">
+    <!-- Balance Cards -->
+
+    <div class="balance-cards">
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/Wallet-new.png" alt="" class="bars-img">
                 <p>Main Balance</p>
-                <h2>0.00 ₹</h2>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
             </div>
-            <div class="total-bonus">
-                <p>Total Bonus</p>
-                <h2>0.00 ₹</h2>
+            <p>₹440.16</p>
+        </div>
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/Profit-and-loss.png" alt="" class="bars-img">
+                <p>Profit & Loss</p>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
             </div>
+            <p class="red-text">- ₹120.02</p>
+        </div>
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/lock-amount.png" alt="" class="bars-img">
+                <p>Request Lock Amount</p>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
+            </div>
+            <p class="green-text">₹440.16</p>
+        </div>
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/deposit-withdrawal-request.png" alt="" class="bars-img">
+                <p>Welcome/Deposit Bonus</p>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
+            </div>
+            <p>₹440.16</p>
+        </div>
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/purple-gift-box.png" alt="" class="bars-img">
+                <p>Referred Bonus</p>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
+            </div>
+            <p>₹440.16</p>
+        </div>
+        <div class="balance-bars">
+            <div class="balance-bars-left">
+                <img src="/images/reward-cup.png" alt="" class="bars-img">
+                <p>Reward</p>
+                <img src="/images/down-side-arrow.png" alt="" class="arrow-img">
+            </div>
+            <p>₹440.16</p>
         </div>
     </div>
 
-    <!-- Profile Card Section -->
+    <!-- Exposure Bar -->
 
-    <div class="profile-card-section">
-        <h2><span></span>Profile</h2>
-        <div class="profile-content-box">
-            <a href="/profile.html" class="profile-content-cards">
-                <img src="/images/user-3d.png" alt="">
-                <p>Account Info</p>
-            </a>
-            <a href="/refer.html" class="profile-content-cards">
-                <img src="/images/referral-img.png" alt="">
-                <p>Referral</p>
-            </a>
-            <a href="/scratch-card.html" class="profile-content-cards">
-                <img src="/images/scratch-card.png" alt="">
-                <p>Scratch Card</p>
-            </a>
-            <a href="/create-user.html" class="profile-content-cards">
-                <img src="/images/user-to-user.png" alt="">
-                <p>User To User</p>
-            </a>
-            <a href="/money-transfer.html" class="profile-content-cards">
-                <img src="/images/money-transfer.png" alt="">
-                <p>Money Transfer</p>
-            </a>
-        </div>
-    </div>
+    <div class="faq-section">
+        <details>
+            <summary>
+                <span class="summary-title">Exposure</span>
+                <div class="summary-chevron-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-chevron-down">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </summary>
 
-    <!-- Finance Card Section -->
-
-    <div class="profile-card-section">
-        <h2><span></span>Finance</h2>
-        <div class="profile-content-box">
-            <a href="/cash-pick.html" class="profile-content-cards">
-                <img src="/images/cash-pick.png" alt="">
-                <p>Cash Pick</p>
-            </a>
-            <a href="/cash-drop.html" class="profile-content-cards">
-                <img src="/images/cash-drop.png" alt="">
-                <p>Cash Drop</p>
-            </a>
-            <a href="/deposit-withdrawal-request.html" class="profile-content-cards">
-                <img src="/images/deposit-withdrawal-request.png" alt="">
-                <p>D/W Request</p>
-            </a>
-            <a href="/pick-drop-request.html" class="profile-content-cards">
-                <img src="/images/pick-drop-request.png" alt="">
-                <p>Pick Drop Request</p>
-            </a>
-            <a href="/money-transfer-request.html" class="profile-content-cards">
-                <img src="/images/money-transfer-request.png" alt="">
-                <p>Money Transfer Request</p>
-            </a>
-        </div>
-    </div>
-
-    <!-- Reports Card Section -->
-
-    <div class="profile-card-section">
-        <h2><span></span>Reports</h2>
-        <div class="reports-content-box">
-            <a href="/profit-loss.html" class="reports-content-cards">
-                <img src="/images/betting-p-l.png" alt="">
-                <p>Betting P&L</p>
-            </a>
-            <a href="/bet-history.html" class="reports-content-cards">
-                <img src="/images/bet-history.png" alt="">
-                <p>Bet History</p>
-            </a>
-            <a href="/account-statement.html" class="reports-content-cards mob-padding">
-                <img src="/images/account-statement.png" alt="">
-                <p>Account Statement</p>
-            </a>
-            <a href="/login-history.html" class="reports-content-cards">
-                <img src="/images/login-history.png" alt="">
-                <p>Login History</p>
-            </a>
-        </div>
+            <div class="summary-content">Shyam Play.</div>
+            <div class="summary-chevron-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-up">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </div>
+        </details>
     </div>
 
     <!-- Footer -->
@@ -307,26 +283,26 @@
         </div>
         <div class="gaming-partner-logo">
             <div class="gaming-partner-logo-img">
-                <div class="gaming-partner-logo-section">
-                    <img src="/images/footer-logo/ag-logo.png" alt="">
-                    <img src="/images/footer-logo/bet-game.png" alt="">
-                    <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
-                    <img src="/images/footer-logo/ecugi.png" alt="">
-                    <img src="/images/footer-logo/evolution.png" alt="">
-                    <img src="/images/footer-logo/evoplay.png" alt="">
-                    <img src="/images/footer-logo/india-soe.png" alt="">
-                    <img src="/images/footer-logo/jili.png" alt="">
-                </div>
-                <div class="gaming-partner-logo-section">
-                    <img src="/images/footer-logo/pragmatic-play.png" alt="">
-                    <img src="/images/footer-logo/sexy.png" alt="">
-                    <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
-                    <img src="/images/footer-logo/BETSOFT.png" alt="">
-                    <img src="/images/footer-logo/Spribe.png" alt="">
-                    <img src="/images/footer-logo/supernowa.png" alt="">
-                    <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
-                    <img src="/images/footer-logo/Royal-gaming.png" alt="">
-                </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/ag-logo.png" alt="">
+                <img src="/images/footer-logo/bet-game.png" alt="">
+                <img src="/images/footer-logo/SUPER-SPADE-GAME.png" alt="">
+                <img src="/images/footer-logo/ecugi.png" alt="">
+                <img src="/images/footer-logo/evolution.png" alt="">
+                <img src="/images/footer-logo/evoplay.png" alt="">
+                <img src="/images/footer-logo/india-soe.png" alt="">
+                <img src="/images/footer-logo/jili.png" alt="">
+            </div>
+            <div class="gaming-partner-logo-section">
+                <img src="/images/footer-logo/pragmatic-play.png" alt="">
+                <img src="/images/footer-logo/sexy.png" alt="">
+                <img src="/images/footer-logo/SmartSoft-Gaming.png" alt="">
+                <img src="/images/footer-logo/BETSOFT.png" alt="">
+                <img src="/images/footer-logo/Spribe.png" alt="">
+                <img src="/images/footer-logo/supernowa.png" alt="">
+                <img src="/images/footer-logo/O-BET-GAMES.png" alt="">
+                <img src="/images/footer-logo/Royal-gaming.png" alt="">
+            </div>
             </div>
         </div>
         <div class="gaming-partner">
@@ -366,5 +342,4 @@
         mobsidebar.style.display = "none"
     }
 </script>
-
 </html>
