@@ -908,7 +908,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 20px auto;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .offer-box {
@@ -1472,7 +1472,7 @@ footer p {
 .mob-sidebar{
     width: 300px;
     height: 100vh;
-    background-color: #393838;
+    background-color: #161623;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -1506,6 +1506,13 @@ footer p {
 .mob-sidebar-top img{
     height: 30px;
     width: 30px;
+}
+
+.line-wid{
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, white , transparent);
 }
 
 .mob-side-register{
