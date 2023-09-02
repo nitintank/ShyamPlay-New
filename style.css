@@ -21,7 +21,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 0px 0px 20px 20px;
-    background: linear-gradient(180deg, rgba(181,179,38,1) 0%, rgba(121,119,25,1) 52%, rgba(73,72,15,1) 74%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(181,179,38,1) 0%, rgba(121,119,25,1) 52%, rgba(73,72,15,1) 74%, transparent 100%);
 }
 
 .bottom_bar {
@@ -503,8 +503,8 @@ nav {
 }
 
 .notification-bell img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .notification-bell p{
@@ -530,8 +530,8 @@ nav {
     }
 
     .notification-bell img{
-        width: 25px !important;
-        height: 25px !important;
+        width: 22px !important;
+        height: 22px !important;
     }
     .notification-bell p{
         padding: 8px;
@@ -584,7 +584,7 @@ nav {
 .trending {
     height: 190px;
     width: 92%;
-    background-color: #443e1b;
+    background-color: #292910;
     display: block;
     margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
@@ -633,6 +633,45 @@ nav {
     border-radius: 15px;
 }
 
+.trending-game-slide{
+    color: white;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-game-slide p span{
+    color: #b7b325;
+}
+
+.trending-game-slide img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 500px) {
+    .trending-game-slide{
+        font-size: 14px;
+        gap: 5px;
+        top: -25px;
+    }
+    .trending-game-slide img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 365px){
+    .trending-game-slide img{
+        width: 15px;
+        height: 15px;
+    }
+}
+
 /* Game Pills Section */
 
 .game-pills {
@@ -642,7 +681,7 @@ nav {
     justify-content: space-between;
     margin: auto;
     margin-bottom: 10px;
-    background-color: #443e1b;
+    background-color: #292910;
     border: 1px solid #b7b520;
     padding: 5px;
     border-radius: 15px;
@@ -720,7 +759,7 @@ nav {
 .inplay {
     height: auto;
     width: 92%;
-    background-color: #443e1b;
+    background-color: #2e2e15;
     display: block;
     margin: 45px auto 20px;
     border-radius: 0px 15px 15px 15px;
