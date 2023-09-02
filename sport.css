@@ -296,7 +296,7 @@ nav {
 .inplay-img {
     position: absolute;
     top: -36px !important;
-    left: 12px !important;
+    left: 5px !important;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -469,6 +469,7 @@ nav {
     justify-content: center;
     border-radius: 5px;
     position: relative;
+    cursor: pointer;
 }
 
 .match-counter{
