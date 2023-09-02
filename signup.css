@@ -408,12 +408,18 @@ background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
 
 .offer-box{
     width: 80%;
-    height: 150px;
+    height: auto;
     border: 2px solid #b5b326;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.offer-box-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .offer-box p{
@@ -425,6 +431,12 @@ background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
     border-radius: 5px;
     font-size: 20px;
     margin-top: -20px;
+}
+
+.offer-box img{
+    width: 14%;
+    height: auto;
+    cursor: pointer;
 }
 
 .or-button{
@@ -456,6 +468,16 @@ background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
     bottom: calc(50% - 1px);
     background: #fff;
     height: 2px;
+}
+
+@media (max-width:769px) {
+    .offer-box img{
+        width: 24%;
+    }
+    .offer-box-img{
+        overflow-x: auto;
+        justify-content: space-between;
+    }
 }
 
 /* Manual Box */
@@ -719,7 +741,6 @@ footer p{
         display: none;
     }
     .offer-box{
-        height: 100px;
         width: 95%;
         border-radius: 20px;
     }
