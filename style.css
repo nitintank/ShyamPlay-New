@@ -582,7 +582,7 @@ nav {
 /* Trending Games Section */
 
 .trending {
-    height: 190px;
+    height: auto;
     width: 92%;
     background-color: rgba(182, 179, 38, 0.10);;
     display: block;
@@ -593,6 +593,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10px 0px;
 }
 
 .trending .top-pill {
@@ -682,7 +683,7 @@ nav {
     justify-content: space-between;
     margin: auto;
     margin-bottom: 10px;
-    background-color: rgba(182, 179, 38, 0.10);;
+    background-color: rgba(182, 179, 38, 0.10);
     border: 1px solid #b7b520;
     padding: 5px;
     border-radius: 15px;
@@ -953,8 +954,8 @@ nav {
 
 .offer-box {
     width: 24%;
-    height: 120px;
-    padding: 15px;
+    height: auto;
+    padding: 5px 15px;
     background-color: #171f35;
     /* border: 2px solid #b7b520; */
     color: white;
@@ -1056,19 +1057,29 @@ footer {
 
 .follow-us {
     width: 70%;
-    height: 100px;
-    background-image: url("/images/black-box.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 2px;
+    margin: 10px 0px;
+    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+    border-radius: 15px;
 }
 
 .follow-us h2 {
     color: white;
     font-size: 30px;
+}
+
+.follow-us-mini{
+    width: 100%;
+    background-color: #161623;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 25px 50px;
 }
 
 .download-android {
@@ -1120,15 +1131,25 @@ footer {
 
 .gaming-partner {
     width: 70%;
-    height: 100px;
-    background-image: url("/images/black-box.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+    border-radius: 15px;
+}
+
+.gaming-partner-mini{
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding: 0px 50px;
+    padding: 30px 50px;
+    background-color: #161623;
+    border-radius: 15px;
 }
 
 /* Copyright Section */
@@ -1230,7 +1251,7 @@ footer p {
         height: auto;
         justify-content: space-between;
         gap: 5px;
-        padding-left: 5px;
+        padding: 0px 0px 0px 5px;
         margin: 42px auto 10px;
     }
     .trending-img{
@@ -1379,19 +1400,8 @@ footer p {
     .follow-us h2{
         font-size: 22px;
     }
-}
-
-@media (max-width: 1275px){
-    .follow-us h2{
-        font-size: 22px;
-    }
-    .follow-us{
-        height: 90px;
-        padding: 0px 20px;
-    }
-    .gaming-partner{
-        height: 90px;
-        overflow-x: auto;
+    .follow-us-mini{
+        padding: 20px 10px;
     }
 }
 
@@ -1400,30 +1410,22 @@ footer p {
         font-size: 20px;
     }
     .social-images img{
-        width: 110px;
-    }
-    .follow-us{
-        height: 80px;
-    }
-    .gaming-partner{
-        height: 80px;
+        width: 90px;
     }
     .gaming-partner img{
-        width: 10%;
+        width: 15%;
+    }
+    .social-desk{
+        display: none;
+    }
+    .social-mob{
+        display: block;
     }
 }
 
 @media (max-width: 900px){
     .follow-us h2{
         font-size: 18px;
-    }
-    .follow-us{
-        height: 60px;
-        padding: 0px 20px;
-    }
-    .gaming-partner{
-        height: 60px;
-        overflow-x: auto;
     }
     .social-images img{
         width: 95px;
@@ -1439,17 +1441,12 @@ footer p {
     }
     .follow-us{
         width: 95%;
-        padding: 0px 10px;
-        height: 70px;
+    }
+    .follow-us-mini{
+        padding: 15px 10px;
     }
     .follow-us h2 {
         font-size: 18px;
-    }
-    .gaming-partner{
-        width: 95%;
-        padding: 0px 10px;
-        height: 70px;
-        overflow-x: auto;
     }
     .copyright{
         height: 50px;
@@ -1460,32 +1457,24 @@ footer p {
     footer p{
         text-align: center;
     }
-    .social-desk{
-        display: none;
+    .gaming-partner{
+        width: 95%;
     }
-    .social-mob{
-        display: block;
+    .gaming-partner-mini{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    footer{
+        padding-bottom: 100px;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 530px){
     .social-images img{
         width: 50px;
     }
     .follow-us h2 {
         font-size: 14px;
-    }
-    .follow-us{
-        background-image: url("/images/black-box-mob.png");
-    }
-    .gaming-partner{
-        background-image: url("/images/black-box-mob.png");
-    }
-    .gaming-partner{
-        height: 55px;
-    }
-    .follow-us{
-        height: 55px;
     }
     .sport-games{
         width: 49%;
@@ -1495,15 +1484,6 @@ footer p {
 @media (max-width: 410px){
     .social-images{
         gap: 7px;
-    }
-}
-
-@media (max-width: 375px){
-    .gaming-partner{
-        height: 47px;
-    }
-    .follow-us{
-        height: 47px;
     }
 }
 
@@ -1891,7 +1871,7 @@ footer p {
         width: 32%;
     }
     .gaming-partner-logo{
-        width: 70%;
+        width: 95%;
     }
     .gaming-partner-logo-img img {
         width: 20%;
@@ -1901,6 +1881,15 @@ footer p {
         flex-wrap: nowrap;
         justify-content: space-between;
         overflow-x: scroll;
+    }
+    .gaming-partner{
+        width: 95%;
+    }
+    .follow-us{
+        width: 95%;
+    }
+    .download-android{
+        width: 95%;
     }
 }
 

@@ -267,7 +267,7 @@ nav {
 .match-details {
     height: auto;
     width: 74%;
-    background-color: #28280f;
+    background-color: rgba(182, 179, 38, 0.10);
     display: block;
     margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
@@ -566,7 +566,7 @@ details {
     border: 1px solid #b7b520;
     margin: 52px auto 15px;
     border-radius: 15px;
-    background-color: #28280f;
+    background-color: rgba(182, 179, 38, 0.10);
     padding: 10px 0px;
   }
 
