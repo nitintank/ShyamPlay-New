@@ -423,7 +423,7 @@ nav {
 .profile-content-cards{
     width: 24.1%;
     height: 100%;
-    background-color: #29354F;
+    background-color: #161623;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -462,7 +462,7 @@ nav {
 .reports-content-cards{
     width: 24.1%;
     height: 100%;
-    background-color: #29354F;
+    background-color: #161623;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
