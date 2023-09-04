@@ -268,7 +268,7 @@ nav {
 .create-user-card{
     width: 30%;
     height: auto;
-    background-color: #333216;
+    background-color: rgba(182, 179, 38, 0.10);
     border-radius: 15px;
     border: 2px solid #B6B326;
     margin: 20px auto;
@@ -361,7 +361,7 @@ nav {
 .user-search{
     width: 90%;
     height: auto;
-    background-color: #333216;
+    background-color: rgba(182, 179, 38, 0.10);
     border-radius: 15px;
     border: 2px solid #B6B326;
     margin: 20px auto;

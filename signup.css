@@ -414,6 +414,7 @@ background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(182, 179, 38, 0.10);;
 }
 
 .offer-box-img{

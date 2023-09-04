@@ -584,7 +584,7 @@ nav {
 .trending {
     height: 190px;
     width: 92%;
-    background-color: #292910;
+    background-color: rgba(182, 179, 38, 0.10);;
     display: block;
     margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
@@ -682,7 +682,7 @@ nav {
     justify-content: space-between;
     margin: auto;
     margin-bottom: 10px;
-    background-color: #292910;
+    background-color: rgba(182, 179, 38, 0.10);;
     border: 1px solid #b7b520;
     padding: 5px;
     border-radius: 15px;
@@ -760,7 +760,7 @@ nav {
 .inplay {
     height: auto;
     width: 92%;
-    background-color: #2e2e15;
+    background-color: rgba(182, 179, 38, 0.10);;
     display: block;
     margin: 45px auto 20px;
     border-radius: 0px 15px 15px 15px;

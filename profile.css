@@ -302,7 +302,7 @@ nav {
 .profile-details{
     width: 40%;
     height: auto;
-    background-color: #333216;
+    background-color: rgba(182, 179, 38, 0.10);
     border-radius: 25px;
     border: 2px solid #B6B326;
     margin: 20px auto;
