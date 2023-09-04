@@ -364,6 +364,7 @@ nav {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    width: 60%;
 }
 
 .deposit-btn{
@@ -379,6 +380,7 @@ nav {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    width: 60%;
 }
 
 /* Profile Card Section */
@@ -495,10 +497,12 @@ nav {
         width: 95%;
     }
     .withdrawal-btn button{
-        padding: 20px 30px;
+        padding: 15px 30px;
+        width: 80%;
     }
     .deposit-btn button{
-        padding: 20px 30px;
+        padding: 15px 30px;
+        width: 80%;
     }
     .profile-card-section{
         width: 95%;
@@ -514,8 +518,8 @@ nav {
         padding: 10px 0px;
     }
     .profile-content-cards img{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     .profile-content-cards p{
         font-size: 14px;
