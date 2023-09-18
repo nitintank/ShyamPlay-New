@@ -21,7 +21,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 0px 0px 20px 20px;
-    background: linear-gradient(180deg, rgba(181,179,38,1) 0%, rgba(121,119,25,1) 52%, rgba(73,72,15,1) 74%, transparent 100%);
+    /* background: linear-gradient(180deg, rgba(181,179,38,1) 0%, rgba(121,119,25,1) 52%, rgba(73,72,15,1) 74%, transparent 100%); */
 }
 
 .bottom_bar {
@@ -35,7 +35,7 @@ nav {
     display: none;
 }
 
-.bottom_bar ul{
+.bottom_bar ul {
     list-style: none;
     display: flex;
     padding-left: 0;
@@ -44,9 +44,11 @@ nav {
 .bottom_bar li {
     flex-basis: 20%;
 }
+
 .bottom_bar li:last-child {
     border-right: 1px solid transparent;
 }
+
 .bottom_bar li a {
     display: flex;
     flex-flow: column;
@@ -60,6 +62,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .bottom_bar li a span.ic {
     text-align: center;
     display: block;
@@ -67,20 +70,24 @@ nav {
     height: 30px;
     margin: 0 auto;
 }
+
 .bottom_bar li a img {
     width: 25px;
     height: 25px;
     object-fit: contain;
     object-position: center;
 }
+
 .bottom_bar li a.active {
     background: var(--active-primary);
     color: var(--color-white);
     font-weight: 600;
 }
+
 .bottom_bar li a.active span img {
     filter: brightness(100);
 }
+
 .bottom_bar li.bigCircle {
     position: absolute;
     height: 70px;
@@ -90,6 +97,7 @@ nav {
     right: 0;
     bottom: 10px;
 }
+
 .bottom_bar li.bigCircle:before {
     content: "";
     position: absolute;
@@ -104,6 +112,7 @@ nav {
     margin: auto;
     box-shadow: -4.58667px 4.58667px 9.17333px rgba(230, 230, 230, 0.2), 4.58667px -4.58667px 9.17333px rgba(230, 230, 230, 0.2), -4.58667px -4.58667px 9.17333px rgba(255, 255, 255, 0.9), 4.58667px 4.58667px 11.9253px rgba(230, 230, 230, 0.9), inset -0.917333px -0.917333px 1.83467px rgba(230, 230, 230, 0.5);
 }
+
 .bottom_bar li.bigCircle a.circleBtn {
     position: relative;
     color: var(--color-white);
@@ -114,16 +123,19 @@ nav {
     margin: 0 auto;
     padding: 0;
 }
+
 .bottom_bar li.bigCircle a.circleBtn img {
     position: relative;
     left: -1.5px;
 }
+
 .bottom_bar li.bigCircle a.circleBtn .closeImg {
     display: none;
     font-size: 22px;
     position: relative;
     top: 4px;
 }
+
 .bottom_bar li.bigCircle span.menu-item {
     width: 40px;
     height: 40px;
@@ -144,48 +156,59 @@ nav {
     -webkit-box-shadow: var(--bottom-tab-menuitem-shadow);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 @media (max-width: 699px) {
     .bottom_bar li.bigCircle span.menu-item {
         left: 70%;
-   }
+    }
 }
+
 @media (max-width: 575px) {
     .bottom_bar li.bigCircle span.menu-item {
         left: 77%;
-   }
+    }
 }
+
 @media (max-width: 399px) {
     .bottom_bar li.bigCircle span.menu-item {
         left: 84%;
-   }
+    }
 }
+
 .bottom_bar li.bigCircle span.menu-item a {
     padding: 0;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(2) {
     transform: rotate(-35deg) translateY(-95px) rotate(35deg);
     transition-delay: 0.2s;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(3) {
     transform: rotate(-70deg) translateY(-90px) rotate(70deg);
     transition-delay: 0.3s;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(4) {
     transform: rotate(30deg) translateY(-95px) rotate(-30deg);
     transition-delay: 0.1s;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(5) {
     transform: rotate(70deg) translateY(-90px) rotate(310deg);
     transition-delay: 0s;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(6) {
     transform: rotate(0) translateY(-108px) rotate(0);
     transition-delay: 0s;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.menu-item:nth-child(6) img {
     width: 28px;
     height: 28px;
 }
+
 .bottom_bar li.bigCircle.menuOpen span.bottom-circle {
     z-index: -3;
     position: absolute;
@@ -198,9 +221,11 @@ nav {
     border-radius: 160px 160px 0 0;
     background-color: #000;
 }
+
 .bottom_bar li.bigCircle.menuOpen .circleBtn img.house_img {
     display: none;
 }
+
 .bottom_bar li.bigCircle.menuOpen .circleBtn .closeImg {
     display: block;
 }
@@ -211,6 +236,7 @@ nav {
     position: relative;
     top: -2px;
 }
+
 .search-box .modeBtn {
     font-size: 22px;
     color: white;
@@ -218,10 +244,10 @@ nav {
     background: transparent;
 }
 
-.fav_ic img{
-      width: 30px;
-      height: 30px;
-  }
+.fav_ic img {
+    width: 30px;
+    height: 30px;
+}
 
 .whatp {
     /* background-color: #66d548; */
@@ -237,6 +263,7 @@ nav {
     font-size: 18px;
     color: white;
 }
+
 /* @keyframes blinkw {
     0% {
         background-color: #66d548;
@@ -253,7 +280,7 @@ nav {
 } */
 
 @media (max-width: 769px) {
-    .bottom_bar{
+    .bottom_bar {
         display: block;
     }
 }
@@ -467,7 +494,7 @@ nav {
     gap: 20px;
 }
 
-.right-nav a{
+.right-nav a {
     display: flex;
 }
 
@@ -490,7 +517,7 @@ nav {
     width: 40px;
 }
 
-.notification-bell{
+.notification-bell {
     width: 40px;
     height: 40px;
     background-color: #252e4d;
@@ -502,12 +529,12 @@ nav {
     position: relative;
 }
 
-.notification-bell img{
+.notification-bell img {
     width: 25px;
     height: 25px;
 }
 
-.notification-bell p{
+.notification-bell p {
     height: 20px;
     width: 20px;
     color: white;
@@ -524,16 +551,17 @@ nav {
 }
 
 @media (max-width: 790px) {
-    .notification-bell{
+    .notification-bell {
         height: 30px;
         width: 30px;
     }
 
-    .notification-bell img{
+    .notification-bell img {
         width: 22px !important;
         height: 22px !important;
     }
-    .notification-bell p{
+
+    .notification-bell p {
         padding: 8px;
         width: 10px;
         height: 10px;
@@ -542,7 +570,7 @@ nav {
 
 /* Marquee Section */
 
-.marquee{
+.marquee {
     color: white;
     background-color: #0f171d;
     padding: 5px 0px;
@@ -552,11 +580,11 @@ nav {
     justify-content: flex-end;
 }
 
-.marquee marquee{
+.marquee marquee {
     width: 98%;
 }
 
-.marquee img{
+.marquee img {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -584,11 +612,11 @@ nav {
 .trending {
     height: auto;
     width: 92%;
-    background-color: rgba(182, 179, 38, 0.10);;
+    /* background-color: rgba(182, 179, 38, 0.10); */
     display: block;
     margin: 52px auto 15px;
     border-radius: 0px 15px 15px 15px;
-    border: 1px solid #b7b520;
+    /* border: 1px solid #b7b520; */
     position: relative;
     display: flex;
     align-items: center;
@@ -606,15 +634,15 @@ nav {
 
 .trend {
     position: absolute;
-    top: -37px !important;
-    left: 12px !important;
+    top: -27px !important;
+    left: 5px !important;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .trend img {
-    width: 35px;
+    width: 40px;
 }
 
 .trend p {
@@ -622,19 +650,20 @@ nav {
     font-size: 17px;
 }
 
-.trending-img{
+.trending-img {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.trending-img img{
+.trending-img img {
     width: 16%;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 0.2px solid #D8AC79;
 }
 
-.trending-game-slide{
+.trending-game-slide {
     color: white;
     position: absolute;
     top: -30px;
@@ -645,30 +674,31 @@ nav {
     gap: 10px;
 }
 
-.trending-game-slide p span{
+.trending-game-slide p span {
     color: #b7b325;
 }
 
-.trending-game-slide img{
+.trending-game-slide img {
     width: 25px;
     height: 25px;
     cursor: pointer;
 }
 
 @media (max-width: 500px) {
-    .trending-game-slide{
+    .trending-game-slide {
         font-size: 14px;
         gap: 5px;
         top: -25px;
     }
-    .trending-game-slide img{
+
+    .trending-game-slide img {
         width: 20px;
         height: 20px;
     }
 }
 
-@media (max-width: 365px){
-    .trending-game-slide img{
+@media (max-width: 365px) {
+    .trending-game-slide img {
         width: 15px;
         height: 15px;
     }
@@ -683,10 +713,10 @@ nav {
     justify-content: space-between;
     margin: auto;
     margin-bottom: 10px;
-    background-color: rgba(182, 179, 38, 0.10);
-    border: 1px solid #b7b520;
+    background-color: #161623;
+    /* border: 1px solid #b7b520; */
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .games-pill-btn label img {
@@ -712,13 +742,15 @@ nav {
     white-space: nowrap;
     cursor: pointer;
     display: block;
-    padding: 12px 18px;
-    border-radius: 10px;
+    padding: 12px 14px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
     height: 40px;
+    background: #222;
+    backdrop-filter: blur(6px);
 }
 
 :checked+label {
@@ -727,12 +759,13 @@ nav {
 }
 
 @media (max-width:500px) {
-    .games-pill-btn label img{
+    .games-pill-btn label img {
         height: 35px;
         width: 35px;
         align-self: flex-end;
     }
-    .games-pill-btn label{
+
+    .games-pill-btn label {
         height: 35px;
     }
 }
@@ -761,11 +794,11 @@ nav {
 .inplay {
     height: auto;
     width: 92%;
-    background-color: rgba(182, 179, 38, 0.10);;
+    /* background-color: rgba(182, 179, 38, 0.10); */
     display: block;
     margin: 45px auto 20px;
-    border-radius: 0px 15px 15px 15px;
-    border: 1px solid #b7b520;
+    /* border-radius: 0px 15px 15px 15px; */
+    /* border: 1px solid #b7b520; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -785,15 +818,15 @@ nav {
 
 .inplay-img {
     position: absolute;
-    top: -36px !important;
-    left: 12px !important;
+    top: -25px !important;
+    left: 1px !important;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 .inplay-img img {
-    width: 35px;
+    width: 40px;
 }
 
 .inplay-img p {
@@ -801,13 +834,55 @@ nav {
     font-size: 17px;
 }
 
-.table {
-    width: 98%;
+.upcoming-img {
+    position: absolute;
+    top: -25px !important;
+    left: 1px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
 }
 
-.table-top {
+.upcoming-img img {
+    width: 40px;
+}
+
+.upcoming-img p {
+    color: white;
+    font-size: 17px;
+}
+
+.upcoming-img-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.upcoming-img select{
+    width: 115px;
+    background-color: #B6B326;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-image: url("/images/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 16px 12px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.table {
     width: 100%;
-    height: 50px;
+}
+
+.table-main-top-bar {
+    width: 100%;
+    height: 40px;
     background-color: #161623;
     display: flex;
     align-items: center;
@@ -816,17 +891,29 @@ nav {
     border-radius: 10px 10px 0px 0px;
 }
 
+.table-top {
+    width: 100%;
+    height: 35px;
+    background-color: #393838;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 10px;
+    border-radius: 0px 0px 0px 0px;
+    border-top: 1px solid white;
+}
+
 .sport-img-table {
     width: 2%;
 }
 
 .table-top img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .match-name {
-    width: 40%;
+    width: 42%;
     display: flex;
     align-items: center;
     color: white;
@@ -862,16 +949,19 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .favourite-img {
     width: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .favourite-img img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .names {
@@ -879,11 +969,23 @@ nav {
     color: white;
     display: flex;
     flex-direction: column;
+    gap: 0px;
+}
+
+.match-timer {
+    display: flex;
+    align-items: center;
     gap: 5px;
+    color: #B6B326;
+}
+
+.names img {
+    width: 14px;
+    height: 16px;
 }
 
 .live-tv {
-    width: 18%;
+    width: 11%;
 }
 
 .live-tv img {
@@ -893,7 +995,7 @@ nav {
 }
 
 .t-odds {
-    width: 40%;
+    width: 47%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -917,6 +1019,7 @@ nav {
     border-radius: 10px;
     font-size: 18px;
     width: 50%;
+    text-align: center;
 }
 
 .pink {
@@ -927,6 +1030,7 @@ nav {
     border-radius: 10px;
     font-size: 18px;
     width: 50%;
+    text-align: center;
 }
 
 .blank {
@@ -939,6 +1043,81 @@ nav {
     border: 1px solid #aaafb5;
     width: 50%;
     text-align: center;
+}
+
+/* Details */
+
+details {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+    background-color: #161623;
+}
+
+details .summary-title {
+    font-size: 18px;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+details .summary-title img {
+    width: 20px;
+    height: 20px;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+details .summary-content {
+    /* border-top: 1px solid #e2e8f0; */
+    cursor: default;
+    /* padding: 1em; */
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+details summary {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+details summary:focus {
+    outline: none;
+}
+
+details summary:hover .summary-chevron-up svg {
+    opacity: 1;
+}
+
+details .summary-chevron-up svg {
+    opacity: 0.5;
+}
+
+details .summary-chevron-up,
+details .summary-chevron-down {
+    pointer-events: none;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    background: #161623;
+}
+
+details .summary-chevron-up svg,
+details .summary-chevron-down svg {
+    display: block;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
 }
 
 /* Offer Section */
@@ -956,8 +1135,9 @@ nav {
     width: 24%;
     height: auto;
     padding: 5px 15px;
-    background-color: #171f35;
+    /* background-color: #171f35; */
     /* border: 2px solid #b7b520; */
+    background: radial-gradient(1376.99% 141.35% at 0% 0%, #000 0%, #4B0072 100%);
     color: white;
     border-radius: 15px;
     display: flex;
@@ -971,11 +1151,11 @@ nav {
 
 /* Upcoming Matches */
 
-.match-label{
+.match-label {
     padding: 4px 15px !important;
 }
 
-.upcoming-matches{
+.upcoming-matches {
     padding-left: 14px;
     width: 100%;
     display: flex;
@@ -983,6 +1163,7 @@ nav {
     justify-content: flex-start;
     gap: 20px;
 }
+
 .upcoming-matches-img {
     width: 117px;
     height: 40px;
@@ -990,6 +1171,7 @@ nav {
     top: -39.5px;
     left: -2px;
 }
+
 .upcoming-matches-img2 {
     width: 198px;
     position: absolute;
@@ -997,6 +1179,7 @@ nav {
     top: -42px;
     left: 52.8px;
 }
+
 .upcoming-matches-img3 {
     position: absolute;
     display: none;
@@ -1063,7 +1246,7 @@ footer {
     justify-content: space-between;
     padding: 2px;
     margin: 10px 0px;
-    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+    background-image: linear-gradient(-145deg, #cfcfd0, #161623, #161623, #cfcfd0);
     border-radius: 15px;
 }
 
@@ -1072,7 +1255,7 @@ footer {
     font-size: 30px;
 }
 
-.follow-us-mini{
+.follow-us-mini {
     width: 100%;
     background-color: #161623;
     display: flex;
@@ -1101,9 +1284,38 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .android-images img {
+    width: 235px;
+    cursor: pointer;
+}
+
+.download-android1 {
+    width: 70%;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-android1 h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.android-images1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.android-images1 img {
     width: 235px;
     cursor: pointer;
 }
@@ -1136,11 +1348,11 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 2px;
-    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+    background-image: linear-gradient(-145deg, #cfcfd0, #161623, #161623, #cfcfd0);
     border-radius: 15px;
 }
 
-.gaming-partner-mini{
+.gaming-partner-mini {
     width: 100%;
     height: auto;
     display: flex;
@@ -1175,78 +1387,96 @@ footer p {
 
 /* Responsive Code */
 
-@media (max-width: 1060px){
-    .middle-nav{
+@media (max-width: 1060px) {
+    .middle-nav {
         display: none;
     }
 }
 
 @media (min-width: 790px) and (max-width: 1350px) {
-    .banner{
+    .banner {
         width: 98%;
     }
-    .game-pills{
+
+    .game-pills {
         gap: 5px;
         width: 98%;
         overflow-x: scroll;
     }
-    .trending{
+
+    .trending {
         width: 98%;
     }
-    .sports{
+
+    .sports {
         width: 98%;
     }
-    .offers{
+
+    .offers {
         width: 98%;
     }
-    .inplay{
+
+    .inplay {
         width: 98%;
     }
-    .table{
+
+    .table {
         overflow-x: scroll;
     }
-    .t-btn{
+
+    .t-btn {
         margin-left: 0px;
     }
-    .blue{
+
+    .blue {
         padding: 10px;
     }
-    .pink{
+
+    .pink {
         padding: 10px;
     }
-    .blank{
+
+    .blank {
         padding: 10px;
     }
 }
 
 @media (max-width: 790px) {
-    nav{
+    nav {
         padding: 15px 10px;
     }
-    .logo{
+
+    .logo {
         width: 110px;
     }
-    .middle-nav{
+
+    .middle-nav {
         display: none;
     }
-    .right-nav{
+
+    .right-nav {
         gap: 5px;
     }
-    .right-nav img{
+
+    .right-nav img {
         height: 30px;
         width: 30px;
     }
+
     .marquee marquee {
         width: 92%;
     }
-    .marquee img{
+
+    .marquee img {
         top: 2px;
     }
-    .banner{
+
+    .banner {
         width: 97%;
         margin: 10px auto auto;
     }
-    .trending{
+
+    .trending {
         width: 97%;
         height: auto;
         justify-content: space-between;
@@ -1254,242 +1484,314 @@ footer p {
         padding: 0px 0px 0px 5px;
         margin: 42px auto 10px;
     }
-    .trending-img{
+
+    .trending-img {
         padding: 5px 0px;
         justify-content: space-between;
         gap: 5px;
         overflow-x: scroll;
     }
-    .trending-img img{
+
+    .trending-img img {
         width: 32.5%;
     }
-    .game-pills{
+
+    .game-pills {
         width: 97%;
         gap: 5px;
         overflow-x: scroll;
     }
-    .sports{
+
+    .sports {
         width: 97%;
         flex-wrap: wrap;
     }
-    .sport-games{
+
+    .sport-games {
         width: 32%;
     }
-    .sport-img-table{
+
+    .sport-img-table {
         width: 9%;
     }
-    .inplay{
+
+    .inplay {
         width: 98%;
         padding: 10px 0px;
     }
-    .table-top{
+
+    .table-top {
+        justify-content: space-between;
         padding: 0px 5px;
         gap: 0px;
     }
-    .table-top img{
-        width: 25px;
-        height: 25px;
+
+    .table-top img {
+        width: 20px;
+        height: 20px;
     }
-    .match-name{
+
+    .match-name {
         width: 78%;
     }
-    .match-name p{
+
+    .match-name p {
         font-size: 14px;
     }
-    .live-status{
+
+    .live-status {
         width: 13%;
     }
-    .live-status p{
+
+    .live-status p {
         font-size: 14px;
     }
-    .table-below{
+
+    .table-below {
         flex-wrap: wrap;
         gap: 0px;
         padding: 5px;
     }
-    .favourite-img{
-        width: 9%;
+
+    .favourite-img {
+        width: 8%;
     }
-    .names{
+
+    .favourite-img img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .names {
         width: 78%;
     }
-    .names p{
+
+    .names p {
         font-size: 14px;
     }
-    .live-tv{
+
+    .live-tv {
         width: 13%;
         display: flex;
     }
-    .live-tv img{
+
+    .live-tv img {
         width: 14px;
         height: 14px;
         margin-right: 3px;
     }
-    .t-odds{
+
+    .t-odds {
         width: 100%;
         gap: 5px;
         margin-top: 5px;
     }
-    .t-btn{
+
+    .t-btn {
         margin-left: 0px;
         gap: 5px;
         width: 32%;
     }
-    .blue{
+
+    .blue {
         padding: 8px 10px;
         font-size: 14px;
         width: 50%;
         text-align: center;
     }
-    .pink{
+
+    .pink {
         padding: 8px 10px;
         font-size: 14px;
         width: 50%;
         text-align: center;
     }
-    .blank{
+
+    .blank {
         padding: 8px 10px;
         font-size: 14px;
         width: 50%;
         text-align: center;
     }
-    .offers{
+
+    .offers {
         width: 98%;
         flex-wrap: wrap;
         gap: 5px;
-        margin-bottom: 50px;
+        margin-bottom: 42px;
     }
-    .offer-box{
+
+    .offer-box {
         width: 49%;
         height: auto;
     }
-    .offer-box-content h2{
+
+    .offer-box-content h2 {
         font-size: 16px;
     }
-    .offer-box-content p{
+
+    .offer-box-content p {
         font-size: 12px;
     }
-    .match-label{
+
+    .match-label {
         padding: 4px 15px !important;
         font-size: 18px !important;
     }
-    .games-pill-btn label{
+
+    .games-pill-btn label {
         padding: 5px 10px;
         font-size: 14px;
     }
-    .upcoming-matches{
+
+    .upcoming-matches {
         padding-left: 5px;
         padding-right: 5px;
         justify-content: space-between;
         gap: 10px;
     }
-    .download-android{
+
+    .download-android {
         width: 90%;
         height: auto;
         gap: 10px;
     }
-    .download-android h2{
+
+    .download-android h2 {
         font-size: 16px;
     }
-    .android-images img{
+
+    .android-images img {
         width: 170px;
+    }
+
+    .download-android1 {
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+
+    .download-android1 h2 {
+        font-size: 16px;
+    }
+
+    .android-images1 img {
+        width: 49%;
     }
 }
 
-@media (max-width: 1350px){
-    .follow-us h2{
+@media (max-width: 1350px) {
+    .follow-us h2 {
         font-size: 22px;
     }
-    .follow-us-mini{
+
+    .follow-us-mini {
         padding: 20px 10px;
     }
 }
 
-@media (max-width: 1100px){
-    .follow-us h2{
+@media (max-width: 1100px) {
+    .follow-us h2 {
         font-size: 20px;
     }
-    .social-images img{
+
+    .social-images img {
         width: 90px;
     }
-    .gaming-partner img{
+
+    .gaming-partner img {
         width: 15%;
     }
-    .social-desk{
+
+    .social-desk {
         display: none;
     }
-    .social-mob{
+
+    .social-mob {
         display: block;
     }
 }
 
-@media (max-width: 900px){
-    .follow-us h2{
+@media (max-width: 900px) {
+    .follow-us h2 {
         font-size: 18px;
     }
-    .social-images img{
+
+    .social-images img {
         width: 95px;
     }
 }
 
 @media (max-width: 769px) {
-    .social-images img{
+    .social-images img {
         width: 80px;
     }
-    .gaming-partner img{
+
+    .gaming-partner img {
         width: 15%;
     }
-    .follow-us{
+
+    .follow-us {
         width: 95%;
     }
-    .follow-us-mini{
+
+    .follow-us-mini {
         padding: 15px 10px;
     }
+
     .follow-us h2 {
         font-size: 18px;
     }
-    .copyright{
+
+    .copyright {
         height: 50px;
     }
-    .copyright img{
+
+    .copyright img {
         width: 100px;
     }
-    footer p{
+
+    footer p {
         text-align: center;
     }
-    .gaming-partner{
+
+    .gaming-partner {
         width: 95%;
     }
-    .gaming-partner-mini{
+
+    .gaming-partner-mini {
         width: 100%;
         padding: 20px 10px;
     }
-    footer{
+
+    footer {
         padding-bottom: 100px;
     }
 }
 
-@media (max-width: 530px){
-    .social-images img{
+@media (max-width: 530px) {
+    .social-images img {
         width: 50px;
     }
+
     .follow-us h2 {
         font-size: 14px;
     }
-    .sport-games{
+
+    .sport-games {
         width: 49%;
     }
 }
 
-@media (max-width: 410px){
-    .social-images{
+@media (max-width: 410px) {
+    .social-images {
         gap: 7px;
     }
 }
 
 /* Mobile Sidebar */
 
-.mob-sidebar{
+.mob-sidebar {
     width: 300px;
     height: 100vh;
     background-color: #161623;
@@ -1503,39 +1805,39 @@ footer p {
     padding-bottom: 90px;
 }
 
-.mob-sidebar-top{
+.mob-sidebar-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px;
 }
 
-.mob-side-top-content{
+.mob-side-top-content {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.mob-side-cross{
+.mob-side-cross {
     background-color: white;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 2px;
 }
 
-.mob-sidebar-top img{
+.mob-sidebar-top img {
     height: 30px;
     width: 30px;
 }
 
-.line-wid{
+.line-wid {
     width: 100%;
     border: none;
     height: 1px;
-    background-image: linear-gradient(to right, white , transparent);
+    background-image: linear-gradient(to right, white, transparent);
 }
 
-.mob-side-register{
+.mob-side-register {
     background-color: #b7b520;
     color: white;
     padding: 5px 10px;
@@ -1543,7 +1845,7 @@ footer p {
     border-radius: 2px;
 }
 
-.mob-sidebar ul li{
+.mob-sidebar ul li {
     color: white;
     list-style: none;
     display: flex;
@@ -1554,22 +1856,22 @@ footer p {
     font-weight: 500;
 }
 
-.mob-side-arrow li{
+.mob-side-arrow li {
     justify-content: space-between;
 }
 
-.mob-sidebar ul li span{
+.mob-sidebar ul li span {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.mob-sidebar ul li img{
+.mob-sidebar ul li img {
     width: 20px;
     height: 20px;
 }
 
-.mob-side-title{
+.mob-side-title {
     color: white;
     background-color: #161623;
     padding: 10px;
@@ -1581,12 +1883,12 @@ footer p {
     font-weight: 700;
 }
 
-.mob-side-title img{
+.mob-side-title img {
     width: 20px;
     height: 20px;
 }
 
-.mob-sidebar-support{
+.mob-sidebar-support {
     width: 95%;
     height: 70px;
     margin: 10px auto;
@@ -1605,17 +1907,17 @@ footer p {
     align-self: flex-end;
 }
 
-.mob-sidebar-support-content{
+.mob-sidebar-support-content {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.mob-sidebar-support-content p{
+.mob-sidebar-support-content p {
     color: #a2a2a7;
 }
 
-.mobile-side-bars{
+.mobile-side-bars {
     display: none;
     width: 25px !important;
     height: 25px !important;
@@ -1624,38 +1926,43 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-    .mobile-side-bars{
+    .mobile-side-bars {
         display: block;
     }
 }
 
-@media (max-width: 450px){
-    .wallet{
+@media (max-width: 450px) {
+    .wallet {
         padding: 5px;
     }
-    .deposit{
+
+    .deposit {
         padding: 5px;
     }
 }
 
 @media (max-width: 400px) {
-    .right-nav img{
+    .right-nav img {
         width: 25px;
         height: 25px;
     }
-    .mobile-side-bars{
+
+    .mobile-side-bars {
         width: 20px !important;
         height: 20px !important;
     }
-    .notification-bell{
+
+    .notification-bell {
         height: 25px;
         width: 25px;
     }
-    .notification-bell img{
+
+    .notification-bell img {
         height: 20px !important;
         width: 20px !important;
     }
-    .notification-bell p{
+
+    .notification-bell p {
         padding: 7px;
         width: 8px;
         height: 8px;
@@ -1693,33 +2000,33 @@ footer p {
 
 .casino-games-pill-btn label {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  outline: none;
-  height: 40px;
-  width: auto;
-  border: none;
-  text-decoration: none;
-  background-image: linear-gradient(-145deg,#161623,#161623,#161623,#161623);
-  transform: skew(-20deg);
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    outline: none;
+    height: 40px;
+    width: auto;
+    border: none;
+    text-decoration: none;
+    background-image: linear-gradient(-145deg, #161623, #161623, #161623, #161623);
+    transform: skew(-20deg);
 }
 
-.casino-games-pill-btn label span{
-    position:relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  height: 32px;
-  width: auto;
-  background: #161623;
-  margin: 0px 5px;
-  padding: 0px 10px;
+.casino-games-pill-btn label span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 32px;
+    width: auto;
+    background: #161623;
+    margin: 0px 5px;
+    padding: 0px 10px;
 }
 
-.casino-games-pill-btn label span p{
-    position:relative;
+.casino-games-pill-btn label span p {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1733,10 +2040,11 @@ footer p {
 }
 
 .casino-games-pill-btn input:checked+label {
-    background-image: linear-gradient(-145deg,#fff,#b7b325,#b7b325,#fff);
+    background-image: linear-gradient(-145deg, #fff, #b7b325, #b7b325, #fff);
     transform: skew(-20deg);
 }
-.casino-games-pill-btn input:checked+label span{
+
+.casino-games-pill-btn input:checked+label span {
     background: #b7b325;
 }
 
@@ -1755,7 +2063,7 @@ footer p {
 .casino-games-card-img {
     width: 16%;
     height: 150px;
-    background-image: linear-gradient(-145deg,#161623,#b7b325,#b7b325,#161623);
+    background-image: linear-gradient(-145deg, #161623, #b7b325, #b7b325, #161623);
     border-radius: 10px;
     position: relative;
 }
@@ -1767,7 +2075,7 @@ footer p {
     border-radius: 10px;
 }
 
-.casino-games-card-img p{
+.casino-games-card-img p {
     color: white;
     background-color: #b7b325;
     position: absolute;
@@ -1789,7 +2097,7 @@ footer p {
     flex-wrap: wrap;
     gap: 5px;
     border-radius: 15px;
-    background-image: linear-gradient(-145deg,#cfcfd0,#161623,#161623,#cfcfd0);
+    background-image: linear-gradient(-145deg, #cfcfd0, #161623, #161623, #cfcfd0);
 }
 
 .gaming-partner-logo-img {
@@ -1807,7 +2115,7 @@ footer p {
     gap: 5px;
 }
 
-.gaming-partner-logo-section{
+.gaming-partner-logo-section {
     width: 100%;
     display: flex;
     gap: 5px;
@@ -1821,41 +2129,48 @@ footer p {
     border-radius: 10px;
 }
 
-@media (max-width:1350px){
-    .casino-games{
+@media (max-width:1350px) {
+    .casino-games {
         width: 98%;
         justify-content: space-between;
         gap: 5px;
         overflow-x: scroll;
         padding: 5px 10px;
     }
-    .casino-games-pill-btn label span{
+
+    .casino-games-pill-btn label span {
         padding: 0px;
     }
-    .casino-games-card{
+
+    .casino-games-card {
         width: 98%;
         gap: 5px;
         justify-content: space-between;
     }
-    .casino-games-card-img{
+
+    .casino-games-card-img {
         width: 16%;
     }
 }
 
 @media (min-width: 816px) and (max-width: 1250px) {
-    .casino-games-card{
+    .casino-games-card {
         justify-content: flex-start;
     }
-    .casino-games-card-img{
+
+    .casino-games-card-img {
         width: 24%;
     }
-    .gaming-partner-logo{
+
+    .gaming-partner-logo {
         width: 70%;
     }
+
     .gaming-partner-logo-img img {
         width: 20%;
         height: 60px;
     }
+
     .gaming-partner-logo-img {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -1864,56 +2179,70 @@ footer p {
 }
 
 @media (min-width: 501px) and (max-width: 815px) {
-    .casino-games-card{
+    .casino-games-card {
         justify-content: center;
     }
-    .casino-games-card-img{
+
+    .casino-games-card-img {
         width: 32%;
     }
-    .gaming-partner-logo{
+
+    .gaming-partner-logo {
         width: 95%;
     }
+
     .gaming-partner-logo-img img {
         width: 20%;
         height: 60px;
     }
+
     .gaming-partner-logo-img {
         flex-wrap: nowrap;
         justify-content: space-between;
         overflow-x: scroll;
     }
-    .gaming-partner{
+
+    .gaming-partner {
         width: 95%;
     }
-    .follow-us{
+
+    .follow-us {
         width: 95%;
     }
-    .download-android{
+
+    .download-android {
+        width: 95%;
+    }
+    .download-android1 {
         width: 95%;
     }
 }
 
 @media (max-width: 500px) {
-    .gaming-partner-logo{
+    .gaming-partner-logo {
         width: 95%;
     }
+
     .gaming-partner-logo-img img {
         width: 20%;
         height: 60px;
     }
+
     .gaming-partner-logo-img {
         flex-wrap: nowrap;
         justify-content: space-between;
         overflow-x: scroll;
     }
-    .casino-games-card{
+
+    .casino-games-card {
         justify-content: center;
     }
-    .casino-games-card-img{
+
+    .casino-games-card-img {
         width: 49%;
     }
 }
 
-#casino-toggle{
+#casino-toggle {
     display: none;
 }
