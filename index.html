@@ -353,7 +353,7 @@
 
     <section class="game-pills">
         <span class="games-pill-btn">
-            <input type='radio' name='game-btn' id='sports' checked onclick="showsports()">
+            <input type='radio' name='game-btn' id='sports' onclick="showsports()">
             <label for='sports'><img src="/images/sports-new.png" alt="">Sports</label>
         </span>
         <span class="games-pill-btn">
@@ -382,7 +382,7 @@
         </span>
         <span class="games-pill-btn">
             <input type='radio' name='game-btn' id='our-game'>
-            <label for='our-game'><img src="/images/table-games-icon.png" alt="">Our Game</label>
+            <label for='our-game'><img src="/images/our-game-new-icon.png" alt="">Our Game</label>
         </span>
     </section>
 
@@ -587,6 +587,39 @@
     </section>
 
     <section id="sports-toggle">
+
+        <!-- Sports Pills -->
+
+    <section class="game-pills" id="sports-item-pills">
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='all-games'>
+            <label for='all-games' class="desk-max-width-label"><img src="/images/all-game-icon.png" alt="" style="height: 25px; width: 25px; align-self: center;">All</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='cricket-games'>
+            <label for='cricket-games' class="desk-max-width-label"><img src="/images/cricket-icon.png" alt="" style="height: 25px; width: 25px; align-self: center;">Cricket</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='football-games'>
+            <label for='football-games' class="desk-max-width-label"><img src="/images/soccer-img.png" alt="" style="height: 25px; width: 25px; align-self: center;">Football</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='tennis-games'>
+            <label for='tennis-games' class="desk-max-width-label"><img src="/images/tennis-img.png" alt="" style="height: 25px; width: 25px; align-self: center;">Tennis</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='horse-racing-games'>
+            <label for='horse-racing-games' class="desk-max-width-label"><img src="/images/horse-racing-img.png" alt="" style="height: 25px; width: 25px; align-self: center;">Horse Racing</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='greyhound-racing-games'>
+            <label for='greyhound-racing-games' class="desk-max-width-label"><img src="/images/greyhound-img.png" alt="" style="height: 25px; width: 25px; align-self: center;">Greyhound Racing</label>
+        </span>
+        <span class="games-pill-btn">
+            <input type='radio' name='game-btn' id='virtual-games'>
+            <label for='virtual-games' class="desk-max-width-label"><img src="/images/virtual-real-img.png" alt="" style="height: 25px; width: 25px; align-self: center;">Virtual Games</label>
+        </span>
+    </section>
 
         <!-- Sports Section -->
         <section class="sports">
@@ -1608,10 +1641,14 @@
 
     let sportstoggle = document.getElementById("sports-toggle")
     let casinotoggle = document.getElementById("casino-toggle")
+    let sportsitemtoggle = document.getElementById("sports-item-pills")
+    
 
     let showsports = () => {
         sportstoggle.style.display = "block"
         casinotoggle.style.display = "none"
+        sportsitemtoggle.style.display = "flex"
+        
     }
     let showcasino = () => {
         sportstoggle.style.display = "none"
