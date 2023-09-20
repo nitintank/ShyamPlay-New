@@ -760,6 +760,9 @@ nav {
     border-radius: 25px;
     overflow-x: auto;
 }
+.game-pills::-webkit-scrollbar {
+    display: none;
+  }
 
 .games-pill-btn label img {
     width: 35px;
@@ -1553,6 +1556,10 @@ footer p {
         overflow-x: scroll;
     }
 
+    .trending-img::-webkit-scrollbar {
+        display: none;
+      }
+
     .trending-img img {
         width: 32.5%;
     }
@@ -1576,13 +1583,18 @@ footer p {
     .trending-img1 img {
         width: 69%;
     }
-
+    .trending-img1::-webkit-scrollbar {
+        display: none;
+      }
     .trending-img2 {
         padding: 5px 0px;
         justify-content: space-between;
         gap: 5px;
         overflow-x: scroll;
     }
+    .trending-img2::-webkit-scrollbar {
+        display: none;
+      }
     .trending-img2 img {
         width: 49%;
     }
@@ -2265,6 +2277,9 @@ footer p {
         justify-content: space-between;
         overflow-x: scroll;
     }
+    .gaming-partner-logo-img::-webkit-scrollbar {
+        display: none;
+      }
 }
 
 @media (min-width: 501px) and (max-width: 815px) {
@@ -2290,6 +2305,9 @@ footer p {
         justify-content: space-between;
         overflow-x: scroll;
     }
+    .gaming-partner-logo-img::-webkit-scrollbar {
+        display: none;
+      }
 
     .gaming-partner {
         width: 95%;
@@ -2322,6 +2340,9 @@ footer p {
         justify-content: space-between;
         overflow-x: scroll;
     }
+    .gaming-partner-logo-img::-webkit-scrollbar {
+        display: none;
+      }
 
     .casino-games-card {
         justify-content: center;
