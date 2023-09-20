@@ -1444,7 +1444,7 @@ footer {
 }
 
 footer p {
-    color: white;
+    color: #dddddd;
 }
 
 /* Responsive Code */
@@ -2046,6 +2046,7 @@ footer p {
 
     .deposit {
         padding: 5px;
+        font-size: 12px;
     }
 }
 
