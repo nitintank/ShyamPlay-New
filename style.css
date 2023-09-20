@@ -503,6 +503,7 @@ nav {
     padding: 5px 10px;
     background-color: #252e4d;
     border-radius: 5px;
+    /* box-shadow: #B6B326 0px 1px 8px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 }
 
 .deposit {
@@ -510,6 +511,7 @@ nav {
     padding: 5px 10px;
     background-color: #D17918;
     border-radius: 5px;
+    box-shadow: #D17918 0px 1px 8px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .right-nav img {
@@ -527,6 +529,7 @@ nav {
     justify-content: center;
     text-decoration: none;
     position: relative;
+    /* box-shadow: #B6B326 0px 0.5px 4px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 }
 
 .notification-bell img {
@@ -2047,7 +2050,7 @@ footer p {
         padding: 5px;
     }
     .deposit {
-        padding: 7px 5px;
+        padding: 7.5px 5px;
         font-size: 12px;
         font-weight: 600;
     }

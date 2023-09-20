@@ -500,6 +500,15 @@ nav {
     color: #C81C28;
     white-space: nowrap;
 }
+.mob-wid-50{
+    width: 49% !important;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
 
 /* Responsive Code */
 
