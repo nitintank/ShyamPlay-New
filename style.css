@@ -733,6 +733,18 @@ nav {
     border-radius: 10px;
 }
 
+.trending-img2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trending-img2 img {
+    width: 24%;
+    border-radius: 10px;
+}
+
 /* Game Pills Section */
 
 .game-pills {
@@ -1565,6 +1577,16 @@ footer p {
         width: 69%;
     }
 
+    .trending-img2 {
+        padding: 5px 0px;
+        justify-content: space-between;
+        gap: 5px;
+        overflow-x: scroll;
+    }
+    .trending-img2 img {
+        width: 49%;
+    }
+
     .game-pills {
         width: 97%;
         gap: 5px;
@@ -1746,6 +1768,12 @@ footer p {
 
     .android-images1 img {
         width: 49%;
+    }
+}
+
+@media (max-width: 425px){
+    .trending-img1 img{
+        width: 100%;
     }
 }
 
@@ -2043,8 +2071,8 @@ footer p {
 }
 
 .casino-games-pill-btn label img {
-    width: 25px;
-    height: 25px;
+    width: auto;
+    height: 30px;
 }
 
 .casino-games-pill-btn input[type="radio"] {
@@ -2303,6 +2331,10 @@ footer p {
 }
 
 #casino-toggle {
+    display: none;
+}
+
+#slot-games-toggle{
     display: none;
 }
 

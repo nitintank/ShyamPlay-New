@@ -319,7 +319,7 @@
     </section> -->
 
     <div class="trending1">
-        <div class="trending-img1">
+        <div class="trending-img2">
             <img src="/images/banner-1.png" alt="">
             <img src="/images/banner-1.png" alt="">
             <img src="/images/banner-1.png" alt="">
@@ -333,7 +333,7 @@
         <!-- <img src="/images/rect-shape.png" alt="" class="top-pill"> -->
         <div class="trend">
             <img src="/images/flying-rocket.png" alt="">
-            <p>TRENDING GAMES</p>
+            <p style="font-weight: 600;">Trending Games</p>
         </div>
         <div class="trending-game-slide">
             <p><span>ALL</span></p>
@@ -365,7 +365,7 @@
             <label for='live-casino'><img src="/images/live-casino-new.png" alt="">Live Casino</label>
         </span>
         <span class="games-pill-btn">
-            <input type='radio' name='game-btn' id='slot-games'>
+            <input type='radio' name='game-btn' id='slot-games' onclick="showslotgames()">
             <label for='slot-games'><img src="/images/slot-games-new.png" alt="">Slot Games</label>
         </span>
         <span class="games-pill-btn">
@@ -386,6 +386,7 @@
         </span>
     </section>
 
+    <!-- Live Casino Section -->
     <section id="casino-toggle">
 
         <!-- Casino Games Section -->
@@ -394,43 +395,97 @@
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='royal-gaming' checked>
                 <label for='royal-gaming'><span>
-                        <p><img src="/images/casino-card.png" alt="">Royal Gaming</p>
+                        <p><img src="/images/royal-gaming-logo.png" alt=""></p>
                     </span></label>
             </span>
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='royal-gaming-virtual'>
                 <label for='royal-gaming-virtual'><span>
-                        <p><img src="/images/casino-card.png" alt="">Live Casino</p>
+                    <p><img src="/images/royal-gaming-logo.png" alt=""></p>
                     </span></label>
             </span>
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='ezugi'>
                 <label for='ezugi'><span>
-                        <p><img src="/images/casino-card.png" alt="">Ezugi</p>
+                        <p><img src="/images/ezugi-logo.png" alt=""></p>
                     </span></label>
             </span>
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='evolution-gaming'>
                 <label for='evolution-gaming'><span>
-                        <p><img src="/images/casino-card.png" alt="">Evolution Gaming</p>
+                        <p><img src="/images/evolution-gaming-logo.png" alt=""></p>
                     </span></label>
             </span>
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='supernova'>
                 <label for='supernova'><span>
-                        <p><img src="/images/casino-card.png" alt="">Supernova</p>
-                    </span></label>
-            </span>
-            <span class="casino-games-pill-btn">
-                <input type='radio' name='casino-game-btn' id='jili-gaming'>
-                <label for='jili-gaming'><span>
-                        <p><img src="/images/casino-card.png" alt="">Jili Gaming</p>
+                        <p><img src="/images/supernowa-logo.png" alt=""></p>
                     </span></label>
             </span>
             <span class="casino-games-pill-btn">
                 <input type='radio' name='casino-game-btn' id='asia-gaming'>
                 <label for='asia-gaming'><span>
-                        <p><img src="/images/casino-card.png" alt="">Asia Gaming</p>
+                        <p><img src="/images/asia-gaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='bet-games-tv'>
+                <label for='bet-games-tv'><span>
+                        <p><img src="/images/betgames-tv-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='sa-gaming'>
+                <label for='sa-gaming'><span>
+                        <p><img src="/images/sa-gaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='e-bet'>
+                <label for='e-bet'><span>
+                        <p><img src="/images/ebet-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='pragmatic-play'>
+                <label for='pragmatic-play'><span>
+                        <p><img src="/images/pragmatic-play-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='better-live'>
+                <label for='better-live'><span>
+                        <p><img src="/images/better-live-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='bombay-live'>
+                <label for='bombay-live'><span>
+                        <p><img src="/images/bombay-live-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='playtech'>
+                <label for='playtech'><span>
+                        <p><img src="/images/playtech-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='sexybcrt'>
+                <label for='sexybcrt'><span>
+                        <p><img src="/images/sexybcrt-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='tangente'>
+                <label for='tangente'><span>
+                        <p><img src="/images/tangente-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='tangente'>
+                <label for='tangente'><span>
+                        <p><img src="/images/venus-gaming-logo.png" alt=""></p>
                     </span></label>
             </span>
         </section>
@@ -586,6 +641,162 @@
 
     </section>
 
+    <!-- Slot Games Section -->
+    <section id="slot-games-toggle">
+
+        <!-- Casino Games Section -->
+
+        <section class="casino-games">
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='evoplay-gaming-logo' checked>
+                <label for='evoplay-gaming-logo'><span>
+                        <p><img src="/images/evoplay-gaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='pragmatic-play-1'>
+                <label for='pragmatic-play-1'><span>
+                    <p><img src="/images/pragmatic-play-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='pragmatic-play-2'>
+                <label for='pragmatic-play-2'><span>
+                        <p><img src="/images/pragmatic-play-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='onetouch-logo'>
+                <label for='onetouch-logo'><span>
+                        <p><img src="/images/onetouch-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='bet-soft'>
+                <label for='bet-soft'><span>
+                        <p><img src="/images/bet-soft-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='indi-slot-game'>
+                <label for='indi-slot-game'><span>
+                        <p><img src="/images/indislot-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='microgaming-logo'>
+                <label for='microgaming-logo'><span>
+                        <p><img src="/images/microgaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='spribe-logo'>
+                <label for='spribe-logo'><span>
+                        <p><img src="/images/spribe-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='caleta-logo'>
+                <label for='caleta-logo'><span>
+                        <p><img src="/images/caleta-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='hacksaw-gaming'>
+                <label for='hacksaw-gaming'><span>
+                        <p><img src="/images/hacksaw-gaming.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='atomic-slot-lab'>
+                <label for='atomic-slot-lab'><span>
+                        <p><img src="/images/atomic-slot-lab-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='b-gaming'>
+                <label for='b-gaming'><span>
+                        <p><img src="/images/bgaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='big-time-gaming'>
+                <label for='big-time-gaming'><span>
+                        <p><img src="/images/big-time-gaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='blue-guru'>
+                <label for='blue-guru'><span>
+                        <p><img src="/images/blue-guru-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='booming-games'>
+                <label for='booming-games'><span>
+                        <p><img src="/images/booming-games-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='buck-stakes-entertainment'>
+                <label for='buck-stakes-entertainment'><span>
+                        <p><img src="/images/buck-stakes-entertainment.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='candlebets'>
+                <label for='candlebets'><span>
+                        <p><img src="/images/candlebets-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='fantasma'>
+                <label for='fantasma'><span>
+                        <p><img src="/images/fantasma-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='gamomat'>
+                <label for='gamomat'><span>
+                        <p><img src="/images/gamomat-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='habanero'>
+                <label for='habanero'><span>
+                        <p><img src="/images/habanero-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='kalamba-games'>
+                <label for='kalamba-games'><span>
+                        <p><img src="/images/kalamba-games-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+            <span class="casino-games-pill-btn">
+                <input type='radio' name='casino-game-btn' id='oryx-gaming'>
+                <label for='oryx-gaming'><span>
+                        <p><img src="/images/oryx-gaming-logo.png" alt=""></p>
+                    </span></label>
+            </span>
+        </section>
+
+        <!-- Casino Games Card Section -->
+
+        <section class="casino-games-card">
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/pgp_cash_patrol/thumb.jpg" alt="">
+                <p>Cash Patrol</p>
+            </div>
+            <div class="casino-games-card-img">
+                <img src="https://cdn.dreamcasino.live/pgp_bounty_gold/thumb.jpg" alt="">
+                <p>Bounty Gold</p>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Sports Section -->
     <section id="sports-toggle">
 
         <!-- Sports Pills -->
@@ -649,7 +860,7 @@
             <!-- <img src="/images/rect-shape.png" alt="" class="inplay-pill-img"> -->
             <div class="inplay-img">
                 <img src="/images/inplay-img.png" alt="">
-                <p>INPLAY</p>
+                <p style="font-weight: 600;">Inplay</p>
             </div>
             <!-- Cricket Inplay -->
             <details open>
@@ -1011,7 +1222,7 @@
             <div class="upcoming-img">
                 <div class="upcoming-img-content">
                     <img src="/images/upcoming-new.png" alt="">
-                    <p>UPCOMING</p>
+                    <p style="font-weight: 600;">Upcoming</p>
                 </div>
                 <select name="" id="">
                     <option value="">Today</option>
@@ -1378,7 +1589,7 @@
             <!-- <img src="/images/rect-shape.png" alt="" class="top-pill"> -->
             <div class="trend">
                 <img src="/images/live-casino-new-one.png" alt="">
-                <p>LIVE CASINO</p>
+                <p style="font-weight: 600;">Live Casino</p>
             </div>
             <div class="trending-game-slide">
                 <p><span>ALL</span></p>
@@ -1400,7 +1611,7 @@
             <!-- <img src="/images/rect-shape.png" alt="" class="top-pill"> -->
             <div class="trend">
                 <img src="/images/crash-game-new.png" alt="">
-                <p>CRASH GAMES</p>
+                <p style="font-weight: 600;">Crash Games</p>
             </div>
             <div class="trending-game-slide">
                 <p><span>ALL</span></p>
@@ -1422,7 +1633,7 @@
             <!-- <img src="/images/rect-shape.png" alt="" class="top-pill"> -->
             <div class="trend">
                 <img src="/images/virtual-sports-icon.png" alt="">
-                <p>VIRTUAL GAMES</p>
+                <p style="font-weight: 600;">Virtual Games</p>
             </div>
             <div class="trending-game-slide">
                 <p><span>ALL</span></p>
@@ -1443,7 +1654,7 @@
         <div class="trending">
             <div class="trend">
                 <img src="/images/bonuses.png" alt="" style="width: 22px;">
-                <p>BONUSES</p>
+                <p style="font-weight: 600;">Bonuses</p>
             </div>
             <div class="trending-img1">
                 <img src="/images/banner-2.png" alt="">
@@ -1641,18 +1852,25 @@
 
     let sportstoggle = document.getElementById("sports-toggle")
     let casinotoggle = document.getElementById("casino-toggle")
+    let slotgamestoggle = document.getElementById("slot-games-toggle")
     let sportsitemtoggle = document.getElementById("sports-item-pills")
     
 
     let showsports = () => {
         sportstoggle.style.display = "block"
         casinotoggle.style.display = "none"
+        slotgamestoggle.style.display = "none"
         sportsitemtoggle.style.display = "flex"
-        
     }
     let showcasino = () => {
         sportstoggle.style.display = "none"
         casinotoggle.style.display = "block"
+        slotgamestoggle.style.display = "none"
+    }
+    let showslotgames = () => {
+        sportstoggle.style.display = "none"
+        casinotoggle.style.display = "none"
+        slotgamestoggle.style.display = "block"
     }
 
     let mobsidebar = document.getElementById("mob-sidebar")
