@@ -1066,7 +1066,7 @@ nav {
 
 .blue {
     padding: 10px 20px;
-    background-color: #4fa1dc;
+    background-color: #82CFFF;
     color: black;
     font-weight: 700;
     border-radius: 10px;
@@ -1077,7 +1077,7 @@ nav {
 
 .pink {
     padding: 10px 20px;
-    background-color: #f994ba;
+    background-color: #FFB5BD;
     color: black;
     font-weight: 700;
     border-radius: 10px;
@@ -2063,11 +2063,13 @@ footer p {
     width: 92%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
+    gap: 5px;
+    overflow-x: auto;
 }
 
 .casino-games-pill-btn label img {
@@ -2327,6 +2329,9 @@ footer p {
 
     .casino-games-card-img {
         width: 49%;
+    }
+    details{
+        width: 97%;
     }
 }
 

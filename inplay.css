@@ -568,7 +568,7 @@ nav {
 
 .blue {
     padding: 10px 20px;
-    background-color: #4fa1dc;
+    background-color: #82CFFF;
     color: black;
     font-weight: 700;
     border-radius: 10px;
@@ -579,7 +579,7 @@ nav {
 
 .pink {
     padding: 10px 20px;
-    background-color: #f994ba;
+    background-color: #FFB5BD;
     color: black;
     font-weight: 700;
     border-radius: 10px;
@@ -1286,5 +1286,8 @@ footer p {
         flex-wrap: nowrap;
         justify-content: space-between;
         overflow-x: scroll;
+    }
+    details{
+        width: 97%;
     }
 }
