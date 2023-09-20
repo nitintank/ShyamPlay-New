@@ -2100,6 +2100,10 @@ footer p {
     overflow-x: auto;
 }
 
+.casino-games::-webkit-scrollbar {
+    display: none;
+}
+
 .casino-games-pill-btn label img {
     width: 90px;
     height: 30px;
