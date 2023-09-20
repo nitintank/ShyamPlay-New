@@ -646,7 +646,7 @@ nav {
 }
 
 .trend p {
-    color: white;
+    color: #e6e6e6;
     font-size: 17px;
 }
 
@@ -664,7 +664,7 @@ nav {
 }
 
 .trending-game-slide {
-    color: white;
+    color: #e6e6e6;
     position: absolute;
     top: -25px;
     right: 0px;
@@ -899,7 +899,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    width: 100%;
+    width: 98%;
 }
 
 .upcoming-img img {
@@ -1116,7 +1116,7 @@ details {
 
 details .summary-title {
     font-size: 18px;
-    color: white;
+    color: #dddddd;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1644,6 +1644,7 @@ footer p {
     .match-name p {
         font-size: 14px;
         font-weight: 600;
+        color: #e6e6e6;
     }
 
     .live-status {
