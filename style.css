@@ -582,6 +582,7 @@ nav {
 
 .marquee marquee {
     width: 98%;
+    font-size: 14px;
 }
 
 .marquee img {
@@ -672,6 +673,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 600;
 }
 
 .trending-game-slide p span {
@@ -1115,8 +1117,8 @@ details {
 }
 
 details .summary-title {
-    font-size: 18px;
-    color: #dddddd;
+    font-size: 14px;
+    color: #ededed;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1124,6 +1126,7 @@ details .summary-title {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-weight: 600;
 }
 
 details .summary-title img {
@@ -2044,7 +2047,7 @@ footer p {
         padding: 5px;
     }
     .deposit {
-        padding: 5px;
+        padding: 7px 5px;
         font-size: 12px;
         font-weight: 600;
     }

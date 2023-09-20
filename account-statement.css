@@ -402,6 +402,13 @@ nav {
     align-self: flex-end;
 }
 
+.input-box-inner{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
 /* Paginator */
 
 .paginator{
@@ -579,6 +586,12 @@ nav {
     }
     .amount-status{
         font-size: 20px;
+    }
+    .mob-wid-50{
+        width: 49% !important;
+    }
+    .input-box label{
+        font-size: 14px;
     }
 }
 
