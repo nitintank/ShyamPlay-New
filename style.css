@@ -2043,10 +2043,10 @@ footer p {
     .wallet {
         padding: 5px;
     }
-
     .deposit {
         padding: 5px;
         font-size: 12px;
+        font-weight: 600;
     }
 }
 
