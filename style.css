@@ -1010,7 +1010,7 @@ nav {
     border-radius: 0px 0px 10px 10px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2px;
     padding: 5px 10px;
 }
 
@@ -1511,6 +1511,18 @@ footer p {
     .blank {
         padding: 10px;
     }
+}
+
+.match-name p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e6e6e6;
+}
+
+.names p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #BBB;
 }
 
 @media (max-width: 790px) {
@@ -2091,7 +2103,7 @@ footer p {
     width: 92%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: auto;
     margin-bottom: 10px;
     padding: 5px;
@@ -2253,7 +2265,7 @@ footer p {
 @media (max-width:1350px) {
     .casino-games {
         width: 98%;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 5px;
         overflow-x: scroll;
         padding: 5px 10px;
@@ -2381,6 +2393,14 @@ footer p {
 }
 
 #slot-games-toggle{
+    display: none;
+}
+
+#crash-games-toggle{
+    display: none;
+}
+
+#table-games-toggle{
     display: none;
 }
 
