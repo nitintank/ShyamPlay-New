@@ -1437,11 +1437,18 @@
                     <img src="/images/upcoming-new.png" alt="">
                     <p style="font-weight: 600;">Upcoming</p>
                 </div>
-                <select name="" id="">
+                <!-- <select name="" id="">
                     <option value="">Today</option>
                     <option value="">Tomorrow</option>
                     <option value="">Upcoming</option>
-                </select>
+                </select> -->
+                <div class="dropdownv">
+                    <button onclick="myFunction()" class="dropbtnv" id="dropbtnv">Today<i class='bx bx-chevron-down'></i></button>
+                    <div id="myDropdownv" class="dropdown-contentv">
+                      <a href="#home" onclick="myFunction()">Tomorrow</a>
+                      <a href="#about" onclick="myFunction()">Upcoming</a>
+                    </div>
+                  </div>
             </div>
             <!-- Cricket Upcoming -->
             <div class="bt-n">
@@ -2124,6 +2131,11 @@
     let openmenu = () => {
         menuopen.classList.toggle("menuOpen");
     }
+
+    function myFunction() {
+  document.getElementById("myDropdownv").classList.toggle("showv");
+  document.getElementById("dropbtnv").classList.toggle("border-radiusv");
+}
 </script>
 
 </html>
