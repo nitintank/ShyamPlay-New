@@ -2825,4 +2825,7 @@ footer p {
     .bt-n{
         width: 98%;
     }
+    .bt-n h2 details{
+        width: 100%;
+    }
 }
