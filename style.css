@@ -764,6 +764,7 @@ nav {
     padding: 10px 5px;
     border-radius: 15px;
     overflow-x: auto;
+    gap: 10px;
 }
 .game-pills::-webkit-scrollbar {
     display: none;
@@ -792,7 +793,7 @@ nav {
     white-space: nowrap;
     cursor: pointer;
     display: block;
-    padding: 12px 14px;
+    padding: 12px 10px;
     border-radius: 25px;
     display: flex;
     align-items: center;
