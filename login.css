@@ -482,10 +482,74 @@ background: linear-gradient(135deg, #161623 32.81%, #B6B326 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.manual-box img{
+.manual-box-back{
     width: 30%;
+    height: 580px;
+}
+
+.manual-box-content{
+    width: 30%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 580px;
+    padding: 15px 0px;
+}
+
+.manual-book-title{
+    width: 85% !important;
+}
+
+.manual-company-logos{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manual-company-logos img{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+}
+
+.manual-company-logos-1{
+    width: 88%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manual-company-logos-1 img{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+}
+
+.manual-company-logos-2{
+    width: 92%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manual-company-logos-2 img{
+    width: 21%;
+    height: auto;
+    cursor: pointer;
+}
+
+.manual-whatsapp-btn{
+    width: 45% !important;
 }
 
 /* Footer */
@@ -574,6 +638,15 @@ footer p{
 
 /* Mobile Responsive Code */
 
+@media (min-width:1600px) {
+    .manual-box-content{
+        height: 700px;
+    }
+    .manual-box-back{
+        height: 700px;
+    }
+}
+
 @media (max-width: 1350px){
     .follow-us h2{
         font-size: 22px;
@@ -619,8 +692,26 @@ footer p{
     .bt-n2{
         width: 48%;
     }
-    .manual-box img{
+    .manual-company-logos img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-1 img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-2 img{
+        width: 21%;
+        height: auto;
+    }
+    .manual-box-content{
         width: 40%;
+    }
+    .manual-box-back{
+        width: 40%;
+    }
+    .manual-book-title{
+        width: 85% !important;
     }
     .login-box{
         width: 95%;
@@ -754,8 +845,28 @@ footer p{
         padding: 5px 15px;
         margin-top: -17px;
     }
-    .manual-box img{
+    .manual-company-logos img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-1 img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-2 img{
+        width: 21%;
+        height: auto;
+    }
+    .manual-box-content{
         width: 60%;
+        height: 570px;
+    }
+    .manual-box-back{
+        width: 60%;
+        height: 570px;
+    }
+    .manual-book-title{
+        width: 85% !important;
     }
     .social-images img{
         width: 80px;
@@ -794,6 +905,17 @@ footer p{
     }
 }
 
+@media (max-width:650px) {
+    .manual-box-content{
+        width: 60%;
+        height: 500px;
+    }
+    .manual-box-back{
+        width: 60%;
+        height: 500px;
+    }
+}
+
 @media (max-width: 500px){
     .content .heading-2{
         text-align: center;
@@ -811,8 +933,28 @@ footer p{
         text-align: center;
         display: block;
     }
-    .manual-box img{
+    .manual-company-logos img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-1 img{
+        width: 30%;
+        height: auto;
+    }
+    .manual-company-logos-2 img{
+        width: 21%;
+        height: auto;
+    }
+    .manual-box-content{
         width: 90%;
+        height: 550px;
+    }
+    .manual-box-back{
+        width: 90%;
+        height: 550px;
+    }
+    .manual-book-title{
+        width: 85% !important;
     }
     .follow-us{
         background-image: url("/images/black-box-mob.png");
@@ -826,7 +968,6 @@ footer p{
     .follow-us{
         height: 55px;
     }
-    
 }
 
 @media (max-width: 410px){
@@ -838,6 +979,14 @@ footer p{
     }
     .social-images{
         gap: 7px;
+    }
+    .manual-box-content{
+        width: 90%;
+        height: 500px;
+    }
+    .manual-box-back{
+        width: 90%;
+        height: 500px;
     }
 }
 
