@@ -1047,7 +1047,7 @@ nav {
 
 .names img {
     width: 14px;
-    height: 16px;
+    height: 14px;
 }
 
 .live-tv {
@@ -1081,7 +1081,7 @@ nav {
 .live-tv .live-tv-box span{
     background-color: #b5b326;
     width: 100%;
-    padding: 0px 2px;
+    padding: 7px 2px;
     margin: 0.5px;
     border-radius: 2px;
     height: 12px;
