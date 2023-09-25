@@ -267,16 +267,15 @@ nav {
 .match-details {
     height: auto;
     width: 74%;
-    background-color: rgba(182, 179, 38, 0.10);
+    /* background-color: rgba(182, 179, 38, 0.10); */
     display: block;
-    margin: 52px auto 15px;
-    border-radius: 0px 15px 15px 15px;
-    border: 1px solid #b7b520;
+    margin: 15px auto;
+    border-radius: 15px;
+    /* border: 1px solid #b7b520; */
     position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 10px 0px;
 }
 
 .match-details .top-pill {
@@ -317,29 +316,178 @@ nav {
 
 .match-game-details .para{
     color: white;
-    background-color: #161623;
     width: 98%;
     text-align: center;
-    padding: 10px 0px;
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 10px;
+    white-space: nowrap;
+}
+
+.cashout-btn{
+    width: 120px !important;
+    height: auto !important;
+}
+
+.match-game-details .para1{
+    color: white;
+    width: 98%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.match-name-main-box{
+    color: white;
+    background-color: black;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.match-game-details .para-title{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.match-game-details .para-title p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #BBBBBB;
+    font-weight: 600;
+}
+
+.match-game-details .para-title p img{
+    width: 30px;
+    height: 30px;
+}
+
+.match-game-details .para-title .vs-logo{
+    width: 30px;
+    height: auto;
+}
+
+.league-name-main-box{
+    width: 98%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    gap: 5px;
+}
+
+.league-name-box{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.league-name-box p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.league-name-box p img{
+    width: 25px;
+    height: 25px;
+}
+
+.league-timing{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #B6B326;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Live Status Text */
+
+.live-status-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.live-status-text span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #44E15C;
+    border-radius: 50%;
+}
+
+.live-status-text p {
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .match-game-details .para-title{
+        font-size: 13px;
+        gap: 7px;
+        padding: 0px 5px;
+    }
+    .match-game-details .para-title p{
+        gap: 2px;
+    }
+    .match-game-details .para-title p img{
+        width: 25px;
+        height: 25px;
+    }
+    .match-game-details .para-title .vs-logo{
+        width: 20px;
+    }
+    .league-name-box{
+        font-size: 13px;
+        gap: 10px;
+    }
+    .league-timing{
+        font-size: 13px;
+    }
+    .live-status-text p{
+        font-size: 13px;
+    }
+    .league-name-box p img{
+        width: 20px;
+        height: 20px;
+    }
+    .match-name-main-box{
+        border-radius: 10px;
+    }
 }
 
 /* Match Table */
 
 .table{
-    width: 98%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
     overflow: hidden;
 }
 
 .table-head{
-    width: 100%;
+    width: 95%;
     background-color: #161623;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10px;
+    font-size: 14px;
 }
 
 .table-top-left{
@@ -356,8 +504,9 @@ nav {
 
 .table-top-right{
     display: flex;
-    white-space: nowrap;
-    gap: 10px;
+    gap: 2px;
+    flex-direction: column;
+    padding: 5px 0px;
 }
 
 .table-body{
@@ -368,18 +517,74 @@ nav {
     justify-content: space-between;
     padding: 5px 10px;
     border-bottom: 1px solid rgb(132, 132, 132);
+    gap: 5px;
 }
 
 .table-body-left p{
     background-color: #393838;
     color: white;
     font-size: 18px;
+    font-weight: 500;
+}
+
+.table-body-left{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-body-right{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.book-btn{
+    border: 1px solid #FFF;
+    background-color: #555;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.green-yellow-btn{
+    border: 1px solid green;
+    background-color: #d3d166;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.red-yellow-btn{
+    border: 1px solid red;
+    background-color: #d3d166;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 5px;
 }
 
 .t-odds {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .t-btn {
@@ -388,43 +593,48 @@ nav {
     justify-content: center;
     gap: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .blue {
-    padding: 7px 0px;
-    background-color: #4fa1dc !important;
+    padding: 4px 0px;
+    background-color: #82CFFF !important;
     color: black;
-    font-weight: 700;
-    border-radius: 10px;
+    font-weight: 600;
+    border-radius: 5px;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 45%;
+    line-height: 15px;
 }
 
 .blue span{
     font-size: 12px;
+    font-weight: 500;
 }
 
 .pink {
-    padding: 7px 0px;
-    background-color: #f994ba !important;
+    padding: 4px 0px;
+    background-color: #FFB5BD !important;
     color: black;
-    font-weight: 700;
-    border-radius: 10px;
+    font-weight: 600;
+    border-radius: 5px;
     font-size: 15px;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 45%;
+    line-height: 15px;
 }
 
 .pink span{
     font-size: 12px;
+    font-weight: 500;
 }
 
 /* Fancy Bar */
@@ -457,9 +667,6 @@ nav {
     margin-bottom: 10px;
     border-radius: 5px;
     gap: 5px;
-    position: absolute;
-    top: -38px;
-    right: 10px;
 }
 
 .live-status-pill-btn label img {
@@ -502,61 +709,78 @@ nav {
 /* Details */
 
 details {
-    font-size: 18px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    width: 98%;
+    width: 100%;
     border-radius: 8px;
     position: relative;
     color: white;
     background-color: #161623;
-    display: none;
-  }
-  details .summary-title {
-    font-size: 18px;
-    color: #b7b520;
+}
+
+details .summary-title {
+    font-size: 14px;
+    color: #ededed;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  details:hover {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+details .summary-title img {
+    width: 20px;
+    height: 20px;
+}
+
+details:hover {
     cursor: pointer;
-  }
-  details .summary-content {
-    border-top: 1px solid #e2e8f0;
+}
+
+details .summary-content {
+    /* border-top: 1px solid #e2e8f0; */
     cursor: default;
-    padding: 1em;
+    /* padding: 1em; */
     font-weight: 300;
     line-height: 1.5;
-  }
-  details summary {
+}
+
+details summary {
     list-style: none;
-    padding: 10px 10px;
-  }
-  details summary:focus {
+    padding: 2px 10px;
+}
+
+details summary:focus {
     outline: none;
-  }
-  details summary:hover .summary-chevron-up svg {
+}
+
+details summary:hover .summary-chevron-up svg {
     opacity: 1;
-  }
-  details .summary-chevron-up svg {
+}
+
+details .summary-chevron-up svg {
     opacity: 0.5;
-  }
-  details .summary-chevron-up,
-  details .summary-chevron-down {
+}
+
+details .summary-chevron-up,
+details .summary-chevron-down {
     pointer-events: none;
     position: absolute;
     top: 0.5em;
     right: 1em;
     background: #161623;
-  }
-  details .summary-chevron-up svg,
-  details .summary-chevron-down svg {
+}
+
+details .summary-chevron-up svg,
+details .summary-chevron-down svg {
     display: block;
-  }
-  details summary::-webkit-details-marker {
+}
+
+details summary::-webkit-details-marker {
     display: none;
-  }
+}
 
   /* Open Bets Section */
 
@@ -564,7 +788,7 @@ details {
     width: 24%;
     height: auto;
     border: 1px solid #b7b520;
-    margin: 52px auto 15px;
+    margin: 15px auto;
     border-radius: 15px;
     background-color: rgba(182, 179, 38, 0.10);
     padding: 10px 0px;
@@ -626,10 +850,7 @@ details {
         display: none;
     }
     .match-details{
-        width: 98%;
-    }
-    details{
-        display: block;
+        width: 100%;
     }
 }
 
@@ -836,28 +1057,53 @@ footer p {
 }
 
 @media (max-width: 769px) {
-    .match-details{
+    .main-box{
         width: 98%;
     }
+    .match-details{
+        width: 100%;
+    }
     .match-game-details .para{
-        font-size: 16px;
+        font-size: 10px;
+    }
+    .match-game-details .para1{
+        font-size: 12px;
+    }
+    details .summary-title img{
+        width: 17px;
+        height: 17px;
     }
     details .summary-title{
         font-size: 16px;
     }
-    .table{
-        border-radius: 10px;
+    .table-head{
+        width: 90%;
+    }
+    .table-body-left{
+        width: 55%;
     }
     .table-body-left p{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .cashout-btn{
+        width: 90px !important;
+    }
+    .table-body-right{
+        width: 45%;
     }
     .blue{
-        width: 65px;
+        width: 45%;
         font-size: 13px;
     }
+    .blue span{
+        font-size: 11px;
+    }
     .pink{
-        width: 65px;
+        width: 45%;
         font-size: 13px;
+    }
+    .pink span{
+        font-size: 11px;
     }
     .fancy-bar p{
         font-size: 16px;
@@ -1163,3 +1409,56 @@ footer p {
         overflow-x: scroll;
     }
 }
+
+/* Button */
+.bt-n {
+    width: 100%;
+    height: auto;
+    /* background: #393939; */
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: linear-gradient(-145deg, #cfcfd0, black, black, #cfcfd0);
+  }
+  
+  .bt-n h2 {
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+      padding: 2px;
+  }
+  
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .bt-n::after {
+    content: '';
+    position: absolute;
+    background: #393939;
+    inset: 4px;
+    border-radius: 15px;
+  }
+  
+  @media (max-width: 500px) {
+      .bt-n{
+          width: 98%;
+      }
+      .bt-n h2 details{
+          width: 100%;
+      }
+  }
