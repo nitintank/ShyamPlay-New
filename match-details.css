@@ -813,19 +813,19 @@ details summary::-webkit-details-marker {
   .open-bets{
     width: 24%;
     height: auto;
-    border: 1px solid #b7b520;
+    border: 1px solid black;
     margin: 15px auto;
-    border-radius: 15px;
-    background-color: rgba(182, 179, 38, 0.10);
-    padding: 10px 0px;
+    border-radius: 10px;
+    /* background-color: rgba(182, 179, 38, 0.10); */
+    /* padding: 10px 0px; */
   }
 
   .open-bets p{
     font-size: 18px;
     color: #b7b520;
-    width: 98%;
+    width: 100%;
     border-radius: 10px;
-    background-color: #161623;
+    background-color: black;
     padding: 10px;
     margin: auto;
   }
@@ -857,7 +857,7 @@ details summary::-webkit-details-marker {
 .open-bets-toggle-btn label {
     width: 100%;
     color: white;
-    background-color: #161623;
+    background-color: black;
     cursor: pointer;
     display: flex;
     align-items: center;
