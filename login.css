@@ -1030,4 +1030,13 @@ footer p{
     .content .heading-2{
         margin-bottom: 35px;
     }
+    .login-box{
+        width: 95%;
+        background: transparent;
+        background-image: url("/images/mobile-login-bg-small.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+        height: auto;
+    }
 }
