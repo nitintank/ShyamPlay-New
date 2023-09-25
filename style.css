@@ -1066,20 +1066,28 @@ nav {
 
 .live-tv .live-tv-box{
     width: auto;
-    padding: 0px 4px;
-    height: 18px;
+    height: auto;
     background-color: #276aa4;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 2px;
     font-weight: 500;
-    color: black;
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image: radial-gradient(circle at center center, #ffffff, #e5e5f7), repeating-radial-gradient(circle at center center, #ffffff, #ffffff, 10px, transparent 20px, transparent 10px);
-    background-blend-mode: multiply;
+    color: white;
+    background-image: linear-gradient(-145deg, #fff, #b5b326, #b5b326, #fff);
+}
+
+.live-tv .live-tv-box span{
+    background-color: #b5b326;
+    width: 100%;
+    padding: 0px 2px;
+    margin: 0.5px;
+    border-radius: 2px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .t-odds {
@@ -1747,7 +1755,7 @@ footer p {
     }
 
     .live-tv .live-tv-box{
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .t-odds {
