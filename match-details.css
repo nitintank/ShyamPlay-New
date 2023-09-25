@@ -483,7 +483,7 @@ nav {
 
 .table-head{
     width: 95%;
-    background-color: #161623;
+    background-color: #000713;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -740,7 +740,7 @@ details {
     border-radius: 8px;
     position: relative;
     color: white;
-    background-color: #161623;
+    background-color: #000713;
 }
 
 details .summary-title {
@@ -796,7 +796,7 @@ details .summary-chevron-down {
     position: absolute;
     top: 0.5em;
     right: 1em;
-    background: #161623;
+    background: #000713;
 }
 
 details .summary-chevron-up svg,
