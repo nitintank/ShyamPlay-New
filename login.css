@@ -968,6 +968,9 @@ footer p{
     .follow-us{
         height: 55px;
     }
+    .offer-section{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 410px){
