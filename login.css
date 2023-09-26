@@ -1043,3 +1043,197 @@ footer p{
         height: auto;
     }
 }
+
+/* Manual Box */
+
+.cardz {
+  width: 500px;
+  height: 405px;
+  background: #b5b326;
+  /* background: linear-gradient(45deg, #b5b326 25%, #b5b326 25%, #444 25%, #444 50%, #b5b326 50%, #b5b326 75%, #444 75%, #444 100%);
+  animation: animate_6810 15s linear infinite; */
+  background-size: 60px 60px;
+  position: relative;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-infoz {
+  position: absolute;
+  width: 97.5%;
+  height: 96.5%;
+  left: 1.2%;
+  top: 2%;
+  background-color: rgba(0, 0, 0, 0.822);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(12px);
+}
+
+.paraz {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  background-color: #b5b326;
+  border-radius: 19px 20px 0px 0px;
+  padding: 30px;
+  padding-top: 0px;
+  height: 25px;
+  width: 100%;
+}
+
+.pz {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 900;
+  font-size: 13px;
+  width: 48%;
+}
+
+.pz img {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes animate_6810 {
+  0% {
+      background-position: 0px;
+  }
+
+  100% {
+      background-position: 1000px;
+  }
+}
+
+.btnz {
+  width: 65%;
+  margin: auto;
+  border: 2px solid #fff;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 0px 20px 0px 20px;
+  background: #012f1a;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 12px;
+  animation: abc 1.3s infinite;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@keyframes abc {
+  0% {
+      background-color: #012f1a;
+      box-shadow: 0 0 3px #048c4f;
+  }
+
+  50% {
+      background-color: #056138;
+      box-shadow: 0 0 15px #048c4f;
+  }
+
+  100% {
+      background-color: #012f1a;
+      box-shadow: 0 0 3px #048c4f;
+  }
+}
+
+.btnz img {
+  width: 45px;
+  height: 45px;
+}
+
+.imgz {
+  width: 23%;
+  height: 45px;
+}
+
+.imgx{
+  height: 38px;
+}
+
+.logoz {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.paz {
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  width: 65%;
+  display: block;
+  margin: auto;
+  border-radius: 0px 20px 0px 20px;
+  border: 2px solid #b5b326;
+  padding: 0px 10px;
+  /* border-radius: 10px; */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.green-backz{
+  width: 94.5%;
+  margin: 15px auto;
+  border-radius: 10px;
+  background-color: #012f1a;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: #b5b326 0px 2px 4px 0px, #b5b326 0px 2px 16px 0px;
+}
+
+
+@media (max-width:500px){
+  .imgz {
+  height: 35px;
+}
+.imgx{
+  height: 35px;
+}
+.paraz{
+  font-size: 14px;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+.paz{
+  width: 90%;
+  font-size: 15px;
+}
+.cardz{
+  width: 95%;
+  height: 390px;
+}
+.btnz{
+    width: 95%;
+}
+}
+
+@media (max-width:375px){
+  .cardz{
+    height: 370px;
+  }
+  .btnz{
+    font-size: 14px;
+}
+}
