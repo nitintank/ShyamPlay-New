@@ -530,11 +530,14 @@ nav {
 
 @media (max-width:426px) {
     .score-bar button{
-        font-size: 14px;
+        font-size: 12px;
         padding: 2.5px 5px;
     }
     .live-status-bar p{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .score-bar button img{
+        width: 16px;
     }
 }
 
