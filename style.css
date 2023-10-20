@@ -29,12 +29,13 @@ nav {
 .bottom_bar {
     position: fixed;
     bottom: 0;
-    background-image: radial-gradient(circle at 50% 3px, transparent 35px, #000 35px);
+    /* background-image: radial-gradient(circle at 50% 3px, transparent 35px, #000 35px); */
     left: 0;
     width: 100%;
     z-index: 10;
     border-radius: 18px 18px 0 0;
     display: none;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(181,179,38,1) 100%);
 }
 
 .bottom_bar ul {
@@ -641,10 +642,23 @@ nav {
 .trend {
     position: absolute;
     top: -27px !important;
-    left: 5px !important;
+    left: 0px !important;
     display: flex;
     align-items: center;
     gap: 5px;
+    background-color: black;
+    padding: 5px;
+    padding-right: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.crash-trend{
+    top: -22px !important;
+}
+
+.bonus-text{
+    background-color: transparent !important;
+    left: 5px !important;
 }
 
 .trend img {
@@ -661,6 +675,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: black;
+    padding: 10px 2px;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .trending-img img {
@@ -689,6 +706,18 @@ nav {
     width: 25px;
     height: 25px;
     cursor: pointer;
+}
+
+@media (max-width: 790px){
+    .trend{
+        left: 5px !important;
+        top: -30px !important;
+        padding: 2px;
+        padding-right: 10px;
+    }
+    .crash-trend{
+        top: -27px !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1612,7 +1641,7 @@ footer p {
     }
 
     .trending-img {
-        padding: 5px 0px;
+        padding: 5px 5px;
         justify-content: space-between;
         gap: 5px;
         overflow-x: scroll;
