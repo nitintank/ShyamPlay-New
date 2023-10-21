@@ -646,10 +646,13 @@ nav {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: black;
+    /* background-color: black; */
+    background-image: url("./images/Black-Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5px;
-    padding-right: 15px;
-    border-radius: 10px 10px 0px 0px;
+    padding-right: 100px;
+    /* border-radius: 10px 10px 0px 0px; */
 }
 
 .crash-trend{
@@ -657,7 +660,7 @@ nav {
 }
 
 .bonus-text{
-    background-color: transparent !important;
+    background-image: none !important;
     left: 5px !important;
 }
 
@@ -713,10 +716,13 @@ nav {
         left: 5px !important;
         top: -30px !important;
         padding: 2px;
-        padding-right: 10px;
+        padding-right: 95px;
     }
     .crash-trend{
-        top: -27px !important;
+        top: -25px !important;
+    }
+    .virual-trend{
+        top: -25px !important;
     }
 }
 
@@ -1641,7 +1647,7 @@ footer p {
     }
 
     .trending-img {
-        padding: 5px 5px;
+        padding: 8px;
         justify-content: space-between;
         gap: 5px;
         overflow-x: scroll;
