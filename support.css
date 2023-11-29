@@ -1,0 +1,375 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 170px;
+}
+
+.middle-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.middle-nav p {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nested Dropdown */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* .dropdown-content a:hover {
+    background-color: #d0d0d0
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+/* navlinks */
+
+.sidebar .nav-links {
+    height: 100%;
+    overflow: auto;
+    width: 260px;
+}
+
+.sidebar.close .nav-links {
+    overflow: visible;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover {
+    /* background: #d0d0d0; */
+}
+
+.sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .iocn-link {
+    display: block
+}
+
+.sidebar .nav-links li i {
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+    transform: rotate(-180deg);
+}
+
+.sidebar.close .nav-links i.arrow {
+    display: none;
+}
+
+.sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav-links li a .link_name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0.4s ease;
+    white-space: nowrap;
+}
+
+.sidebar.close .nav-links li a .link_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+    padding: 10px 20px;
+    /* margin-top: -10px; */
+    background: #dbdbdb;
+    display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu a {
+    color: black;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+.sidebar.close .nav-links li .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu .link_name {
+    display: none;
+}
+
+.sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-links li:hover .sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Nested Dropdown End */
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-nav a{
+    display: flex;
+}
+
+.wallet {
+    color: white;
+    padding: 5px 10px;
+    background-color: #252e4d;
+    border-radius: 5px;
+}
+
+.deposit {
+    color: white;
+    padding: 5px 10px;
+    background-color: #D17918;
+    border-radius: 5px;
+}
+
+.right-nav img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Profile Section */
+
+.support-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-section h2{
+    font-size: 30px;
+    color: white;
+}
+
+.support-box{
+    width: 80%;
+    height: 600px;
+    background-color: #111;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.support-content-box{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.support-main-img{
+    width: 90%;
+    height: auto;
+}
+
+.gaming-partner-logo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 15px;
+    background-image: linear-gradient(-145deg, #cfcfd0, #161623, #161623, #cfcfd0);
+}
+
+.gaming-partner-logo-img {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #161623;
+    margin: 2px;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.gaming-partner-logo-img img{
+    width: auto;
+    height: 80px;
+}
+
+.gaming-partner-logo-img h3{
+    color: white;
+    font-size: 25px;
+}
+
+/* Responsive Code */
+
+@media (max-width: 910px) {
+    .support-box{
+        flex-direction: column;
+        gap: 0px;
+        padding: 5px;
+        width: 95%;
+    }
+    .gaming-partner-logo-img img{
+        height: 60px;
+    }
+}
+
+@media (max-width:769px) {
+    .gaming-partner-logo-img img{
+        height: 50px;
+    }
+    .gaming-partner-logo-img h3{
+        font-size: 16px;
+    }
+    .gaming-partner-logo{
+        width: 65%;
+    }
+    .support-content-box{
+        width: 100%;
+    }
+    .support-main-img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width:500px){
+    .support-main-img{
+        width: 90%;
+        height: auto;
+    }
+    .gaming-partner-logo{
+        width: 85%;
+    }
+}

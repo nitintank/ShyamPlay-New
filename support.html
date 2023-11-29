@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="./support.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Profile Section -->
+
+    <div class="support-section">
+        <h2>Support</h2>
+        <div class="support-box">
+            <div class="support-content-box">
+                <img src="./images/Support-Img.png" alt="" class="support-main-img">
+            </div>
+            <div class="support-content-box">
+                <div class="gaming-partner-logo">
+                    <div class="gaming-partner-logo-img">
+                        <img src="./images/cash-money-img.png" alt="">
+                        <h3>Deposit & Withdrawal</h3>
+                    </div>
+                </div>
+                <div class="gaming-partner-logo">
+                    <div class="gaming-partner-logo-img">
+                        <img src="./images/Whatsapp-Support-Img.png" alt="">
+                        <h3>WhatsApp Chat</h3>
+                    </div>
+                </div>
+                <div class="gaming-partner-logo">
+                    <div class="gaming-partner-logo-img">
+                        <img src="./images/Chat-support-img.png" alt="">
+                        <h3>Chat Support</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+</body>
+<script>
+    const submenuItems = document.querySelectorAll(".submenu_item");
+    submenuItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("showMenu");
+            submenuItems.forEach((item2, index2) => {
+                if (index !== index2) {
+                    item2.classList.remove("showMenu");
+                }
+            });
+        });
+    });
+
+    let mobsidebar = document.getElementById("mob-sidebar")
+    let sidemobopen = () => {
+        mobsidebar.style.display = "block"
+    }
+    let sidemobclose = () => {
+        mobsidebar.style.display = "none"
+    }
+</script>
+
+</html>
